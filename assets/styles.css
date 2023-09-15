@@ -1,0 +1,53 @@
+.conteiner{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 100px;
+}
+.conteudo{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    align: auto;
+}
+.h1{
+    align: center;
+}
+/* Estilos CSS para a div e seus elementos */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Largura da div, ajuste conforme necessário */
+    background: #E9E9ED;
+    margin-bottom: 10px;
+    
+}
+
+label {
+    margin-bottom: 5px; /* Espaço entre o label e o select */
+}
+
+select {
+    padding: 5px; /* Espaçamento interno para o select */
+    border-top: none;
+}
+/* Estilo para ocultar a segunda div por padrão */
+.hidden {
+    display: none;
+}
+.proporcao {
+    display: flex;
+}
+
+.inner-div {
+    margin: 10px;
+    background: #E9E9ED;
+    margin-right: 5px;
+}
+/* Estilo para tornar o fundo do input transparente */
+.inner-div input {
+    background-color: transparent;
+    width: 100%;
+}

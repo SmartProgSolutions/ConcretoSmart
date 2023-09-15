@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=".\assets\styles.css">
+</head>
+<body>
+    <section class="conteiner">
+        <h1>Dosagem de Concreto</h1>
+
+        <div class="container">
+            <label for="meuSelect">Formato:</label>
+            <select id="meuSelect">
+                <option value="bloco">Bloco</option>
+                <option value="cilindro">Cilindro</option>
+            </select>
+        </div>
+            <!-- Primeira div com Select -->
+        <div class="container">
+            <label for="meuSelect1">Resistência do concreto</label>
+            <select id="meuSelect1">
+                <option value="opcao1">Método FCJ</option>
+                <option value="opcao2">Método FCK</option>
+                <option value="opcao3">Informar traço de concreto</option>
+            </select>
+        </div>
+
+            <!-- Segunda div com Select (inicialmente oculta) -->
+        <div class="container hidden" id="div2">
+            <label for="meuSelect1">Traço do concreto</label>
+            <select id="meuSelect1">
+                <option value="opcaoA">Obras de responsabilidade de grande porte</option>
+                <option value="opcaoB">Estruturas de responsabilidade(Lajes,Pilares e Vigas)</option>
+                <option value="opcaoC">Estruturas comuns(Sapatas, Estacas, Pilares, Vigas, Estacas)</option>
+                <option value="opcaoD">Concreto comun de menor responsabilidade</option>
+                <option value="opcaoE">Cinta de amarração e Vigas</option>
+                <option value="opcaoF">Contrapiso, Calçados e Concreto Magro</option>
+            </select>
+        </div>
+
+        <div class="proporcao">
+            <div class="inner-div">
+                <label for="label">Label 1:</label>
+                <input type="text" id="input" name="input1">
+            </div>
+            <div class="inner-div">
+                <label for="label">Label 2:</label>
+                <input type="text" id="input" name="input2">
+            </div>
+            <div class="inner-div">
+                <label for="label">Label 3:</label>
+                <input type="text" id="input" name="input3">
+            </div>
+            <div class="inner-div">
+                <label for="label">Label 4:</label>
+                <input type="text" id="input" name="input4">
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="calculadora">
+            <h1>Calculadora de Volume</h1>
+            <label for="comprimento">Comprimento:</label>
+            <input type="text" id="comprimento"><br><br>
+        
+            <label for="largura">Largura:</label>
+            <input type="text" id="largura"><br><br>
+        
+            <label for="altura">Altura:</label>
+            <input type="text" id="altura"><br><br>
+        
+            <button onclick="calcularVolume()">Calcular</button>
+        
+            <p id="resultado"></p>
+        </div>
+        
+    </section>
+    <script>
+        // Função para mostrar ou ocultar a segunda div com base na escolha no primeiro select
+        document.getElementById('meuSelect1').addEventListener('change', function() {
+            var div2 = document.getElementById('div2');
+            if (this.value === 'opcao2') {
+                div2.style.display = 'block';
+            } else {
+                div2.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
