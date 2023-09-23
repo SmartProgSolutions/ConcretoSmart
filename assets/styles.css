@@ -4,7 +4,7 @@
     flex-direction: column;
     margin: 0 auto;
     width: 60%;
-    margin-top: 100px;
+   /*margin-top: 100px;*/ 
 }
 .conteudo{
     display: flex;
@@ -12,9 +12,25 @@
     width: 50%;
     align: auto;
 }
-.h1{
-    align: center;
+body {
+    font-family: 'Open Sans', sans-serif;
 }
+h1{
+    margin-left: 35%;
+}
+
+/* Classe para estilo "bold"
+.bold {
+    font-weight: bold;
+}
+
+Classe para estilo "semi-bold" 
+.semi-bold {
+    font-weight: 600; /* 600 é uma típica representação de semi-bold 
+}
+*/
+
+
 /* Estilos CSS para a div e seus elementos */
 .container {
     display: flex;
@@ -42,12 +58,41 @@ select {
 }
 
 .inner-div {
+    /*configurações do imput*/
     margin: 10px;
     background: #E9E9ED;
     margin-right: 5px;
 }
+
 /* Estilo para tornar o fundo do input transparente */
 .inner-div input {
     background-color: transparent;
-    width: 100%;
+    width: 95%;
+    border-color: transparent;
+}
+
+.inner-div input:focus{
+    border: 2px solid rgb(142, 135, 135); /* Defina a cor da borda desejada quando o input está selecionado */
+    outline: none; /* Remove a borda padrão do navegador que geralmente aparece ao selecionar um input */
+}
+.div-botao-calcular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botao-calcular {
+    background-color: #0583F2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+    
+}
+/* Estilos para o select com a classe .transparent-select */
+.select-volume {
+    background: transparent; /* Define o fundo como transparente */
+    border: none; /* Remove as bordas */
+    outline: none; /* Remove a borda de foco ao clicar */
+    font-size: 18px; /* Tamanho do texto em cada option */
 }
