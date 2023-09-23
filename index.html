@@ -13,18 +13,19 @@
             <h1 >Dosagem de Concreto</h1>
         </div>
        
-
-        <div class="container">
+         <!-- Seleciona o Formato-->
+        <div  class="container ">
             <label for="meuSelect">Formato:</label>
-            <select id="meuSelect">
+            <select class="select-transparent" id="meuSelect">
                 <option value="bloco">Bloco</option>
                 <option value="cilindro">Cilindro</option>
             </select>
         </div>
+
             <!-- Primeira div com Select -->
         <div class="container">
             <label for="meuSelect1">Resistência do concreto</label>
-            <select id="opcoes-metodo">
+            <select class="select-transparent" id="opcoes-metodo">
                 <option value="informar">Informar traço de concreto</option>      
                 <option value="fcj">Método FCJ</option>
                 <option value="fck">Método FCK</option>
@@ -35,21 +36,20 @@
             <!-- Select (inicialmente oculta)  Método FCJ-->
         <div class="container hidden" id="div1" class="hidden">
             <label for="meuSelect1">Traço do concreto FCJ</label>
-            <select id="traco-fcj">
-                <option value=""></option>
-                <option value="opcaoA">Obras de responsabilidade de grande porte</option>
-                <option value="opcaoB">Estruturas de responsabilidade(Lajes,Pilares e Vigas)</option>
-                <option value="opcaoC">Estruturas comuns(Sapatas, Estacas, Pilares, Vigas, Estacas)</option>
-                <option value="opcaoD">Concreto comun de menor responsabilidade</option>
-                <option value="opcaoE">Cinta de amarração e Vigas</option>
-                <option value="opcaoF">Contrapiso, Calçados e Concreto Magro</option>
+            <select class="select-transparent" id="traco-fcj">
+                <option value="opcaoA">Obras de responsabilidade de grande porte; 1 : 1 : 2 : 40 MPa</option>
+                <option value="opcaoB">Estruturas de responsabilidade(Lajes,Pilares e Vigas)  1 : 1.5 : 3 : 35 MPa</option>
+                <option value="opcaoC">Estruturas comuns(Sapatas, Estacas, Pilares, Vigas, Estacas)  1 : 2 : 3 : 25 MPa </option>
+                <option value="opcaoD">Concreto comun de menor responsabilidade 1 : 2.5 : 4 : 18 MPa</option>
+                <option value="opcaoE">Cinta de amarração e Vigas 1 : 3 : 5 : 12 MPa</option>
+                <option value="opcaoF">Contrapiso, Calçados e Concreto Magro 1 : 3 : 6 : 10 MPa</option>
             </select>
         </div>
 
             <!-- Select (inicialmente oculta) Metodo Método FCK-->
         <div class="container hidden" id="div2" class="hidden">
             <label for="meuSelect1">Traço do concreto FCK</label>
-            <select id="traco-fck">
+            <select class="select-transparent" id="traco-fck">
                 <option value="opcaoG">Obras de responsabilidade de grande porte</option>
                 <option value="opcaoH">Estruturas de responsabilidade(Lajes,Pilares e Vigas)</option>
                 <option value="opcaoI">Estruturas comuns(Sapatas, Estacas, Pilares, Vigas, Estacas)</option>
@@ -86,49 +86,63 @@
 
         </div>
 
-        <div class="volume-conhecido">
+        <div id="" class="">
+            <!--Select que define qual div sera exposta -->
             <select class="select-volume" name="" id="select-volume">
-                <option value="conhecido">Volume Conhecido</option>
-                <option value="desconhecido">Volume Desconhecido</option>
+                <option value="volume-conhecido">Volume Conhecido</option>
+                <option value="volume-desconhecido">Volume Desconhecido</option>
             </select>
 
+            <!--Div Volume Conhecido, Inicialmente exposta-->
+            <div id="volume-conhecido" style="display: block;">
+                <div class="inner-div">
+                    <label for="label">Volume:</label>
+                    <input type="text" placeholder="Volume em (m³)" id="input" name="input1">
+                </div>
+                <div class="inner-div">
+                    <label for="label">Quantidade:</label>
+                    <input type="text" placeholder="Quantidade em (un)" id="input" name="input2">
+                </div>
+                <div class="inner-div">
+                    <label for="label">Taxa de perda:</label>
+                    <input type="text" placeholder="Taxa de perda em (%)" id="input" name="input3">
+                </div>
+            </div>
 
-            
-            <div class="inner-div">
-                <label for="label">Volume:</label>
-                <input type="text" id="input" name="input1">
+            <!--Div Volume Desconhecido, inicialmente Oculta-->
+            <div id="volume-desconhecido"  style="display: none;">
+                <div class="inner-div">
+                    <label for="label">Altura:</label>
+                    <input type="text" placeholder="Altura em (cm)" id="altura" name="input1">
+                </div>
+                <div class="inner-div">
+                    <label for="label">Largura:</label>
+                    <input type="text" placeholder="Largura em (cm)" id="largura" name="input1">
+                </div>
+                <div class="inner-div">
+                    <label for="label">Comprimento:</label>
+                    <input type="text" placeholder="Comprimento em (cm)" id="comprimento" name="input1">
+                </div>
+                <div class="inner-div">
+                    <label for="label">Quantidade:</label>
+                    <input type="text" placeholder="Quantidade em (un)" id="input" name="input2">
+                </div>
+                <div class="inner-div">
+                    <label for="label">Taxa de perda:</label>
+                    <input type="text" placeholder="Taxa de perda em (%)"  id="input" name="input3">
+                </div>
             </div>
-            <div class="inner-div">
-                <label for="label">Quant(un):</label>
-                <input type="text" id="input" name="input2">
-            </div>
-            <div class="inner-div">
-                <label for="label">Taxa de perda (%):</label>
-                <input type="text" id="input" name="input3">
-            </div>
+
 
         </div>
 
         <div class="div-botao-calcular">
-            <button class="botao-calcular">Calcular</button>
+            <button  class="botao-calcular" onclick="calcularVolume()">Calcular</button>
         </div>
 
+        <p id="resultado"></p>
 
-        <div class="calculadora">
-            <h1 class="bold">Calculadora de Volume</h1>
-            <label for="comprimento">Comprimento:</label>
-            <input type="text" id="comprimento"><br><br>
-        
-            <label for="largura">Largura:</label>
-            <input type="text" id="largura"><br><br>
-        
-            <label for="altura">Altura:</label>
-            <input type="text" id="altura"><br><br>
-        
-            <button onclick="calcularVolume()">Calcular</button>
-        
-            <p id="resultado"></p>
-        </div>
+
         
     </section>
     <script src="./assets/calculadora.js"></script>

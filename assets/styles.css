@@ -72,6 +72,8 @@ select {
 }
 
 .inner-div input:focus{
+    width: 99%;
+    height:99%;
     border: 2px solid rgb(142, 135, 135); /* Defina a cor da borda desejada quando o input está selecionado */
     outline: none; /* Remove a borda padrão do navegador que geralmente aparece ao selecionar um input */
 }
@@ -95,4 +97,9 @@ select {
     border: none; /* Remove as bordas */
     outline: none; /* Remove a borda de foco ao clicar */
     font-size: 18px; /* Tamanho do texto em cada option */
+}
+.select-transparent{
+    background: transparent; /* Define o fundo como transparente */
+    border: none; /* Remove as bordas */
+    outline: none; /* Remove a borda de foco ao clicar */
 }
