@@ -1,36 +1,3 @@
-        // Função que calcula o volume do concreto 
-        function calcularVolume() {
-            const comprimento = parseFloat(document.getElementById('comprimento').value);
-            const largura = parseFloat(document.getElementById('largura').value);
-            const altura = parseFloat(document.getElementById('altura').value);
-
-            if (!isNaN(comprimento) && !isNaN(largura) && !isNaN(altura)) {
-                var volume = comprimento * largura * altura;
-                document.getElementById('resultado').innerHTML = 'Volume: ' + volume.toFixed(2) + ' unidades cúbicas';
-            } else {
-                document.getElementById('resultado').innerHTML = 'Por favor, insira valores válidos para as dimensões.';
-            }
-        }
-
-        // Adicione um evento de escuta ao select, e mostra opçẽs de traçoes de acordo com o metodo
-        document.getElementById('opcoes-metodo').addEventListener('change', function() {
-            var div1 = document.getElementById('div1');
-            var div2 = document.getElementById('div2');
-
-            if (this.value === 'fcj') {
-                div1.style.display = 'block';
-                div2.style.display = 'none';
-            } else if (this.value === 'fck') {
-                div1.style.display = 'none';
-                div2.style.display = 'block';
-            } else {
-                div1.style.display = 'none';
-                div2.style.display = 'none';
-            }
-        });
-
-
-
 
         // Preenche os inputs de acordo com o traço selecionado Método FCJ
         document.getElementById('traco-fcj').addEventListener('change', function() {
@@ -121,31 +88,3 @@
         MPA.value = '';
     }
 });
-
-document.addEventListener("DOMContentLoaded", function() {
-    // Obtém o elemento select
-    var selectVolume = document.getElementById("select-volume");
-
-    // Obtém as divs
-    var volumeConhecido = document.getElementById("volume-conhecido");
-    var volumeDesconhecido = document.getElementById("volume-desconhecido");
-
-    // Adiciona um ouvinte de evento para o evento "change" no select
-    selectVolume.addEventListener("change", function() {
-        if (selectVolume.value === "volume-conhecido") {
-            // Se "Volume conhecido" for selecionado, mostra a div "volume-conhecido" e oculta a div "volume-desconhecido"
-            volumeConhecido.style.display = "block";
-            volumeDesconhecido.style.display = "none";
-        } else if (selectVolume.value === "volume-desconhecido") {
-            // Se "Volume desconhecido" for selecionado, mostra a div "volume-desconhecido" e oculta a div "volume-conhecido"
-            volumeConhecido.style.display = "none";
-            volumeDesconhecido.style.display = "block";
-        }
-    });
-    
-    // Define o valor inicial do select e exibe a div correspondente
-    selectVolume.value = "volume-conhecido";
-    volumeConhecido.style.display = "block";
-    volumeDesconhecido.style.display = "none";
-});
-

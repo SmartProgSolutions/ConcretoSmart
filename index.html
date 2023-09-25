@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de calculo</title>
-    <link rel="stylesheet" href=".\assets\styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 </head>
 <body>
@@ -34,7 +34,7 @@
         </div>
 
             <!-- Select (inicialmente oculta)  Método FCJ-->
-        <div class="container hidden" id="div1" class="hidden">
+        <div class="container hidden" id="divfcj" class="hidden">
             <label for="meuSelect1">Traço do concreto FCJ</label>
             <select class="select-transparent" id="traco-fcj">
                 <option value="opcaoA">Obras de responsabilidade de grande porte; 1 : 1 : 2 : 40 MPa</option>
@@ -47,7 +47,7 @@
         </div>
 
             <!-- Select (inicialmente oculta) Metodo Método FCK-->
-        <div class="container hidden" id="div2" class="hidden">
+        <div class="container hidden" id="divfck" class="hidden">
             <label for="meuSelect1">Traço do concreto FCK</label>
             <select class="select-transparent" id="traco-fck">
                 <option value="opcaoG">Obras de responsabilidade de grande porte</option>
@@ -59,6 +59,7 @@
             </select>
         </div>
 
+        <!-- traço do cimento | Proporção da massa-->
         <div class="proporcao">
             <div class="inner-div">
                 <label for="label">Cimento:</label>
@@ -97,15 +98,15 @@
             <div id="volume-conhecido" style="display: block;">
                 <div class="inner-div">
                     <label for="label">Volume:</label>
-                    <input type="text" placeholder="Volume em (m³)" id="input" name="input1">
+                    <input type="number" placeholder="Volume em (m³)" id="volume" name="input1">
                 </div>
                 <div class="inner-div">
                     <label for="label">Quantidade:</label>
-                    <input type="text" placeholder="Quantidade em (un)" id="input" name="input2">
+                    <input type="number" placeholder="Quantidade em (un)" id="input" name="input2">
                 </div>
                 <div class="inner-div">
                     <label for="label">Taxa de perda:</label>
-                    <input type="text" placeholder="Taxa de perda em (%)" id="input" name="input3">
+                    <input type="number" placeholder="Taxa de perda em (%)" id="input" name="input3">
                 </div>
             </div>
 
@@ -137,14 +138,184 @@
         </div>
 
         <div class="div-botao-calcular">
-            <button  class="botao-calcular" onclick="calcularVolume()">Calcular</button>
+            <button  class="botao-calcular" onclick="calcularVolume()">Calcular Volume</button>
         </div>
 
-        <p id="resultado"></p>
+        <div class="div-botao-calcular">
+            <button  class="botao-calcular" onclick="calcularDosagem()">Calcular Dosagem</button>
+        </div>
+
+        
+        <div id="resultado"></div>
+
+        <!--Div dos resultados-->
+        <div id="dados-gerais" class="centralizado" style="background-color: #0583F2; color: white; margin-bottom: 1px; "  >
+            <label style="font-size: 18px; ">Dados gerais</label>
+        </div>
+        <div class="descricao">
+            <div class="box">
+                <label>Descrição</label>
+            </div>
+            <div class="box">
+                <label>Quantidade</label>
+            </div>
+            <div class="box">
+                <label>Unidade</label>
+            </div>
+        </div>
+        <div style="justify-content: space-between; display: flex; margin-bottom: 10px;">
+
+            <div style="background-color: red;
+                        height: 50px;
+                        width: 33%;    
+                        "
+                class="centralizado">
+                        <label >Cimento</label>
+
+
+            </div>
+            <div style="background-color: rgb(0, 255, 4); 
+                        height: 50px;
+                        width: 33%;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                ">
+                    <label id="resultado-cimentom3" class="font-9"></label>
+                    <label id="resultado-cimento" class="font-9"></label>
+                            
+            </div>
+            <div style="background-color: rgb(200, 255, 0); 
+                        height: 50px;
+                        width: 33%;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                ">
+                    <label class="font-9">m³</label>
+                    <label class="font-9">Kg</label>
+            </div>
+            
+        </div>
+
+        <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
+
+            <div style="background-color: red;
+                        height: 50px;
+                        width: 33%;   
+                        "
+                class="centralizado">
+
+                        <label>Areia</label>
+
+
+            </div>
+            <div style="background-color: rgb(0, 255, 4); 
+                        height: 50px;
+                        width: 33%;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center
+                ">
+                    <label id="resultado-areiam3" class="font-9"></label>
+                    <label id="resultado-areia" class="font-9"></label>
+
+                
+            </div>
+            <div style="background-color: rgb(200, 255, 0); 
+                        height: 50px;
+                        width: 33%;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        ">
+                    <label class="font-9">m³</label>
+                    <label class="font-9">Kg</label>
+
+                
+            </div>
+            
+        </div>
+
+        <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
+
+            <div style="background-color: red;
+                        height: 50px;
+                        width: 33%;
+        
+                        "
+                class="centralizado">
+
+                        <label>Brita</label>
+
+            </div>
+            <div style="background-color: rgb(0, 255, 4); 
+                        height: 50px;
+                        width: 33%;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center
+                ">
+                    <label id="resultado-britam3" class="font-9"></label>                
+                    <label id="resultado-brita" class="font-9"></label>
+
+                
+            </div>
+            <div style="background-color: rgb(200, 255, 0); 
+                        height: 50px;
+                        width: 33%;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        ">
+                    <label class="font-9">m³</label>
+                    <label class="font-9">Kg</label>
+
+                
+            </div>
+            
+        </div>
+
+        <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
+
+            <div style="background-color: red;
+                        height: 50px;
+                        width: 33%;
+       
+                        "
+                class="centralizado">
+                        <label>Água</label>
+
+
+            </div>
+            <div style="background-color: rgb(0, 255, 4); 
+                        height: 50px;
+                        width: 33%;
+                        
+                ">
+                    <label id="resultado-agua" class="font-9"></label>
+
+                
+            </div>
+            <div style="background-color: rgb(200, 255, 0); 
+                        height: 50px;
+                        width: 33%;
+                        
+                        ">
+                        
+
+                
+            </div>
+            
+        </div>
+
+
 
 
         
     </section>
-    <script src="./assets/calculadora.js"></script>
+    <script src="./assets/js/calculadora.js"></script>
+    <script src="./assets/js/calculardosagem.js"></script>
+    <script src="./assets/js/preencheinput.js"></script>
 </body>
 </html>

@@ -41,9 +41,6 @@ Classe para estilo "semi-bold"
     
 }
 
-label {
-    margin-bottom: 5px; /* Espaço entre o label e o select */
-}
 
 select {
     padding: 5px; /* Espaçamento interno para o select */
@@ -101,4 +98,24 @@ select {
     background: transparent; /* Define o fundo como transparente */
     border: none; /* Remove as bordas */
     outline: none; /* Remove a borda de foco ao clicar */
+}
+.centralizado{
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+.descricao{
+    display: flex; /* Torna as divs filhas flexíveis */
+    justify-content: space-between; /* Distribui as divs igualmente horizontalmente */
+    background-color: #007bff;
+}
+.box{
+    width: 33%;
+    display: flex; /* Torna o texto verticalmente centralizado */
+    color: white;
+    justify-content: center;  /* Centraliza horizontalmente */
+}
+.font-9{
+    font-size: 11px;
+
 }
