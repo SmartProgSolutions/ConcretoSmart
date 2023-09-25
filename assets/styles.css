@@ -73,7 +73,6 @@ select {
 
 .inner-div input:focus{
     width: 99%;
-    height:99%;
     border: 2px solid rgb(142, 135, 135); /* Defina a cor da borda desejada quando o input está selecionado */
     outline: none; /* Remove a borda padrão do navegador que geralmente aparece ao selecionar um input */
 }
