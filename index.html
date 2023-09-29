@@ -1,321 +1,1438 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de calculo</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-</head>
-<body>
-    <section class="conteiner">
-        <div id="div-titulo">
-            <h1 >Dosagem de Concreto</h1>
-        </div>
-       
-         <!-- Seleciona o Formato-->
-        <div  class="container ">
-            <label for="meuSelect">Formato:</label>
-            <select class="select-transparent" id="meuSelect">
-                <option value="bloco">Bloco</option>
-                <option value="cilindro">Cilindro</option>
-            </select>
-        </div>
+<html lang="pt-BR"><head itemscope="" itemtype="http://schema.org/WebSite">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title>test site</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="http://fonts.googleapis.com/">
+<link rel="alternate" type="application/rss+xml" title="Feed para test site »" href="http://localhost:10013/feed/">
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para test site »" href="http://localhost:10013/comments/feed/">
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/localhost:10013\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<style id="ct-main-styles-inline-css">[data-header*="type-1"] .site-header [data-id="button"] {--buttonMinWidth:115px;--buttonInitialColor:var(--paletteColor3);--buttonHoverColor:var(--paletteColor4);--headerButtonBorderColor:var(--paletteColor3);--headerButtonBorderHoverColor:var(--paletteColor4);--margin:0px 0px 0px 20px !important;--buttonBorderRadius:4px;--headerCtaPadding:10px 20px;}[data-header*="type-1"] .site-header [data-id="button"] .cb__button {--buttonTextInitialColor:var(--paletteColor5);--buttonTextHoverColor:var(--paletteColor5);}[data-header*="type-1"] .site-header [data-id="button"] .cb__button-ghost {--buttonTextInitialColor:var(--paletteColor3);--buttonTextHoverColor:var(--paletteColor2);}[data-header*="type-1"] [data-id="contacts"].customizer-builder__contact-info__header {--items-spacing:15px;}[data-header*="type-1"] [data-id="contacts"].customizer-builder__contact-info__header .cb__icon-container {--icon-size:15px;}[data-header*="type-1"] [data-id="contacts"].cb__header-contact-info {--fontSize:14px;--lineHeight:1.3;}[data-header*="type-1"] [data-id="contacts"].cb__header-contact-info .contact-info {--color:var(--paletteColor1);--linkInitialColor:var(--paletteColor2);--linkHoverColor:var(--paletteColor4);}[data-header*="type-1"] [data-id="contacts"].cb__header-contact-info .cb__icon-container {--icon-color:var(--paletteColor1);--icon-hover-color:var(--paletteColor3);--background-color:var(--paletteColor3);--background-hover-color:var(--paletteColor3);}[data-header*="type-1"] .site-header [data-id="logo"] .site-logo-container {--LogoMaxWidth:168px;}[data-header*="type-1"] .site-header [data-id="logo"] .site-title {--fontWeight:700;--textTransform:none;--textDecoration:none;--fontSize:27px;--letterSpacing:0em;--linkInitialColor:var(--paletteColor2);--linkHoverColor:var(--paletteColor3);}[data-header*="type-1"] .site-header [data-sticky*="yes"] [data-id="logo"] .site-title {--linkInitialColor:var(--paletteColor2);--linkHoverColor:var(--paletteColor3);}[data-header*="type-1"] .site-header [data-id="logo"] {--margin:0 !important;}[data-header*="type-1"] .site-header [data-id="menu"] {--menu-items-spacing:25px;--menu-indicator-active-color:var(--paletteColor3);--activeIndicatorbackgroundColor:var(--paletteColor7);--margin:0 20px !important;}[data-header*="type-1"] .site-header [data-id="menu"] > ul > li > a {--menu-item-height:100%;--fontWeight:400;--textTransform:normal;--fontSize:16px;--lineHeight:2.25;--linkInitialColor:var(--paletteColor1);--linkHoverColor:var(--paletteColor3);--colorHoverType3:var(--paletteColor5);}[data-header*="type-1"] .site-header [data-id="menu"] .sub-menu {--dropdown-top-offset:0px;--dropdown-width:250px;--dropdown-items-spacing:15px;--fontWeight:400;--fontSize:16px;--linkInitialColor:var(--paletteColor1);--linkHoverColor:var(--paletteColor3);--dropdown-divider:1px dashed var(--paletteColor6);--background-color:var(--paletteColor5);--background-hover-color:var(--paletteColor7);--box-shadow:0px 10px 20px rgba(41, 51, 61, 0.1);--border-radius:0px 0px 2px 2px;}[data-header*="type-1"] .site-header [data-row="middle"] {--height:98px;--background-image:none;--background-color:var(--paletteColor5);--borderTop:none;--borderBottom:none;--box-shadow:none;}[data-header*="type-1"] .site-header [data-row="middle"] > div {--borderTop:none;--borderBottom:none;}[data-header*="type-1"] .site-header [data-sticky*="yes"] [data-row="middle"] {--background-image:none;--background-color:var(--paletteColor5);--borderTop:none;--borderBottom:none;--box-shadow:0px 10px 20px rgba(44,62,80,0.05);}[data-header*="type-1"] .site-header [data-sticky] [data-row="middle"] {--stickyShrink:65;}[data-header*="type-1"] .site-header [data-sticky*="yes"] [data-row="middle"] > div {--borderTop:none;--borderBottom:none;}[data-header*="type-1"] [data-id="mobile-menu"] {--fontWeight:400;--fontSize:30px;--linkInitialColor:var(--paletteColor1);--linkHoverColor:var(--paletteColor3);--mobile_menu_child_size:16px;--padding:5px 0;}[data-header*="type-1"] #offcanvas > section {--background-image:none;--background-color:var(--paletteColor5);}[data-header*="type-1"] #offcanvas {--background-image:none;--background-color:rgba(255,255,255,0);--side-panel-width:500px;}[data-header*="type-1"] [data-behaviour*="side"] {--box-shadow:0px 0px 70px rgba(0, 0, 0, 0.35);}[data-header*="type-1"] #offcanvas .close-button {--closeButtonColor:var(--paletteColor3);--closeButtonHoverColor:var(--paletteColor2);--closeButtonBackground:none;}[data-header*="type-1"] [data-id="trigger"] {--linkInitialColor:var(--paletteColor3);--linkHoverColor:var(--paletteColor4);--secondColor:var(--paletteColor7);--secondColorHover:var(--paletteColor7);--fontWeight:400;--fontSize:18px;}[data-header*="type-1"] {--headerStickyHeight:63px;}[data-footer*="type-1"] footer.cb__footer [data-row="bottom"] > div {--container-spacing:24px;--items-gap:60px;--border-top:1px solid var(--paletteColor6);--grid-template-colummns:repeat(2, 1fr);}[data-footer*="type-1"] footer.cb__footer [data-row="bottom"] .widget-title {--textTransform:uppercase;--fontSize:16px;--lineHeight:1.75;--letterSpacing:0.4px;--headingColor:var(--paletteColor5);}[data-footer*="type-1"] footer.cb__footer [data-row="bottom"] .widget > *:not(.widget-title) {--color:var(--paletteColor5);--headingColor:var(--paletteColor5);}[data-footer*="type-1"] footer.cb__footer [data-row="bottom"] .widget {--linkInitialColor:var(--paletteColor5);--linkHoverColor:var(--paletteColor5);}[data-footer*="type-1"] footer.cb__footer [data-row="bottom"] [data-divider="columns"] {--border:none;}[data-footer*="type-1"] footer.cb__footer [data-row="bottom"] {--border-top:none;--background-image:none;--background-color:var(--paletteColor5);}[data-footer*="type-1"] [data-id="contacts"].cb__footer-contact-info {--margin:0px !important;--items-spacing:15px;--icon-color:#1b1919;--icon-hover-color:var(--paletteColor3);--background-color:var(--paletteColor6);--background-hover-color:rgba(218, 222, 228, 0.7);}[data-footer*="type-1"] [data-id="contacts"].cb__footer-contact-info .contact-info {--fontSize:16px;--lineHeight:1.3;--color:var(--paletteColor1);--linkInitialColor:var(--paletteColor1);--linkHoverColor:var(--paletteColor3);}[data-footer*="type-1"] [data-id="copyright"] {--fontWeight:400;--fontSize:16px;--lineHeight:1.625;--color:rgba(62, 60, 60, 0.5);--linkInitialColor:var(--paletteColor1);--linkHoverColor:var(--paletteColor3);}[data-footer*="type-1"] [data-column="copyright"] {--horizontal-alignment:left;--vertical-alignment:flex-start;}[data-footer*="type-1"] footer.cb__footer [data-id="menu"] {--menu-items-spacing:20px;}[data-footer*="type-1"] footer.cb__footer [data-column="menu"] {--horizontal-alignment:flex-end;}[data-footer*="type-1"] footer.cb__footer [data-id="menu"] ul {--fontWeight:400;--textTransform:normal;--fontSize:16px;--lineHeight:1.625;--letterSpacing:0px;}[data-footer*="type-1"] footer.cb__footer [data-id="menu"] > ul > li > a {--linkInitialColor:var(--paletteColor1);--linkHoverColor:var(--paletteColor3);}[data-footer*="type-1"] [data-id="socials"].cb__footer-socials {--icon-size:14px;--spacing:14px;}[data-footer*="type-1"] [data-id="socials"].cb__footer-socials [data-color="custom"] {--icon-color:var(--paletteColor1);--icon-hover-color:var(--paletteColor3);--background-color:var(--paletteColor7);--background-hover-color:var(--paletteColor3);}[data-footer*="type-1"] [data-id="socials"].cb__footer-socials .cb__label {--visibility:none;}[data-footer*="type-1"] footer.cb__footer [data-row="top"] > div {--container-spacing:70px;--items-gap:50px;--grid-template-colummns:2fr 1fr 1fr 1fr;}[data-footer*="type-1"] footer.cb__footer [data-row="top"] .widget-title {--fontWeight:600;--textTransform:capitalize;--fontSize:20px;--lineHeight:1.85;--letterSpacing:0.4px;--headingColor:var(--paletteColor1);}[data-footer*="type-1"] footer.cb__footer [data-row="top"] .widget > *:not(.widget-title) {--textTransform:none;--fontSize:18px;--lineHeight:1.65em;--color:var(--paletteColor1);--headingColor:var(--paletteColor1);}[data-footer*="type-1"] footer.cb__footer [data-row="top"] .widget {--linkInitialColor:var(--paletteColor1);--linkHoverColor:var(--paletteColor3);}[data-footer*="type-1"] footer.cb__footer [data-row="top"] [data-divider="columns"] {--border:none;}[data-footer*="type-1"] footer.cb__footer [data-row="top"] {--background-image:none;--background-color:var(--paletteColor5);}:root {--fontFamily:'Inter', Sans-Serif;--fontWeight:400;--fontSize:18px;--lineHeight:1.77777778;--letterSpacing:0;--btnFontWeight:400;--btnFontSize:18px;--btnLineHeight:1.2;--blogCategoryDividerInitialColorFirst:var(--paletteColor1);--blogCategoryDividerHoverColorFirst:var(--paletteColor3);--blogHeadingFontSize:28px;--blogDividerMarginFirst:0 0 20px 0;--formBorderInitialColor:#e0e5eb;--formBorderFocusColor:var(--paletteColor1);--formBorderSize:1px;--radioCheckboxInitialColor:#d5d8de;--radioCheckboxAccentColor:var(--paletteColor1);--primaryColor:var(--paletteColor1);--baseColor:var(--paletteColor7);--genheadingColor:var(--paletteColor2);--genLinkColor:var(--paletteColor3);--genLinkHoverColor:var(--paletteColor4);--textSelectionColor:var(--paletteColor5);--textSelectionHoverColor:var(--paletteColor3);--genborderColor:var(--paletteColor6);--btnTextColor:var(--paletteColor5);--btnTextHoverColor:var(--paletteColor5);--btnBgColor:var(--paletteColor3);--btnBgHoverColor:var(--paletteColor4);--btnBorderColor:var(--paletteColor3);--btnBorderHoverColor:var(--paletteColor4);--paletteColor1:#3e3c3c;--paletteColor2:#1b1919;--paletteColor3:#0583f2;--paletteColor4:#0554f2;--paletteColor5:#ffffff;--paletteColor6:#e6f3fe;--paletteColor7:#edf7ff;--paletteColor8:#F9FBFE;--color:var(--paletteColor2);--linkInitialColor:var(--paletteColor1);--linkHoverColor:var(--paletteColor2);--selectionTextColor:var(--paletteColor5);--selectionBackgroundColor:var(--paletteColor1);--border-color:rgba(224, 229, 235, 0.9);--headingColor:var(--paletteColor4);--contentSpacing:1.5em;--bottonRoundness:4px;--buttonPadding:16px 32px;--buttonMinHeight:45px;--buttonBorderRadius:3px;--buttonTextInitialColor:var(--paletteColor5);--buttonTextHoverColor:var(--paletteColor5);--buttonInitialColor:var(--paletteColor3);--buttonHoverColor:var(--paletteColor2);--container-max-width:1290px;--content-vertical-spacing:60px;--narrow-container-max-width:750px;--wide-offset:130px;--sidebarWidth:27%;--sidebarWidthNoUnit:27;--sidebarGap:4%;--sidebarOffset:50px;--contentSidebarWidth:28%;--sidebarWidgetSpacing:64px;--widgetsContentAreaSpacing:0 0 20px 20px;--breadcrumbsColor:rgba(41,41,41,0.30);--breadcrumbsCurrentColor:var(--paletteColor1);--breadcrumbsSeparatorColor:rgba(41,41,41,0.30);--linkHighlightColor:var(--paletteColor3);--linkHighlightHoverColor:var(--paletteColor1);--linkHighlightBackgroundColor:var(--paletteColor6);--linkHighlightBackgroundHoverColor:var(--paletteColor3);--authorFontColor:var(--paletteColor2);--searchFontColor:var(--paletteColor2);--archiveFontColor:var(--paletteColor2);--blogFontColor:var(--paletteColor2);--titleColor:var(--paletteColor1);--singleCategoryDividerInitialColorFirst:var(--paletteColor1);--singleCategoryDividerHoverColorFirst:var(--paletteColor3);--relatedPostCategoryDividerInitialColor:var(--paletteColor1);--relatedPostCategoryDividerHoverColor:var(--paletteColor3);--captionOverlayColor:var(--paletteColor1);--captionColor:var(--paletteColor8);--containerWidth:1170px;--containerContentMaxWidth:728px;--containerVerticalMargin:80px;}h1, .block-editor-page .editor-styles-wrapper h1, .block-editor-page .editor-post-title__block .editor-post-title__input {--fontFamily:'DM Sans', Sans-Serif;--fontWeight:700;--fontSize:45px;--lineHeight:1.125;--letterSpacing:-0.03em;}h2 {--fontFamily:'DM Sans', Sans-Serif;--fontWeight:700;--fontSize:32px;--lineHeight:1.25;--letterSpacing:-0.03em;}h3 {--fontFamily:'DM Sans', Sans-Serif;--fontWeight:700;--fontSize:24px;--lineHeight:1;--letterSpacing:-0.03em;}h4 {--fontFamily:'DM Sans', Sans-Serif;--fontWeight:700;--fontSize:22px;--lineHeight:1.5;--letterSpacing:-0.03em;}h5 {--fontFamily:'DM Sans', Sans-Serif;--fontWeight:700;--fontSize:20px;--lineHeight:1.4;--letterSpacing:-0.03em;}h6 {--fontFamily:'DM Sans', Sans-Serif;--fontWeight:700;--fontSize:18px;--lineHeight:1.5;--letterSpacing:-0.03em;}.wp-block-quote.is-style-large p, .wp-block-pullquote p, .rt-quote-widget blockquote {--fontFamily:'Georgia', Sans-Serif;--fontWeight:600;--fontSize:25px;}code, kbd, samp, pre {--fontFamily:'monospace', Sans-Serif;--fontWeight:400;--fontSize:16px;}.rt-sidebar .widget-title {--fontSize:18px;}.entry-summary > .product_title {--fontSize:30px;}.entry-summary .price {--fontWeight:700;--fontSize:20px;}.rishi-breadcrumb-main-wrap .rishi-breadcrumbs {--fontFamily:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';--fontWeight:500;--fontSize:14px;}.woocommerce-store-notice.demo_store {--fontWeight:400;--fontSize:18px;}.woocommerce-page .archive-title-wrapper .tagged-in-wrapper h1 {--fontWeight:700;--fontSize:40px;--lineHeight:1.75;}.cb__menu-trigger .cb__label {--fontWeight:400;--fontSize:18px;}.rt-featured-image .rt-caption-wrap {--fontWeight:400;--fontSize:14px;--lineHeight:1.5;--captionPadding:10px;}body {--background-image:none;--background-color:var(--paletteColor5);}.entry-header .page-title {--fontSize:32px;}.entry-header .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;--lineHeight:1.5;}.entry-header .rt-breadcrumbs {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;}.hero-section[data-type="type-1"] {--margin-bottom:50px;}.page .main-content-wrapper .entry-header {--margin-bottom:50px;}.cb__pagination {--spacing:80px;}.cb__pagination[data-divider] {--border:none;}[data-pagination="simple"] {--colorActive:#ffffff;}[data-prefix="blog"] .entry-card .entry-title {--fontSize:20px;--lineHeight:1.3;}[data-prefix="blog"] .entry-excerpt {--fontSize:16px;}[data-prefix="blog"] .entry-card .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;}[data-prefix="blog"] [data-cards="boxed"] .entry-card {--cardBackground:#ffffff;--border:none;--cardSpacing:35px;--box-shadow:0px 12px 18px -6px rgba(34, 56, 101, 0.04);}[data-prefix="blog"] .entry-card {--entry-divider:1px solid rgba(224, 229, 235, 0.8);}[data-prefix="blog"] [data-cards="simple"] .entry-card {--border:1px dashed rgba(224, 229, 235, 0.8);}[data-prefix="categories"] .entry-card .entry-title {--fontSize:20px;--lineHeight:1.3;}[data-prefix="categories"] .entry-excerpt {--fontSize:16px;}[data-prefix="categories"] .entry-card .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;}[data-prefix="categories"] [data-cards="boxed"] .entry-card {--cardBackground:#ffffff;--border:none;--cardSpacing:35px;--box-shadow:0px 12px 18px -6px rgba(34, 56, 101, 0.04);}[data-prefix="categories"] .entry-card {--entry-divider:1px solid rgba(224, 229, 235, 0.8);}[data-prefix="categories"] [data-cards="simple"] .entry-card {--border:1px dashed rgba(224, 229, 235, 0.8);}[data-prefix="author"] .entry-card .entry-title {--fontSize:20px;--lineHeight:1.3;}[data-prefix="author"] .entry-excerpt {--fontSize:16px;}[data-prefix="author"] .entry-card .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;}[data-prefix="author"] [data-cards="boxed"] .entry-card {--cardBackground:#ffffff;--border:none;--cardSpacing:35px;--box-shadow:0px 12px 18px -6px rgba(34, 56, 101, 0.04);}[data-prefix="author"] .entry-card {--entry-divider:1px solid rgba(224, 229, 235, 0.8);}[data-prefix="author"] [data-cards="simple"] .entry-card {--border:1px dashed rgba(224, 229, 235, 0.8);}[data-prefix="search"] .entry-card .entry-title {--fontSize:20px;--lineHeight:1.3;}[data-prefix="search"] .entry-excerpt {--fontSize:16px;}[data-prefix="search"] .entry-card .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;}[data-prefix="search"] [data-cards="boxed"] .entry-card {--cardBackground:#ffffff;--border:none;--cardSpacing:35px;--box-shadow:0px 12px 18px -6px rgba(34, 56, 101, 0.04);}[data-prefix="search"] .entry-card {--entry-divider:1px solid rgba(224, 229, 235, 0.8);}[data-prefix="search"] [data-cards="simple"] .entry-card {--border:1px dashed rgba(224, 229, 235, 0.8);}form textarea {--formInputHeight:170px;}#secondary {--widgetsHeadingColor:var(--sidebarWidgetsTitleColor);--widgetsFontSize:18px;}.widget-area > * {--widgetsLinkColor:var(--primaryColor);}.widget-area {--widgetsLinkHoverColor:var(--paletteColor3);--sidebarBackgroundColor:var(--paletteColor5);--border:none;--border:1px solid var(--paletteColor6);--sidebar-widgets-spacing:60px;--sidebarInnerSpacing:35px;--box-shadow:0px 12px 18px -6px rgba(34, 56, 101, 0.04);}.widget > *:not(.widget-title) {--headingColor:var(--paletteColor2);}.rishi-breadcrumb-main-wrap {--alignment:left;--padding:0px 0px 10px 0px;}.page .entry-header {--alignment:left;--margin-bottom:50px;}.box-layout.page .main-content-wrapper, .content-box-layout.page .main-content-wrapper {--background-image:none;--background-color:var(--paletteColor5);--padding:40px;--box-radius:3px;}.box-layout.single .main-content-wrapper, .content-box-layout.single .main-content-wrapper {--background-image:none;--background-color:var(--paletteColor5);--padding:40px;--box-radius:3px;}.archive.author .site-content .archive-title-wrapper {--width:142px;--margin:78px;--alignment:left;--authorMargin:30px;--background-image:none;--background-color:var(--paletteColor7);}.search .site-content .archive-title-wrapper {--alignment:left;--margin:78px;--searchMargin:30px;--background-image:none;--background-color:var(--paletteColor7);}.archive .site-content .archive-title-wrapper {--margin:60px;--alignment:left;--archiveMargin:30px;--background-image:none;--background-color:var(--paletteColor7);}.blog .site-content .archive-title-wrapper {--background-image:none;--background-color:var(--paletteColor7);--alignment:left;--margin:20px;}.cb__share-box {--icon-size:15px;--iconSpacing:0px 10px 10px 0px;--alignment:left;--fontWeight:500;--fontSize:14px;--lineHeight:1.2;}.cb__share-box[data-location="top"] {--margin:10px;}.cb__share-box[data-location="bottom"] {--margin:10px;}.cb__share-box[data-sticky="yes"] {--topOffset:150px;--sideOffset:15px;}[data-prefix="single_blog_post"] .post-navigation {--margin:80px;--linkInitialColor:var(--color);}[data-prefix="single_blog_post"] .rt-related-posts-container {--padding:70px;--background-image:none;--background-color:#eff1f5;--visibility:block;}[data-prefix="single_blog_post"] .rt-related-posts {--visibility:grid;}[data-prefix="single_blog_post"] .related-entry-title {--linkInitialColor:var(--color);}.to_top {--topButtonIconColorDefault:var(--paletteColor3);--topButtonIconColorHover:var(--paletteColor5);--topButtonShapeBackgroundDefault:rgba(41,41,41,0);--topButtonShapeBackgroundHover:var(--paletteColor3);--topButtonBorderDefaultColor:var(--paletteColor3);--topButtonBorderHoverColor:var(--paletteColor3);--topButtonSize:12px;--topButtonOffset:25px;--sideButtonOffset:25px;--top-button-border:1px;--top-button-border-radius:1px;--top_button_padding:10px;}.rishi-container[data-strech="full"] {--streched-padding:40px;}</style>
+<style id="ct-main-styles-tablet-inline-css" media="(max-width: 999.98px)">[data-header*="type-1"] .site-header [data-id="button"] {--margin:0px 0px 0px 0 !important;}[data-header*="type-1"] .site-header [data-id="button"] a {--box-shadow:0px 10px 20px rgba(0, 0, 0, 0);}[data-header*="type-1"] [data-id="contacts"].cb__header-contact-info {--fontSize:18px;}[data-header*="type-1"] .site-header [data-row="middle"] {--height:80px;}[data-header*="type-1"] .site-header [data-sticky] [data-row="middle"] {--stickyShrink:91;}[data-header*="type-1"] [data-id="mobile-menu"] {--fontSize:18px;--margin:0px 0;}[data-header*="type-1"] #offcanvas {--side-panel-width:65vw;}[data-header*="type-1"] {--headerStickyHeight:72px;}[data-footer*="type-1"] footer.cb__footer [data-row="bottom"] > div {--container-spacing:25px;--items-gap:40px;--grid-template-colummns:initial;}[data-footer*="type-1"] footer.cb__footer [data-row="top"] > div {--items-gap:40px;--grid-template-colummns:initial;}h1, .block-editor-page .editor-styles-wrapper h1, .block-editor-page .editor-post-title__block .editor-post-title__input {--fontSize:40px;--lineHeight:1.25;}h2 {--fontSize:30px;}h3 {--lineHeight:1.3333;}.entry-header .page-title {--fontSize:30px;}.hero-section[data-type="type-1"] {--margin-bottom:30px;}.page .main-content-wrapper .entry-header {--margin-bottom:30px;}.cb__pagination {--spacing:60px;}:root {--sidebarWidgetSpacing:50px;--containerWidth:992px;--containerContentMaxWidth:500px;--containerVerticalMargin:40px;}#secondary {--widgetsFontSize:16px;}.widget-area {--sidebar-widgets-spacing:40px;}.page .entry-header {--margin-bottom:30px;}.box-layout.page .main-content-wrapper, .content-box-layout.page .main-content-wrapper {--padding:15px;}.box-layout.single .main-content-wrapper, .content-box-layout.single .main-content-wrapper {--padding:15px;}.archive.author .site-content .archive-title-wrapper {--width:100px;--margin:30px;}.search .site-content .archive-title-wrapper {--margin:30px;}.archive .site-content .archive-title-wrapper {--margin:30px;}[data-prefix="single_blog_post"] .post-navigation {--margin:60px;}[data-prefix="single_blog_post"] .rt-related-posts-container {--padding:50px;--visibility:none;}[data-prefix="single_blog_post"] .rt-related-posts {--visibility:none;}.rishi-container[data-strech="full"] {--streched-padding:30px;}</style>
+<style id="ct-main-styles-mobile-inline-css" media="(max-width: 689.98px)">[data-header*="type-1"] .site-header [data-id="button"] {--margin:0px !important;}[data-header*="type-1"] [data-id="contacts"].cb__header-contact-info {--fontSize:16px;}[data-header*="type-1"] .site-header [data-row="middle"] {--height:93px;}[data-header*="type-1"] [data-id="mobile-menu"] {--fontSize:16px;}[data-header*="type-1"] #offcanvas {--side-panel-width:90vw;}[data-header*="type-1"] {--headerStickyHeight:84px;}[data-footer*="type-1"] footer.cb__footer [data-row="bottom"] > div {--container-spacing:15px;--grid-template-colummns:initial;}[data-footer*="type-1"] footer.cb__footer [data-row="top"] > div {--grid-template-colummns:initial;}h1, .block-editor-page .editor-styles-wrapper h1, .block-editor-page .editor-post-title__block .editor-post-title__input {--fontSize:30px;--lineHeight:1.5;}h2 {--fontSize:28px;}.entry-header .page-title {--fontSize:25px;}.cb__pagination {--spacing:50px;}[data-prefix="blog"] .entry-card .entry-title {--fontSize:18px;}[data-prefix="blog"] [data-cards="boxed"] .entry-card {--cardSpacing:25px;}[data-prefix="categories"] .entry-card .entry-title {--fontSize:18px;}[data-prefix="categories"] [data-cards="boxed"] .entry-card {--cardSpacing:25px;}[data-prefix="author"] .entry-card .entry-title {--fontSize:18px;}[data-prefix="author"] [data-cards="boxed"] .entry-card {--cardSpacing:25px;}[data-prefix="search"] .entry-card .entry-title {--fontSize:18px;}[data-prefix="search"] [data-cards="boxed"] .entry-card {--cardSpacing:25px;}:root {--content-vertical-spacing:50px;--sidebarWidgetSpacing:30px;--containerWidth:420px;--containerContentMaxWidth:400px;}#secondary {--widgetsFontSize:14px;}.archive.author .site-content .archive-title-wrapper {--width:80px;}[data-prefix="single_blog_post"] .post-navigation {--margin:40px;}[data-prefix="single_blog_post"] .rt-related-posts-container {--padding:30px;}.rishi-container[data-strech="full"] {--streched-padding:15px;}</style>
+<link rel="stylesheet" id="wp-block-library-css" href="test%20site_arquivos/style.min.css" media="all">
+<link rel="stylesheet" id="jet-engine-frontend-css" href="test%20site_arquivos/frontend.css" media="all">
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--palette-color-1: var(--paletteColor1, #3e3c3c);--wp--preset--color--palette-color-2: var(--paletteColor2, #1b1919);--wp--preset--color--palette-color-3: var(--paletteColor3, #0583f2);--wp--preset--color--palette-color-4: var(--paletteColor4, #0554f2);--wp--preset--color--palette-color-5: var(--paletteColor5, #ffffff);--wp--preset--color--palette-color-6: var(--paletteColor6, #e6f3fe);--wp--preset--color--palette-color-7: var(--paletteColor7, #edf7ff);--wp--preset--color--palette-color-8: var(--paletteColor8, #F9FBFE);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--juicy-peach: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);--wp--preset--gradient--young-passion: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);--wp--preset--gradient--true-sunset: linear-gradient(to right, #fa709a 0%, #fee140 100%);--wp--preset--gradient--morpheus-den: linear-gradient(to top, #30cfd0 0%, #330867 100%);--wp--preset--gradient--plum-plate: linear-gradient(135deg, #667eea 0%, #764ba2 100%);--wp--preset--gradient--aqua-splash: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);--wp--preset--gradient--love-kiss: linear-gradient(to top, #ff0844 0%, #ffb199 100%);--wp--preset--gradient--new-retrowave: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);--wp--preset--gradient--plum-bath: linear-gradient(to top, #cc208e 0%, #6713d2 100%);--wp--preset--gradient--high-flight: linear-gradient(to right, #0acffe 0%, #495aff 100%);--wp--preset--gradient--teen-party: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);--wp--preset--gradient--fabled-sunset: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);--wp--preset--gradient--arielle-smile: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);--wp--preset--gradient--itmeo-branding: linear-gradient(180deg, #2af598 0%, #009efd 100%);--wp--preset--gradient--deep-blue: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);--wp--preset--gradient--strong-bliss: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);--wp--preset--gradient--sweet-period: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);--wp--preset--gradient--purple-division: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);--wp--preset--gradient--cold-evening: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);--wp--preset--gradient--mountain-rock: linear-gradient(to right, #868f96 0%, #596164 100%);--wp--preset--gradient--desert-hump: linear-gradient(to top, #c79081 0%, #dfa579 100%);--wp--preset--gradient--ethernal-constance: linear-gradient(to top, #09203f 0%, #537895 100%);--wp--preset--gradient--happy-memories: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);--wp--preset--gradient--grown-early: linear-gradient(to top, #0ba360 0%, #3cba92 100%);--wp--preset--gradient--morning-salad: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);--wp--preset--gradient--night-call: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);--wp--preset--gradient--mind-crawl: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);--wp--preset--gradient--angel-care: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);--wp--preset--gradient--juicy-cake: linear-gradient(to top, #e14fad 0%, #f9d423 100%);--wp--preset--gradient--rich-metal: linear-gradient(to right, #d7d2cc 0%, #304352 100%);--wp--preset--gradient--mole-hall: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);--wp--preset--gradient--cloudy-knoxville: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);--wp--preset--gradient--soft-grass: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);--wp--preset--gradient--saint-petersburg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);--wp--preset--gradient--everlasting-sky: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);--wp--preset--gradient--kind-steel: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);--wp--preset--gradient--over-sun: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);--wp--preset--gradient--premium-white: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);--wp--preset--gradient--clean-mirror: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);--wp--preset--gradient--wild-apple: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);--wp--preset--gradient--snow-again: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);--wp--preset--gradient--confident-cloud: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);--wp--preset--gradient--glass-water: linear-gradient(to top, #dfe9f3 0%, white 100%);--wp--preset--gradient--perfect-white: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="contact-form-7-css" href="test%20site_arquivos/styles.css" media="all">
+<link rel="stylesheet" id="rishi-companion-frontend-css" href="test%20site_arquivos/public.css" media="all">
+<link rel="stylesheet" id="rishi-companion-blocks-public-css" href="test%20site_arquivos/blocks.css" media="all">
+<link rel="stylesheet" id="elementor-icons-css" href="test%20site_arquivos/elementor-icons.min.css" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="test%20site_arquivos/frontend-lite.min_002.css" media="all">
+<link rel="stylesheet" id="swiper-css" href="test%20site_arquivos/swiper.min.css" media="all">
+<link rel="stylesheet" id="elementor-post-919-css" href="test%20site_arquivos/post-919.css" media="all">
+<link rel="stylesheet" id="elementor-pro-css" href="test%20site_arquivos/frontend-lite.min.css" media="all">
+<link rel="stylesheet" id="elementor-post-1027-css" href="test%20site_arquivos/post-1027.css" media="all">
+<link rel="stylesheet" id="elementor-post-1138-css" href="test%20site_arquivos/post-1138.css" media="all">
+<link rel="stylesheet" id="rishi-fonts-font-source-google-css" href="test%20site_arquivos/css2.css" media="all">
+<link rel="stylesheet" id="rishi-style-css" href="test%20site_arquivos/style.min_002.css" media="all">
+<style id="rishi-style-inline-css">
+:root{--e-global-color-rishi1:#3e3c3c;--e-global-color-rishi2:#1b1919;--e-global-color-rishi3:#0583f2;--e-global-color-rishi4:#0554f2;--e-global-color-rishi5:#ffffff;--e-global-color-rishi6:#e6f3fe;--e-global-color-rishi7:#edf7ff;--e-global-color-rishi8:#F9FBFE;}
+</style>
+<link rel="stylesheet" id="google-fonts-1-css" href="test%20site_arquivos/css.css" media="all">
+<link rel="stylesheet" id="elementor-icons-shared-0-css" href="test%20site_arquivos/fontawesome.min.css" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-solid-css" href="test%20site_arquivos/solid.min.css" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-brands-css" href="test%20site_arquivos/brands.min.css" media="all">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><script src="test%20site_arquivos/jquery.min.js" id="jquery-core-js"></script>
+<script src="test%20site_arquivos/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="http://localhost:10013/wp-json/"><link rel="alternate" type="application/json" href="http://localhost:10013/wp-json/wp/v2/pages/1027"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://localhost:10013/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.3.1">
+<link rel="canonical" href="http://localhost:10013/">
+<link rel="shortlink" href="http://localhost:10013/">
+<link rel="alternate" type="application/json+oembed" href="http://localhost:10013/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flocalhost%3A10013%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://localhost:10013/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flocalhost%3A10013%2F&amp;format=xml">
+<link rel="icon" href="data:,"><meta name="generator" content="Elementor 3.15.3; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+		<style id="wp-custom-css">
+			select option {
+  font-weight: bold;
+  font-size: 17px;
+}		</style><script async="" src="test%20site_arquivos/sticky.js"></script>
+		    </head>
 
-            <!-- Primeira div com Select -->
-        <div class="container">
-            <label for="meuSelect1">Resistência do concreto</label>
-            <select class="select-transparent" id="opcoes-metodo">
-                <option value="informar">Informar traço de concreto</option>      
-                <option value="fcj">Método FCJ</option>
-                <option value="fck">Método FCK</option>
+<body class="home page-template page-template-elementor_header_footer page page-id-1027 wp-custom-logo wp-embed-responsive box-layout rishi-has-blocks rightsidebar elementor-default elementor-template-full-width elementor-kit-919 elementor-page elementor-page-1027 e--ua-firefox" itemscope="" itemtype="http://schema.org/WebPage" data-link="type-2" data-forms="classic" data-prefix="single_page" data-header="type-1:sticky:shrink" data-footer="type-1" data-elementor-device-mode="desktop" cz-shortcut-listen="true">
+    	<div id="main-container" class="site">
+		<a class="skip-link screen-reader-text" href="#primary">Skip to content</a>
+	<header id="header" class="site-header" data-id="type-1" itemscope="" itemtype="https://schema.org/WPHeader"><div data-device="desktop"><div class="rt-sticky-container" style="--minHeight: 63.69999694824219px;"><div data-sticky="yes:shrink"><div data-row="middle" data-column-set="2" style="--shrinkHeight: 63.7px;"><div class="customizer_builder__container"><div data-column="start" data-placements="1"><div data-items="primary">
+<div class="site-branding" data-id="logo" data-logo="top" itemscope="itemscope" itemtype="https://schema.org/Organization">
 
-            </select>
-        </div>
+								<a href="http://localhost:10013/" class="site-logo-container" rel="home"><img width="286" height="103" src="test%20site_arquivos/Captura-de-tela-de-2023-09-07-15-26-52.png" class="default-logo" alt="ConcretoSmart"></a>										<h1 class="screen-reader-text site-title " itemprop="name">
+					<a href="http://localhost:10013/" rel="home" itemprop="url">
+						Minimal Agency					</a>
+				</h1>
+						</div>
+</div></div><div data-column="end" data-placements="1"><div data-items="primary"><nav id="header-menu-1" class="header-menu-1" data-id="menu" data-menu="type-1" data-dropdown="type-1:simple" data-responsive="yes" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+	<ul id="menu-primary" class="menu"><li id="menu-item-528" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1027 current_page_item menu-item-528"><a href="http://localhost:10013/" aria-current="page">Home</a></li>
+<li id="menu-item-529" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-529"><a href="http://localhost:10013/about/">About</a></li>
+<li id="menu-item-530" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-530"><a href="http://localhost:10013/services/">Services</a></li>
+<li id="menu-item-531" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-531"><a href="http://localhost:10013/teams/">Teams</a></li>
+<li id="menu-item-532" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-532"><a href="http://localhost:10013/testimonials/">Testimonials</a></li>
+</ul></nav>
 
-            <!-- Select (inicialmente oculta)  Método FCJ-->
-        <div class="container hidden" id="divfcj" class="hidden">
-            <label for="meuSelect1">Traço do concreto FCJ</label>
-            <select class="select-transparent" id="traco-fcj">
-                <option value="opcaoA">Obras de responsabilidade de grande porte; 1 : 1 : 2 : 40 MPa</option>
-                <option value="opcaoB">Estruturas de responsabilidade(Lajes,Pilares e Vigas)  1 : 1.5 : 3 : 35 MPa</option>
-                <option value="opcaoC">Estruturas comuns(Sapatas, Estacas, Pilares, Vigas, Estacas)  1 : 2 : 3 : 25 MPa </option>
-                <option value="opcaoD">Concreto comun de menor responsabilidade 1 : 2.5 : 4 : 18 MPa</option>
-                <option value="opcaoE">Cinta de amarração e Vigas 1 : 3 : 5 : 12 MPa</option>
-                <option value="opcaoF">Contrapiso, Calçados e Concreto Magro 1 : 3 : 6 : 10 MPa</option>
-            </select>
-        </div>
+<div class="cb__header-cta" data-id="button">
+	<a href="http://localhost:10013/login/" class="cb__button " data-size="small" rel="">
+		Entrar	</a>
+</div>
+</div></div></div></div></div></div></div><div data-device="mobile"><div class="rt-sticky-container"><div data-sticky="shrink"><div data-row="middle" data-column-set="2"><div class="customizer_builder__container"><div data-column="start" data-placements="1"><div data-items="primary">
+<div class="site-branding" data-id="logo" data-logo="top" itemscope="itemscope" itemtype="https://schema.org/Organization">
 
-            <!-- Select (inicialmente oculta) Metodo Método FCK-->
-        <div class="container hidden" id="divfck" class="hidden">
-            <label for="meuSelect1">Traço do concreto FCK</label>
-            <select class="select-transparent" id="traco-fck">
-                <option value="opcaoG">Obras de responsabilidade de grande porte</option>
-                <option value="opcaoH">Estruturas de responsabilidade(Lajes,Pilares e Vigas)</option>
-                <option value="opcaoI">Estruturas comuns(Sapatas, Estacas, Pilares, Vigas, Estacas)</option>
-                <option value="opcaoJ">Concreto comun de menor responsabilidade</option>
-                <option value="opcaoK">Cinta de amarração e Vigas</option>
-                <option value="opcaoL">Contrapiso, Calçados e Concreto Magro</option>
-            </select>
-        </div>
+								<a href="http://localhost:10013/" class="site-logo-container" rel="home"><img width="286" height="103" src="test%20site_arquivos/Captura-de-tela-de-2023-09-07-15-26-52.png" class="default-logo" alt="ConcretoSmart"></a>										<span class="screen-reader-text site-title " itemprop="name">
+					<a href="http://localhost:10013/" rel="home" itemprop="url">
+						Minimal Agency					</a>
+				</span>
+						</div>
+</div></div><div data-column="end" data-placements="1"><div data-items="primary">
+<a href="#offcanvas" class="cb__header-trigger toggle-btn" data-toggle-target=".main-menu-modal" data-toggle-body-class="showing-main-menu-modal" aria-expanded="false" data-set-focus=".close-main-nav-toggle" data-design="simple" aria-label="Menu" data-id="trigger">
 
-        <!-- traço do cimento | Proporção da massa-->
-        <div class="proporcao">
-            <div class="inner-div">
-                <label for="label">Cimento:</label>
-                <input type="text" id="cimento" name="input1">
-            </div>
-            <div class="inner-div">
-                <label for="label">Areia:</label>
-                <input type="text" id="areia" name="input2">
-            </div>
-            <div class="inner-div">
-                <label for="label">Brita:</label>
-                <input type="text" id="brita" name="input3">
-            </div>
-            <div class="inner-div">
-                <label for="label">MPA:</label>
-                <input type="text" id="MPA" name="input4">
-            </div>
+	<span class="cb__menu-trigger" data-type="type-1">
+		<span></span>
+	</span>
 
-
-           <!-- <div class="inner-div">
-                <label for="label">Água:</label>
-                <input type="text" id="input" name="input4">
-            </div>
-            -->
-
-        </div>
-
-        <div id="" class="">
-            <!--Select que define qual div sera exposta -->
-            <select class="select-volume" name="" id="select-volume">
-                <option value="volume-conhecido">Volume Conhecido</option>
-                <option value="volume-desconhecido">Volume Desconhecido</option>
-            </select>
-
-            <!--Div Volume Conhecido, Inicialmente exposta-->
-            <div id="volume-conhecido" style="display: block;">
-                <div class="inner-div">
-                    <label for="label">Volume:</label>
-                    <input type="number" placeholder="Volume em (m³)" id="volume" name="input1">
-                </div>
-                <div class="inner-div">
-                    <label for="label">Quantidade:</label>
-                    <input type="number" placeholder="Quantidade em (un)" id="input" name="input2">
-                </div>
-                <div class="inner-div">
-                    <label for="label">Taxa de perda:</label>
-                    <input type="number" placeholder="Taxa de perda em (%)" id="input" name="input3">
-                </div>
-            </div>
-
-            <!--Div Volume Desconhecido, inicialmente Oculta-->
-            <div id="volume-desconhecido"  style="display: none;">
-                <div class="inner-div">
-                    <label for="label">Altura:</label>
-                    <input type="text" placeholder="Altura em (cm)" id="altura" name="input1">
-                </div>
-                <div class="inner-div">
-                    <label for="label">Largura:</label>
-                    <input type="text" placeholder="Largura em (cm)" id="largura" name="input1">
-                </div>
-                <div class="inner-div">
-                    <label for="label">Comprimento:</label>
-                    <input type="text" placeholder="Comprimento em (cm)" id="comprimento" name="input1">
-                </div>
-                <div class="inner-div">
-                    <label for="label">Quantidade:</label>
-                    <input type="text" placeholder="Quantidade em (un)" id="input" name="input2">
-                </div>
-                <div class="inner-div">
-                    <label for="label">Taxa de perda:</label>
-                    <input type="text" placeholder="Taxa de perda em (%)"  id="input" name="input3">
-                </div>
-            </div>
-
-
-        </div>
-
-        <div class="div-botao-calcular">
-            <button  class="botao-calcular" onclick="calcularVolume()">Calcular Volume</button>
-        </div>
-
-        <div class="div-botao-calcular">
-            <button  class="botao-calcular" onclick="calcularDosagem()">Calcular Dosagem</button>
-        </div>
-
-        
-        <div id="resultado"></div>
-
-        <!--Div dos resultados-->
-        <div id="dados-gerais" class="centralizado" style="background-color: #0583F2; color: white; margin-bottom: 1px; "  >
-            <label style="font-size: 18px; ">Dados gerais</label>
-        </div>
-        <div class="descricao">
-            <div class="box">
-                <label>Descrição</label>
-            </div>
-            <div class="box">
-                <label>Quantidade</label>
-            </div>
-            <div class="box">
-                <label>Unidade</label>
-            </div>
-        </div>
-        <div style="justify-content: space-between; display: flex; margin-bottom: 10px;">
-
-            <div style="background-color: red;
-                        height: 50px;
-                        width: 33%;    
-                        "
-                class="centralizado">
-                        <label >Cimento</label>
-
-
-            </div>
-            <div style="background-color: rgb(0, 255, 4); 
-                        height: 50px;
-                        width: 33%;
-                        display: flex;
-                        flex-direction: column;
-                        text-align: center;
-                ">
-                    <label id="resultado-cimentom3" class="font-9"></label>
-                    <label id="resultado-cimento" class="font-9"></label>
+	<span class="cb__label" hidden="">
+		Menu	</span>
+</a>
+</div></div></div></div></div></div></div></header><div class="cb__drawer-header-canvas"><div id="offcanvas" class="cb__panel site-header" data-behaviour="right-side" data-device="mobile"><section class="mobile-menu-list main-menu-modal cover-modal"> <div class="mobile-menus" aria-label="Mobile">
+		<div class="cb__panel-actions">
+			<button class="close-button close close-main-nav-toggle" data-toggle-target=".main-menu-modal" data-toggle-body-class="showing-main-menu-modal" aria-expanded="false" data-set-focus=".main-menu-modal">
+				<span class="cb__menu-trigger closed">
+					<span></span>
+				</span>
+			</button>
+		</div>
+		<div class="cb__panel_content" data-device="desktop"></div><div class="cb__panel_content" data-device="mobile">
+<nav class="mobile-menu" data-id="mobile-menu" data-type="type-1">
+	<ul id="menu-primary-1" class=""><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1027 current_page_item menu-item-528"><a href="http://localhost:10013/" aria-current="page">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-529"><a href="http://localhost:10013/about/">About</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-530"><a href="http://localhost:10013/services/">Services</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-531"><a href="http://localhost:10013/teams/">Teams</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-532"><a href="http://localhost:10013/testimonials/">Testimonials</a></li>
+</ul></nav>
+<div class="cb__header-contact-info customizer-builder__contact-info__header" data-id="contacts"></div><div class="cb__header-cta" data-id="button">
+	<a href="http://localhost:10013/login/" class="cb__button " data-size="small" rel="">
+		Entrar	</a>
+</div>
+</div></div></section></div></div>		<div class="site-content reveal_none_desktop reveal_none_tablet reveal_none_mobile">
+				        <div class="rishi-container" data-strech="none">
+			<div class="main-content-wrapper clear" data-v-spacing="none" data-page-spacing="none">
+			<div data-elementor-type="wp-page" data-elementor-id="1027" class="elementor elementor-1027">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-5f6f294 elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5f6f294" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-d5a5eb6" data-id="d5a5eb6" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-6f54d9c elementor-widget elementor-widget-heading" data-id="6f54d9c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.15.0 - 20-08-2023 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h1 class="elementor-heading-title elementor-size-default">Grow Your Business To The Peak.</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-055dd17 elementor-widget elementor-widget-text-editor" data-id="055dd17" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.15.0 - 20-08-2023 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>Are you having trouble growing your business and don’t know where to begin? We’re here to assist you in expanding your company.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-9656cbf elementor-widget__width-auto elementor-align-left elementor-widget elementor-widget-button" data-id="9656cbf" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-right">
+				<i aria-hidden="true" class="fas fa-angle-right"></i>			</span>
+						<span class="elementor-button-text">Saber mais</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-3dfdcb5 elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="3dfdcb5" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjExMzgiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-right">
+				<i aria-hidden="true" class="fas fa-angle-right"></i>			</span>
+						<span class="elementor-button-text">Nossos serviçoes</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-48c61dc elementor-hidden-mobile" data-id="48c61dc" data-element_type="column">
+			<div class="elementor-widget-wrap">
+									</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-78ed2f6 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="78ed2f6" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ac220cd" data-id="ac220cd" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-af44a23 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="af44a23" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-b3c1370" data-id="b3c1370" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-1c2a104 elementor-widget elementor-widget-image" data-id="1c2a104" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.15.0 - 20-08-2023 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img decoding="async" width="72" height="72" src="test%20site_arquivos/icon.png" class="attachment-full size-full wp-image-41" alt="">															</div>
+				</div>
+				<div class="elementor-element elementor-element-52b3b12 elementor-widget elementor-widget-heading" data-id="52b3b12" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Quality Services</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2a3d34d elementor-widget elementor-widget-text-editor" data-id="2a3d34d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Our professionals give high-quality services to our clients in time to meet deadlines.						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4b3c092" data-id="4b3c092" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a1bf5e4 elementor-widget elementor-widget-image" data-id="a1bf5e4" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="72" height="72" src="test%20site_arquivos/icon-2.png" class="attachment-full size-full wp-image-46" alt="">															</div>
+				</div>
+				<div class="elementor-element elementor-element-a910c48 elementor-widget elementor-widget-heading" data-id="a910c48" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Proven Results</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-54bb90b elementor-widget elementor-widget-text-editor" data-id="54bb90b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Our professionals give high-quality services to our clients in time to meet deadlines.						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-b8bedda" data-id="b8bedda" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-ee76c2d elementor-widget elementor-widget-image" data-id="ee76c2d" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="72" height="72" src="test%20site_arquivos/icon-1.png" class="attachment-full size-full wp-image-45" alt="">															</div>
+				</div>
+				<div class="elementor-element elementor-element-085742b elementor-widget elementor-widget-heading" data-id="085742b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Budget Friendly</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-30d3a1a elementor-widget elementor-widget-text-editor" data-id="30d3a1a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Our professionals give high-quality services to our clients in time to meet deadlines.						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-e23584d elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e23584d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-59f5b6b" data-id="59f5b6b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-040383a elementor-widget elementor-widget-text-editor" data-id="040383a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							About Us						</div>
+				</div>
+				<div class="elementor-element elementor-element-eaf4ffe elementor-widget elementor-widget-heading" data-id="eaf4ffe" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">We assist companies in developing innovative digital goods and experiences. </h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5e7ffa9 elementor-widget elementor-widget-text-editor" data-id="5e7ffa9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Products and services that are simple, elegant, and powerful that
+ unleash new value and revolutionize organizations. 						</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-df98e7c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="df98e7c" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-e410506" data-id="e410506" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a00155b elementor-widget elementor-widget-meafe-counter" data-id="a00155b" data-element_type="widget" data-widget_type="meafe-counter.default">
+				<div class="elementor-widget-container">
+			
+        <div class="meafe-counter meafe-counter-area" data-duration="3000" data-from-value="0" data-to-value="500" data-delimiter="," data-rounding="0">
+            
+        <div class="meafe-counter-icon top">
+                        <span class="icon animated" data-animation="">
+            
                             
-            </div>
-            <div style="background-color: rgb(200, 255, 0); 
-                        height: 50px;
-                        width: 33%;
-                        display: flex;
-                        flex-direction: column;
-                        text-align: center;
-                ">
-                    <label class="font-9">m³</label>
-                    <label class="font-9">Kg</label>
-            </div>
-            
+            </span>
         </div>
-
-        <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
-
-            <div style="background-color: red;
-                        height: 50px;
-                        width: 33%;   
-                        "
-                class="centralizado">
-
-                        <label>Areia</label>
-
-
-            </div>
-            <div style="background-color: rgb(0, 255, 4); 
-                        height: 50px;
-                        width: 33%;
-                        display: flex;
-                        flex-direction: column;
-                        text-align: center
-                ">
-                    <label id="resultado-areiam3" class="font-9"></label>
-                    <label id="resultado-areia" class="font-9"></label>
-
-                
-            </div>
-            <div style="background-color: rgb(200, 255, 0); 
-                        height: 50px;
-                        width: 33%;
-                        display: flex;
-                        flex-direction: column;
-                        text-align: center;
-                        ">
-                    <label class="font-9">m³</label>
-                    <label class="font-9">Kg</label>
-
-                
-            </div>
-            
-        </div>
-
-        <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
-
-            <div style="background-color: red;
-                        height: 50px;
-                        width: 33%;
-        
-                        "
-                class="centralizado">
-
-                        <label>Brita</label>
-
-            </div>
-            <div style="background-color: rgb(0, 255, 4); 
-                        height: 50px;
-                        width: 33%;
-                        display: flex;
-                        flex-direction: column;
-                        text-align: center
-                ">
-                    <label id="resultado-britam3" class="font-9"></label>                
-                    <label id="resultado-brita" class="font-9"></label>
-
-                
-            </div>
-            <div style="background-color: rgb(200, 255, 0); 
-                        height: 50px;
-                        width: 33%;
-                        display: flex;
-                        flex-direction: column;
-                        text-align: center;
-                        ">
-                    <label class="font-9">m³</label>
-                    <label class="font-9">Kg</label>
-
-                
-            </div>
-            
-        </div>
-
-        <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
-
-            <div style="background-color: red;
-                        height: 50px;
-                        width: 33%;
-       
-                        "
-                class="centralizado">
-                        <label>Água</label>
-
-
-            </div>
-            <div style="background-color: rgb(0, 255, 4); 
-                        height: 50px;
-                        width: 33%;
-                        
-                ">
-                    <label id="resultado-agua" class="font-9"></label>
-
-                
-            </div>
-            <div style="background-color: rgb(200, 255, 0); 
-                        height: 50px;
-                        width: 33%;
-                        
-                        ">
-                        
-
-                
-            </div>
-            
-        </div>
-
-
-
 
         
-    </section>
-    <script src="./assets/js/calculadora.js"></script>
-    <script src="./assets/js/calculardosagem.js"></script>
-    <script src="./assets/js/preencheinput.js"></script>
-</body>
-</html>
+        <div class="meafe-init-wrapper top">
+            <div class="meafe-counter-wrapper">
+
+                
+                <span class="meafe-counter-init" id="counter-a00155b">500</span>
+
+                                    <span id="suffix" class="counter-su-pre">+</span>
+                            </div>
+                            <h4 class="meafe-counter-title">
+                        Total Clients                </h4>
+                    </div>
+
+    
+        </div>
+
+        		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-ddbb6bb" data-id="ddbb6bb" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-65ce482 elementor-widget elementor-widget-meafe-counter" data-id="65ce482" data-element_type="widget" data-widget_type="meafe-counter.default">
+				<div class="elementor-widget-container">
+			
+        <div class="meafe-counter meafe-counter-area" data-duration="3000" data-from-value="" data-to-value="150" data-delimiter="," data-rounding="0">
+            
+        <div class="meafe-counter-icon top">
+                        <span class="icon animated" data-animation="">
+            
+                            
+            </span>
+        </div>
+
+        
+        <div class="meafe-init-wrapper top">
+            <div class="meafe-counter-wrapper">
+
+                
+                <span class="meafe-counter-init" id="counter-65ce482">150</span>
+
+                                    <span id="suffix" class="counter-su-pre">+</span>
+                            </div>
+                            <h4 class="meafe-counter-title">
+                        Projects Completed                </h4>
+                    </div>
+
+    
+        </div>
+
+        		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-953589c elementor-hidden-tablet elementor-hidden-mobile" data-id="953589c" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap">
+									</div>
+		</div>
+							</div>
+		</section>
+				<div class="elementor-element elementor-element-36ad2b6 elementor-align-left elementor-widget elementor-widget-button" data-id="36ad2b6" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-right">
+				<i aria-hidden="true" class="fas fa-angle-right"></i>			</span>
+						<span class="elementor-button-text">Learn More</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3be4950" data-id="3be4950" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7121862 elementor-widget elementor-widget-image" data-id="7121862" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" loading="lazy" width="605" height="511" src="test%20site_arquivos/Images.png" class="attachment-full size-full wp-image-88" alt="" srcset="test%20site_arquivos/Images.png 605w, test%20site_arquivos/Images-300x253.png 300w" sizes="(max-width: 605px) 100vw, 605px">															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-0ec2ed9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0ec2ed9" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5a7d060" data-id="5a7d060" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-403b760 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="403b760" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-b83dd5c" data-id="b83dd5c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a911d7c elementor-widget elementor-widget-text-editor" data-id="a911d7c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Why Us						</div>
+				</div>
+				<div class="elementor-element elementor-element-b85d9ca elementor-widget elementor-widget-heading" data-id="b85d9ca" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Why Choose Us</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-cccf8ca elementor-widget elementor-widget-text-editor" data-id="cccf8ca" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Products and services that are simple, elegant, and powerful that
+ unleash new value and revolutionize organizations. 						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-5ead73d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5ead73d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4a7d720" data-id="4a7d720" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e6cb525 elementor-position-left elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="e6cb525" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="test%20site_arquivos/widget-icon-box.min.css">		<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-">
+				<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none"><rect width="64" height="64" rx="32" fill="#EAFDFE"></rect><path d="M42.6667 34.6666C42.6667 40.5577 37.8911 45.3333 32 45.3333C26.109 45.3333 21.3334 40.5577 21.3334 34.6666C21.3334 32 22 30 22.6667 28.6666C23.6225 26.7551 24.9204 27.4926 24.6667 28C24 29.3333 24 32 26.6667 34.6666C27.3334 35.3333 28.6667 34.6666 27.1969 32C26.3163 30.4023 26.6667 26.6666 27.3334 24.6666C28.8889 20 33.0305 16.8485 34 17.3333C35.3334 18 33.3956 20.6565 34 22.6666C34.5856 24.6139 37.3334 26.6666 37.3334 26.6666C37.3334 26.6666 42.6667 30 42.6667 34.6666Z" fill="#0583F2"></path></svg>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h3 class="elementor-icon-box-title">
+					<span>
+						The greatest in the world, committed to you. 					</span>
+				</h3>
+									<p class="elementor-icon-box-description">
+						All information is based on your GitHub profile, that is why you always get fresh and reliable data 					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2eab713" data-id="2eab713" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a68906c elementor-position-left elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="a68906c" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-">
+				<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none"><rect width="64" height="64" rx="32" fill="#EAFDFE"></rect><path d="M32 19.5287C34.2481 22.7351 35.6204 26.6015 35.9349 30.6667H28.0651C28.3796 26.6015 29.7519 22.7351 32 19.5287Z" fill="#0583F2"></path><path d="M46.6069 33.3333H38.6087C38.2731 38.1684 36.593 42.7876 33.7804 46.5597C40.6057 45.7338 45.9863 40.2198 46.6069 33.3333Z" fill="#0583F2"></path><path d="M46.6069 30.6667H38.6087C38.2731 25.8316 36.593 21.2124 33.7804 17.4403C40.6057 18.2662 45.9863 23.7802 46.6069 30.6667Z" fill="#0583F2"></path><path d="M30.2196 17.4403C27.407 21.2124 25.7269 25.8316 25.3913 30.6667H17.3931C18.0137 23.7802 23.3943 18.2662 30.2196 17.4403Z" fill="#0583F2"></path><path d="M17.3931 33.3333C18.0137 40.2198 23.3943 45.7338 30.2196 46.5597C27.4071 42.7876 25.7269 38.1684 25.3913 33.3333H17.3931Z" fill="#0583F2"></path><path d="M32 44.4713C29.7519 41.2648 28.3796 37.3984 28.0651 33.3333H35.9349C35.6204 37.3984 34.2481 41.2648 32 44.4713Z" fill="#0583F2"></path></svg>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h3 class="elementor-icon-box-title">
+					<span>
+						World class designer and developers for every client.					</span>
+				</h3>
+									<p class="elementor-icon-box-description">
+						All information is based on your GitHub profile, that is why you always get fresh and reliable data 					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-76d933f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="76d933f" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c7e5ade" data-id="c7e5ade" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-9e4de25 elementor-position-left elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="9e4de25" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-">
+				<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none"><rect width="64" height="64" rx="32" fill="#EAFDFE"></rect><path fill-rule="evenodd" clip-rule="evenodd" d="M22.6667 18.6667C22.6667 17.9303 23.2637 17.3334 24 17.3334H40C40.7364 17.3334 41.3334 17.9303 41.3334 18.6667L41.3334 20C44.2789 20 46.6667 22.3879 46.6667 25.3334C46.6667 28.2789 44.2789 30.6667 41.3334 30.6667H40.4352C39.5132 32.6076 37.941 34.1798 36 35.1019V38.8347C38.3003 39.4268 40 41.5149 40 44V46.6667H24V44C24 41.5149 25.6997 39.4268 28 38.8347V35.1019C26.0591 34.1798 24.4869 32.6076 23.5649 30.6667H22.6667C19.7212 30.6667 17.3334 28.2789 17.3334 25.3334C17.3334 22.3879 19.7212 20 22.6667 20V18.6667ZM22.6667 22.6667C21.1939 22.6667 20 23.8606 20 25.3334C20 26.8061 21.1939 28 22.6667 28V26.6667V22.6667ZM41.3334 26.6667L41.3334 22.6667C42.8061 22.6667 44 23.8606 44 25.3334C44 26.8061 42.8061 28 41.3334 28V26.6727L41.3334 26.6667Z" fill="#0583F2"></path></svg>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h3 class="elementor-icon-box-title">
+					<span>
+						Dedicated support team for every problem that occurs.					</span>
+				</h3>
+									<p class="elementor-icon-box-description">
+						All information is based on your GitHub profile, that is why you always get fresh and reliable data 					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-22a616f" data-id="22a616f" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a18c0c3 elementor-position-left elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="a18c0c3" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-">
+				<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none"><rect width="64" height="64" rx="32" fill="#EAFDFE"></rect><path fill-rule="evenodd" clip-rule="evenodd" d="M28.383 27.0411C31.4169 23.4254 37.4921 18.6666 45.3333 18.6666C45.3333 25.3015 41.1127 32.5913 36.766 35.983C36.1938 36.4295 36.0902 37.2417 35.9695 38.1886C35.6973 40.3243 35.3377 43.1454 29.3144 44L29.0039 38.4498H27.762L25.2782 35.983V34.7497H20C20.8651 28.7358 23.8392 28.2575 26.0891 27.8956C27.0692 27.738 27.9119 27.6025 28.383 27.0411ZM41.7143 24.3968C41.7143 25.5627 40.7691 26.5079 39.6032 26.5079C38.4372 26.5079 37.4921 25.5627 37.4921 24.3968C37.4921 23.2308 38.4372 22.2857 39.6032 22.2857C40.7691 22.2857 41.7143 23.2308 41.7143 24.3968Z" fill="#0583F2"></path><path d="M18.6667 45.3333C24.6882 45.3333 27.1516 43.1995 28 40.6667C25.5914 40.6667 23.0334 38.1107 23.0334 36C21.6196 36.4222 18.6667 38.8911 18.6667 45.3333Z" fill="#0583F2"></path></svg>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h3 class="elementor-icon-box-title">
+					<span>
+						Focused on making a big and quantifiable difference.					</span>
+				</h3>
+									<p class="elementor-icon-box-description">
+						All information is based on your GitHub profile, that is why you always get fresh and reliable data 					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-df0dac7 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="df0dac7" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-02c3fd8" data-id="02c3fd8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-56ea071 elementor-widget elementor-widget-text-editor" data-id="56ea071" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Tesimonials						</div>
+				</div>
+				<div class="elementor-element elementor-element-1d99d09 elementor-widget elementor-widget-heading" data-id="1d99d09" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Good Things You Have Heard About Uss</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2f91fec elementor-widget elementor-widget-text-editor" data-id="2f91fec" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Here’s what our Amazing Clients have to say till now. 						</div>
+				</div>
+				<div class="elementor-element elementor-element-a39ec3e elementor-align-left elementor-widget elementor-widget-button" data-id="a39ec3e" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-right">
+				<i aria-hidden="true" class="fas fa-angle-right"></i>			</span>
+						<span class="elementor-button-text">Read All Testimonials</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-15a04dd" data-id="15a04dd" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated e-swiper-container">
+								<div class="elementor-element elementor-element-1e576f5 elementor-widget elementor-widget-image" data-id="1e576f5" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" loading="lazy" width="47" height="41" src="test%20site_arquivos/unnamed-file.png" class="attachment-full size-full wp-image-145" alt="">															</div>
+				</div>
+				<div class="elementor-element elementor-element-b2e77e7 e-transform elementor-widget elementor-widget-meafe-testimonial-carousel e-widget-swiper" data-id="b2e77e7" data-element_type="widget" data-settings="{&quot;btccgs_testimonial_carousel_show_carousel_dots&quot;:&quot;yes&quot;,&quot;btccgs_testimonial_carousel_show_carousel_loop&quot;:&quot;yes&quot;,&quot;btccgs_testimonial_carousel_layouts&quot;:&quot;1&quot;,&quot;btccgs_testimonial_carousel_show_carousel_auto&quot;:&quot;yes&quot;,&quot;btccgs_testimonial_carousel_carousel_autoplay_speed&quot;:3000,&quot;_transform_rotateZ_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="meafe-testimonial-carousel.default">
+				<div class="elementor-widget-container">
+			        <div id="b2e77e7" class="meafe-testimonial-carousel-main layout-1 center-aligned-content">
+            <div class="meafe-testimonial-inner-wrap">
+                <div class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress swiper-backface-hidden">
+                    <div class="swiper-wrapper" style="transition-duration: 500ms; transform: translate3d(-2112px, 0px, 0px);" id="swiper-wrapper-9b28aff17cba2a83" aria-live="off"><div class="meafe-testimonial-wrap swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" data-swiper-slide-index="1" style="width: 674px; margin-right: 30px;" role="group" aria-label="2 / 2">
+                                                                <div class="meafe-testimonial-desc-wrap">
+                                    <div class="meafe-testimonial-desc-inner">
+                                                                        
+                                                                        
+                                                        
+                                                                        
+        
+                                                                        
+            <div class="meafe-testimonial-content">
+                                                Working with Minimal 
+Agency has been excellent; the project was completed according to the 
+design requirement, and the new brand and website look fantastic and are
+ extremely useful.Thank you, and congratulations on a job well done!    
+                                         </div>
+                                                                                                                                <div class="meafe-testimonial-designation-wrap">
+                            <div class="meafe-testimonial-reviewer-thumb">
+                    <img loading="lazy" width="80" height="80" src="test%20site_arquivos/Image.png" class="attachment-thumbnail size-thumbnail" alt="" decoding="async">                </div>
+                        <div class="meafe-testimonial-design-only-wrap">
+                                    <div class="meafe-testimonial-reviewer-name">Sira Deskh</div>
+                                                    <div class="meafe-testimonial-reviewer-title">Product Manager, Twister Design</div>
+                                            </div>
+        </div>
+                                            </div>
+                                </div>
+                                                            </div>
+                                                    <div class="meafe-testimonial-wrap swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 674px; margin-right: 30px;" role="group" aria-label="1 / 2">
+                                                                <div class="meafe-testimonial-desc-wrap">
+                                    <div class="meafe-testimonial-desc-inner">
+                                                                        
+                                                                        
+                                                        
+                                                                        
+        
+                                                                        
+            <div class="meafe-testimonial-content">
+                                                Working with Minimal 
+Agency has been excellent; the project was completed according to the 
+design requirement, and the new brand and website look fantastic and are
+ extremely useful.Thank you, and congratulations on a job well done!    
+                                         </div>
+                                                                                                                                <div class="meafe-testimonial-designation-wrap">
+                            <div class="meafe-testimonial-reviewer-thumb">
+                    <img loading="lazy" width="80" height="80" src="test%20site_arquivos/Image.png" class="attachment-thumbnail size-thumbnail" alt="" decoding="async">                </div>
+                        <div class="meafe-testimonial-design-only-wrap">
+                                    <div class="meafe-testimonial-reviewer-name">Liza Smith</div>
+                                                    <div class="meafe-testimonial-reviewer-title">Product Manager, Twister Design</div>
+                                            </div>
+        </div>
+                                            </div>
+                                </div>
+                                                            </div>
+                                                    <div class="meafe-testimonial-wrap swiper-slide swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 674px; margin-right: 30px;" role="group" aria-label="2 / 2">
+                                                                <div class="meafe-testimonial-desc-wrap">
+                                    <div class="meafe-testimonial-desc-inner">
+                                                                        
+                                                                        
+                                                        
+                                                                        
+        
+                                                                        
+            <div class="meafe-testimonial-content">
+                                                Working with Minimal 
+Agency has been excellent; the project was completed according to the 
+design requirement, and the new brand and website look fantastic and are
+ extremely useful.Thank you, and congratulations on a job well done!    
+                                         </div>
+                                                                                                                                <div class="meafe-testimonial-designation-wrap">
+                            <div class="meafe-testimonial-reviewer-thumb">
+                    <img loading="lazy" width="80" height="80" src="test%20site_arquivos/Image.png" class="attachment-thumbnail size-thumbnail" alt="" decoding="async">                </div>
+                        <div class="meafe-testimonial-design-only-wrap">
+                                    <div class="meafe-testimonial-reviewer-name">Sira Deskh</div>
+                                                    <div class="meafe-testimonial-reviewer-title">Product Manager, Twister Design</div>
+                                            </div>
+        </div>
+                                            </div>
+                                </div>
+                                                            </div>
+                                            <div class="meafe-testimonial-wrap swiper-slide swiper-slide-duplicate swiper-slide-visible swiper-slide-active" data-swiper-slide-index="0" style="width: 674px; margin-right: 30px;" role="group" aria-label="1 / 2">
+                                                                <div class="meafe-testimonial-desc-wrap">
+                                    <div class="meafe-testimonial-desc-inner">
+                                                                        
+                                                                        
+                                                        
+                                                                        
+        
+                                                                        
+            <div class="meafe-testimonial-content">
+                                                Working with Minimal 
+Agency has been excellent; the project was completed according to the 
+design requirement, and the new brand and website look fantastic and are
+ extremely useful.Thank you, and congratulations on a job well done!    
+                                         </div>
+                                                                                                                                <div class="meafe-testimonial-designation-wrap">
+                            <div class="meafe-testimonial-reviewer-thumb">
+                    <img loading="lazy" width="80" height="80" src="test%20site_arquivos/Image.png" class="attachment-thumbnail size-thumbnail" alt="" decoding="async">                </div>
+                        <div class="meafe-testimonial-design-only-wrap">
+                                    <div class="meafe-testimonial-reviewer-name">Liza Smith</div>
+                                                    <div class="meafe-testimonial-reviewer-title">Product Manager, Twister Design</div>
+                                            </div>
+        </div>
+                                            </div>
+                                </div>
+                                                            </div></div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+            
+                                    <!-- If we need pagination -->
+                    <div class="testimonial meafa-swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span></div>
+                            </div>
+        </div>
+    		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-95378b2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="95378b2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-669f7fe" data-id="669f7fe" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-254657a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="254657a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-dbdd5b3" data-id="dbdd5b3" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-766ee91 elementor-widget elementor-widget-meafe-counter" data-id="766ee91" data-element_type="widget" data-widget_type="meafe-counter.default">
+				<div class="elementor-widget-container">
+			
+        <div class="meafe-counter meafe-counter-area" data-duration="3000" data-from-value="0" data-to-value="150" data-delimiter="" data-rounding="0">
+            
+        <div class="meafe-counter-icon top">
+                        <span class="icon" data-animation="">
+            
+                            
+            </span>
+        </div>
+
+        
+        <div class="meafe-init-wrapper top">
+            <div class="meafe-counter-wrapper">
+
+                
+                <span class="meafe-counter-init" id="counter-766ee91">0</span>
+
+                                    <span id="suffix" class="counter-su-pre">+</span>
+                            </div>
+                            <h4 class="meafe-counter-title">
+                        Happy Clients                </h4>
+                    </div>
+
+    
+        </div>
+
+        		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-548a48f" data-id="548a48f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-cb811ec elementor-widget elementor-widget-meafe-counter" data-id="cb811ec" data-element_type="widget" data-widget_type="meafe-counter.default">
+				<div class="elementor-widget-container">
+			
+        <div class="meafe-counter meafe-counter-area" data-duration="3000" data-from-value="0" data-to-value="50" data-delimiter="" data-rounding="0">
+            
+        <div class="meafe-counter-icon top">
+                        <span class="icon" data-animation="">
+            
+                            
+            </span>
+        </div>
+
+        
+        <div class="meafe-init-wrapper top">
+            <div class="meafe-counter-wrapper">
+
+                
+                <span class="meafe-counter-init" id="counter-cb811ec">0</span>
+
+                                    <span id="suffix" class="counter-su-pre">+</span>
+                            </div>
+                            <h4 class="meafe-counter-title">
+                        Clients Globally                </h4>
+                    </div>
+
+    
+        </div>
+
+        		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-c386203" data-id="c386203" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-fd1dc65 elementor-widget elementor-widget-meafe-counter" data-id="fd1dc65" data-element_type="widget" data-widget_type="meafe-counter.default">
+				<div class="elementor-widget-container">
+			
+        <div class="meafe-counter meafe-counter-area" data-duration="3000" data-from-value="0" data-to-value="100" data-delimiter="" data-rounding="0">
+            
+        <div class="meafe-counter-icon top">
+                        <span class="icon" data-animation="">
+            
+                            
+            </span>
+        </div>
+
+        
+        <div class="meafe-init-wrapper top">
+            <div class="meafe-counter-wrapper">
+
+                
+                <span class="meafe-counter-init" id="counter-fd1dc65">0</span>
+
+                                    <span id="suffix" class="counter-su-pre">k</span>
+                            </div>
+                            <h4 class="meafe-counter-title">
+                        Users Aquired                </h4>
+                    </div>
+
+    
+        </div>
+
+        		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-8bf0460" data-id="8bf0460" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e99d0e2 elementor-widget elementor-widget-meafe-counter" data-id="e99d0e2" data-element_type="widget" data-widget_type="meafe-counter.default">
+				<div class="elementor-widget-container">
+			
+        <div class="meafe-counter meafe-counter-area" data-duration="3000" data-from-value="0" data-to-value="15" data-delimiter="" data-rounding="0">
+            
+        <div class="meafe-counter-icon top">
+                        <span class="icon" data-animation="">
+            
+                            
+            </span>
+        </div>
+
+        
+        <div class="meafe-init-wrapper top">
+            <div class="meafe-counter-wrapper">
+
+                
+                <span class="meafe-counter-init" id="counter-e99d0e2">0</span>
+
+                                    <span id="suffix" class="counter-su-pre">+</span>
+                            </div>
+                            <h4 class="meafe-counter-title">
+                        Awards Won                </h4>
+                    </div>
+
+    
+        </div>
+
+        		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-092e18a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="092e18a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-90a1b53" data-id="90a1b53" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-201c7b7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="201c7b7" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-2f24813" data-id="2f24813" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-149dd63 elementor-widget elementor-widget-text-editor" data-id="149dd63" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Teams						</div>
+				</div>
+				<div class="elementor-element elementor-element-6812f8a elementor-widget elementor-widget-heading" data-id="6812f8a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Meet Our Teams</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-28076bc elementor-widget elementor-widget-text-editor" data-id="28076bc" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Whatever your aim for you future, we have the perfect program to get you there. 						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-ab0359e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ab0359e" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-4a8b2c1" data-id="4a8b2c1" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-95846ee elementor-widget elementor-widget-image" data-id="95846ee" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" loading="lazy" width="262" height="262" src="test%20site_arquivos/Rectangle-24.png" class="attachment-full size-full wp-image-193" alt="" srcset="test%20site_arquivos/Rectangle-24.png 262w, test%20site_arquivos/Rectangle-24-150x150.png 150w, test%20site_arquivos/Rectangle-24-170x170.png 170w" sizes="(max-width: 262px) 100vw, 262px">															</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-7bb7fb4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7bb7fb4" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-2cbf898" data-id="2cbf898" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-66d5dda elementor-widget elementor-widget-heading" data-id="66d5dda" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-default">Simrun Tuladhar</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-01850df elementor-widget elementor-widget-text-editor" data-id="01850df" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Product Manager						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-9138975 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9138975" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-138fcdf" data-id="138fcdf" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-4e14947 elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="4e14947" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.15.0 - 20-08-2023 */
+.elementor-widget-social-icons.elementor-grid-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-mobile-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-tablet-0 .elementor-widget-container{line-height:1;font-size:0}.elementor-widget-social-icons:not(.elementor-grid-0):not(.elementor-grid-tablet-0):not(.elementor-grid-mobile-0) .elementor-grid{display:inline-grid}.elementor-widget-social-icons .elementor-grid{grid-column-gap:var(--grid-column-gap,5px);grid-row-gap:var(--grid-row-gap,5px);grid-template-columns:var(--grid-template-columns);justify-content:var(--justify-content,center);justify-items:var(--justify-content,center)}.elementor-icon.elementor-social-icon{font-size:var(--icon-size,25px);line-height:var(--icon-size,25px);width:calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)));height:calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)))}.elementor-social-icon{--e-social-icon-icon-color:#fff;display:inline-flex;background-color:#69727d;align-items:center;justify-content:center;text-align:center;cursor:pointer}.elementor-social-icon i{color:var(--e-social-icon-icon-color)}.elementor-social-icon svg{fill:var(--e-social-icon-icon-color)}.elementor-social-icon:last-child{margin:0}.elementor-social-icon:hover{opacity:.9;color:#fff}.elementor-social-icon-android{background-color:#a4c639}.elementor-social-icon-apple{background-color:#999}.elementor-social-icon-behance{background-color:#1769ff}.elementor-social-icon-bitbucket{background-color:#205081}.elementor-social-icon-codepen{background-color:#000}.elementor-social-icon-delicious{background-color:#39f}.elementor-social-icon-deviantart{background-color:#05cc47}.elementor-social-icon-digg{background-color:#005be2}.elementor-social-icon-dribbble{background-color:#ea4c89}.elementor-social-icon-elementor{background-color:#d30c5c}.elementor-social-icon-envelope{background-color:#ea4335}.elementor-social-icon-facebook,.elementor-social-icon-facebook-f{background-color:#3b5998}.elementor-social-icon-flickr{background-color:#0063dc}.elementor-social-icon-foursquare{background-color:#2d5be3}.elementor-social-icon-free-code-camp,.elementor-social-icon-freecodecamp{background-color:#006400}.elementor-social-icon-github{background-color:#333}.elementor-social-icon-gitlab{background-color:#e24329}.elementor-social-icon-globe{background-color:#69727d}.elementor-social-icon-google-plus,.elementor-social-icon-google-plus-g{background-color:#dd4b39}.elementor-social-icon-houzz{background-color:#7ac142}.elementor-social-icon-instagram{background-color:#262626}.elementor-social-icon-jsfiddle{background-color:#487aa2}.elementor-social-icon-link{background-color:#818a91}.elementor-social-icon-linkedin,.elementor-social-icon-linkedin-in{background-color:#0077b5}.elementor-social-icon-medium{background-color:#00ab6b}.elementor-social-icon-meetup{background-color:#ec1c40}.elementor-social-icon-mixcloud{background-color:#273a4b}.elementor-social-icon-odnoklassniki{background-color:#f4731c}.elementor-social-icon-pinterest{background-color:#bd081c}.elementor-social-icon-product-hunt{background-color:#da552f}.elementor-social-icon-reddit{background-color:#ff4500}.elementor-social-icon-rss{background-color:#f26522}.elementor-social-icon-shopping-cart{background-color:#4caf50}.elementor-social-icon-skype{background-color:#00aff0}.elementor-social-icon-slideshare{background-color:#0077b5}.elementor-social-icon-snapchat{background-color:#fffc00}.elementor-social-icon-soundcloud{background-color:#f80}.elementor-social-icon-spotify{background-color:#2ebd59}.elementor-social-icon-stack-overflow{background-color:#fe7a15}.elementor-social-icon-steam{background-color:#00adee}.elementor-social-icon-stumbleupon{background-color:#eb4924}.elementor-social-icon-telegram{background-color:#2ca5e0}.elementor-social-icon-thumb-tack{background-color:#1aa1d8}.elementor-social-icon-tripadvisor{background-color:#589442}.elementor-social-icon-tumblr{background-color:#35465c}.elementor-social-icon-twitch{background-color:#6441a5}.elementor-social-icon-twitter{background-color:#1da1f2}.elementor-social-icon-viber{background-color:#665cac}.elementor-social-icon-vimeo{background-color:#1ab7ea}.elementor-social-icon-vk{background-color:#45668e}.elementor-social-icon-weibo{background-color:#dd2430}.elementor-social-icon-weixin{background-color:#31a918}.elementor-social-icon-whatsapp{background-color:#25d366}.elementor-social-icon-wordpress{background-color:#21759b}.elementor-social-icon-xing{background-color:#026466}.elementor-social-icon-yelp{background-color:#af0606}.elementor-social-icon-youtube{background-color:#cd201f}.elementor-social-icon-500px{background-color:#0099e5}.elementor-shape-rounded .elementor-icon.elementor-social-icon{border-radius:10%}.elementor-shape-circle .elementor-icon.elementor-social-icon{border-radius:50%}</style>		<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-2a64f50" target="_blank">
+						<span class="elementor-screen-only">Facebook</span>
+						<i class="fab fa-facebook"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-6fe1621" target="_blank">
+						<span class="elementor-screen-only">Twitter</span>
+						<i class="fab fa-twitter"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-5470c22" target="_blank">
+						<span class="elementor-screen-only">Youtube</span>
+						<i class="fab fa-youtube"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-e2cefa9" target="_blank">
+						<span class="elementor-screen-only">Linkedin</span>
+						<i class="fab fa-linkedin"></i>					</a>
+				</span>
+					</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-b593625" data-id="b593625" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-2d2fe29 elementor-widget elementor-widget-image" data-id="2d2fe29" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" loading="lazy" width="262" height="262" src="test%20site_arquivos/Rectangle-25.png" class="attachment-full size-full wp-image-194" alt="" srcset="test%20site_arquivos/Rectangle-25.png 262w, test%20site_arquivos/Rectangle-25-150x150.png 150w, test%20site_arquivos/Rectangle-25-170x170.png 170w" sizes="(max-width: 262px) 100vw, 262px">															</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-92e1521 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="92e1521" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-5fc39fc" data-id="5fc39fc" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-da70a22 elementor-widget elementor-widget-heading" data-id="da70a22" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-default">Stephan Carlos</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-e97d12d elementor-widget elementor-widget-text-editor" data-id="e97d12d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Client Service						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-9f787d5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9f787d5" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-94410bc" data-id="94410bc" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-2525d05 elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="2525d05" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-2a64f50" target="_blank">
+						<span class="elementor-screen-only">Facebook</span>
+						<i class="fab fa-facebook"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-6fe1621" target="_blank">
+						<span class="elementor-screen-only">Twitter</span>
+						<i class="fab fa-twitter"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-5470c22" target="_blank">
+						<span class="elementor-screen-only">Youtube</span>
+						<i class="fab fa-youtube"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-425a403" target="_blank">
+						<span class="elementor-screen-only">Linkedin</span>
+						<i class="fab fa-linkedin"></i>					</a>
+				</span>
+					</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-5dd2d38" data-id="5dd2d38" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3370435 elementor-widget elementor-widget-image" data-id="3370435" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" loading="lazy" width="262" height="262" src="test%20site_arquivos/Rectangle-26.png" class="attachment-full size-full wp-image-195" alt="" srcset="test%20site_arquivos/Rectangle-26.png 262w, test%20site_arquivos/Rectangle-26-150x150.png 150w, test%20site_arquivos/Rectangle-26-170x170.png 170w" sizes="(max-width: 262px) 100vw, 262px">															</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-4889664 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4889664" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-9ba5c7c" data-id="9ba5c7c" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-4356212 elementor-widget elementor-widget-heading" data-id="4356212" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-default">Tina Markel</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b5469ad elementor-widget elementor-widget-text-editor" data-id="b5469ad" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Accoutant						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-46661d6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="46661d6" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-82043ee" data-id="82043ee" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-304e3fe elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="304e3fe" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-2a64f50" target="_blank">
+						<span class="elementor-screen-only">Facebook</span>
+						<i class="fab fa-facebook"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-6fe1621" target="_blank">
+						<span class="elementor-screen-only">Twitter</span>
+						<i class="fab fa-twitter"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-5470c22" target="_blank">
+						<span class="elementor-screen-only">Youtube</span>
+						<i class="fab fa-youtube"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-535dcdb" target="_blank">
+						<span class="elementor-screen-only">Linkedin</span>
+						<i class="fab fa-linkedin"></i>					</a>
+				</span>
+					</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-0e52f58" data-id="0e52f58" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-65aa50f elementor-widget elementor-widget-image" data-id="65aa50f" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" loading="lazy" width="262" height="262" src="test%20site_arquivos/Rectangle-27.png" class="attachment-full size-full wp-image-196" alt="" srcset="test%20site_arquivos/Rectangle-27.png 262w, test%20site_arquivos/Rectangle-27-150x150.png 150w, test%20site_arquivos/Rectangle-27-170x170.png 170w" sizes="(max-width: 262px) 100vw, 262px">															</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-8f3cadc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8f3cadc" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3c104da" data-id="3c104da" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7fe5379 elementor-widget elementor-widget-heading" data-id="7fe5379" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-default">Richard Collins</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-232002c elementor-widget elementor-widget-text-editor" data-id="232002c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Client Service						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-1c70008 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1c70008" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-6b5aa4a" data-id="6b5aa4a" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-4877807 elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="4877807" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-2a64f50" target="_blank">
+						<span class="elementor-screen-only">Facebook</span>
+						<i class="fab fa-facebook"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-6fe1621" target="_blank">
+						<span class="elementor-screen-only">Twitter</span>
+						<i class="fab fa-twitter"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-5470c22" target="_blank">
+						<span class="elementor-screen-only">Youtube</span>
+						<i class="fab fa-youtube"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-4c8e52a" target="_blank">
+						<span class="elementor-screen-only">Linkedin</span>
+						<i class="fab fa-linkedin"></i>					</a>
+				</span>
+					</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b4dc674 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b4dc674" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0d097ca" data-id="0d097ca" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-31cbc16 elementor-align-center elementor-widget elementor-widget-button" data-id="31cbc16" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-right">
+				<i aria-hidden="true" class="fas fa-angle-right"></i>			</span>
+						<span class="elementor-button-text">View All Teams</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6f61759 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6f61759" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4087006" data-id="4087006" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-9a621b5 elementor-widget elementor-widget-text-editor" data-id="9a621b5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Our Clients						</div>
+				</div>
+				<div class="elementor-element elementor-element-e01bc87 elementor-widget elementor-widget-heading" data-id="e01bc87" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Client That We Have Worked With.</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-f964390 elementor-widget elementor-widget-text-editor" data-id="f964390" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							We have worked with these beautiful client to create awesome product.						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-0463de5" data-id="0463de5" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-05338d7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="05338d7" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-a0147c2" data-id="a0147c2" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-1ce743d elementor-widget elementor-widget-image" data-id="1ce743d" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" loading="lazy" width="212" height="96" src="test%20site_arquivos/Client-logo-5.png" class="elementor-animation-grow attachment-full size-full wp-image-247" alt="">															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-80e92b8" data-id="80e92b8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-169d299 elementor-widget elementor-widget-image" data-id="169d299" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" loading="lazy" width="212" height="96" src="test%20site_arquivos/Client-logo-6.png" class="elementor-animation-grow attachment-full size-full wp-image-249" alt="">															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-2a968ea" data-id="2a968ea" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-180724e elementor-widget elementor-widget-image" data-id="180724e" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" loading="lazy" width="211" height="96" src="test%20site_arquivos/Client-logo-2.png" class="elementor-animation-grow attachment-full size-full wp-image-248" alt="">															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-3991c5e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3991c5e" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-ad226c5" data-id="ad226c5" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a4993a6 elementor-widget elementor-widget-image" data-id="a4993a6" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" loading="lazy" width="212" height="96" src="test%20site_arquivos/Client-logo-4.png" class="elementor-animation-grow attachment-full size-full wp-image-250" alt="">															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-d72f6db" data-id="d72f6db" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-ae47a9b elementor-widget elementor-widget-image" data-id="ae47a9b" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" loading="lazy" width="211" height="96" src="test%20site_arquivos/Client-logo-3.png" class="elementor-animation-grow attachment-full size-full wp-image-251" alt="">															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-f390131" data-id="f390131" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-75c0245 elementor-widget elementor-widget-image" data-id="75c0245" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" loading="lazy" width="211" height="96" src="test%20site_arquivos/Client-logo-1.png" class="elementor-animation-grow attachment-full size-full wp-image-252" alt="">															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-94f7c8c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="94f7c8c" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7e5e759" data-id="7e5e759" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-af08848 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="af08848" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3ca18dd" data-id="3ca18dd" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-007acb2 elementor-widget elementor-widget-text-editor" data-id="007acb2" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Blog						</div>
+				</div>
+				<div class="elementor-element elementor-element-0b4f7a6 elementor-widget elementor-widget-heading" data-id="0b4f7a6" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Our Recent Blog</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-d8b1c0c elementor-widget elementor-widget-text-editor" data-id="d8b1c0c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Whatever your aim for you future, we have the perfect program to get you there. 						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-6492797 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6492797" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-a3dd850" data-id="a3dd850" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e8c7efa elementor-widget elementor-widget-meafe-blog" data-id="e8c7efa" data-element_type="widget" data-widget_type="meafe-blog.default">
+				<div class="elementor-widget-container">
+			<div id="meafe-post-grid-e8c7efa" class="meafe-blog-wrapper layout-4">
+            <div class="meafe-blog-innerwrapper">
+                <div class="meafe-blog-card" data-id="1">
+                    <div class="meafe-blog-card-inner"><div class="meafe-entry-wrapper category--main"><span class="category--wrapper" itemprop="about"><a href="http://localhost:10013/category/uncategorized/" rel="category tag">Uncategorized</a></span><h2 class="meafe-entry-title"><a class="meafe-grid-post-link" href="http://localhost:10013/hello-world/" title="Hello world!">Hello world!</a></h2><div class="meafe-entry-meta details"><div class="meafe-posted-on meafe-date"><time datetime="setembro 7, 2023">setembro 7, 2023</time></div></div></div></div>
+                </div><div class="meafe-blog-card" data-id="439">
+                    <div class="meafe-blog-card-inner"><figure class="meafe-entry-media image-wrapper"><a class="meafe-grid-post-link" href="http://localhost:10013/transforming-into-the-digital-enterprise/" title="Transforming into the digital enterprise"><img loading="lazy" width="370" height="247" src="test%20site_arquivos/image-4-2048x1365-1-370x247.jpg" class="attachment-meafe-blog-one size-meafe-blog-one" alt="" decoding="async" srcset="test%20site_arquivos/image-4-2048x1365-1-370x247.jpg 370w, test%20site_arquivos/image-4-2048x1365-1-300x200.jpg 300w, test%20site_arquivos/image-4-2048x1365-1-1024x683.jpg 1024w, test%20site_arquivos/image-4-2048x1365-1-768x512.jpg 768w, test%20site_arquivos/image-4-2048x1365-1-270x180.jpg 270w, test%20site_arquivos/image-4-2048x1365-1-1536x1024.jpg 1536w, test%20site_arquivos/image-4-2048x1365-1-360x240.jpg 360w, test%20site_arquivos/image-4-2048x1365-1.jpg 2048w" sizes="(max-width: 370px) 100vw, 370px"></a></figure><div class="meafe-entry-wrapper category--main"><span class="category--wrapper" itemprop="about"><a href="http://localhost:10013/category/organization/" rel="category tag">Organization</a></span><h2 class="meafe-entry-title"><a class="meafe-grid-post-link" href="http://localhost:10013/transforming-into-the-digital-enterprise/" title="Transforming into the digital enterprise">Transforming into the digital enterprise</a></h2><div class="meafe-entry-meta details"><div class="meafe-posted-on meafe-date"><time datetime="agosto 13, 2021">agosto 13, 2021</time></div></div></div></div>
+                </div><div class="meafe-blog-card" data-id="433">
+                    <div class="meafe-blog-card-inner"><figure class="meafe-entry-media image-wrapper"><a class="meafe-grid-post-link" href="http://localhost:10013/how-bidens-victory-will-affect-the-trade-globally/" title="Biden’s victory will affect the trade"><img loading="lazy" width="370" height="247" src="test%20site_arquivos/image-6-2048x1366-1-370x247.jpg" class="attachment-meafe-blog-one size-meafe-blog-one" alt="" decoding="async" srcset="test%20site_arquivos/image-6-2048x1366-1-370x247.jpg 370w, test%20site_arquivos/image-6-2048x1366-1-300x200.jpg 300w, test%20site_arquivos/image-6-2048x1366-1-1024x683.jpg 1024w, test%20site_arquivos/image-6-2048x1366-1-768x512.jpg 768w, test%20site_arquivos/image-6-2048x1366-1-270x180.jpg 270w, test%20site_arquivos/image-6-2048x1366-1-1536x1025.jpg 1536w, test%20site_arquivos/image-6-2048x1366-1-360x240.jpg 360w, test%20site_arquivos/image-6-2048x1366-1.jpg 2048w" sizes="(max-width: 370px) 100vw, 370px"></a></figure><div class="meafe-entry-wrapper category--main"><span class="category--wrapper" itemprop="about"><a href="http://localhost:10013/category/organization/" rel="category tag">Organization</a></span><h2 class="meafe-entry-title"><a class="meafe-grid-post-link" href="http://localhost:10013/how-bidens-victory-will-affect-the-trade-globally/" title="Biden’s victory will affect the trade">Biden’s victory will affect the trade</a></h2><div class="meafe-entry-meta details"><div class="meafe-posted-on meafe-date"><time datetime="agosto 13, 2021">agosto 13, 2021</time></div></div></div></div>
+                </div><div class="meafe-blog-card" data-id="431">
+                    <div class="meafe-blog-card-inner"><figure class="meafe-entry-media image-wrapper"><a class="meafe-grid-post-link" href="http://localhost:10013/when-you-should-hire-an-accountant-for-your-business/" title="Take Action for the Best Strategy Benefits"><img loading="lazy" width="370" height="247" src="test%20site_arquivos/image-8-2048x1365-1-370x247.jpg" class="attachment-meafe-blog-one size-meafe-blog-one" alt="" decoding="async" srcset="test%20site_arquivos/image-8-2048x1365-1-370x247.jpg 370w, test%20site_arquivos/image-8-2048x1365-1-300x200.jpg 300w, test%20site_arquivos/image-8-2048x1365-1-1024x683.jpg 1024w, test%20site_arquivos/image-8-2048x1365-1-768x512.jpg 768w, test%20site_arquivos/image-8-2048x1365-1-270x180.jpg 270w, test%20site_arquivos/image-8-2048x1365-1-1536x1024.jpg 1536w, test%20site_arquivos/image-8-2048x1365-1-360x240.jpg 360w, test%20site_arquivos/image-8-2048x1365-1.jpg 2048w" sizes="(max-width: 370px) 100vw, 370px"></a></figure><div class="meafe-entry-wrapper category--main"><span class="category--wrapper" itemprop="about"><a href="http://localhost:10013/category/enterprise/" rel="category tag">Enterprise</a> <a href="http://localhost:10013/category/organization/" rel="category tag">Organization</a></span><h2 class="meafe-entry-title"><a class="meafe-grid-post-link" href="http://localhost:10013/when-you-should-hire-an-accountant-for-your-business/" title="Take Action for the Best Strategy Benefits">Take Action for the Best Strategy Benefits</a></h2><div class="meafe-entry-meta details"><div class="meafe-posted-on meafe-date"><time datetime="agosto 13, 2021">agosto 13, 2021</time></div></div></div></div>
+                </div>
+            </div>
+        </div><div class="meafe-load-more-button-wrap">
+                <a href="#" class="meafe-load-more-button">Read All Blog</a>
+            </div>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8d607cd elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="8d607cd" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4c81716" data-id="4c81716" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-f87b21e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f87b21e" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3efe842" data-id="3efe842" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-2f13813 elementor-widget elementor-widget-heading" data-id="2f13813" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Let’s work together on your
+next project. 🎈</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-22acbf1 elementor-widget elementor-widget-text-editor" data-id="22acbf1" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Call to action (CTA) is a marketing term for any device designed to prompt an immediate response or encourage an immediate sale.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-aa6d363 elementor-align-center elementor-widget elementor-widget-button" data-id="aa6d363" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-right">
+				<i aria-hidden="true" class="fas fa-angle-right"></i>			</span>
+						<span class="elementor-button-text">Let’s Get Started</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		            
+		</div><!-- .main-content-wrapper -->
+	</div><!-- .rishi-container-->
+		    </div><!-- .site-content -->
+		<footer class="cb__footer" data-id="type-1" itemscope="" itemtype="https://schema.org/WPFooter"><div data-row="top"><div class="cb__container" data-stack="tablet:mobile"><div data-column="widget-area-1"><section id="block-7" class="widget hide_widget_title widget_block widget_media_image">
+<figure class="wp-block-image size-full"><img decoding="async" src="test%20site_arquivos/Frame-5.png" alt="" class="wp-image-8"></figure>
+</section><section id="block-8" class="widget hide_widget_title widget_block widget_text">
+<p style="font-size:16px">We assist companies in developing innovative digital goods and experiences.</p>
+</section><div class="cb__contact-info cb__footer-contact-info" data-id="contacts">
+	<ul data-icons-type="simple">
+								<li>
+				<span class="cb__icon-container">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="12.683" viewBox="0 0 20 12.683"><path id="Path_26505" data-name="Path 26505" d="M10.463,976.362a1.465,1.465,0,0,0-.541.107l8.491,7.226a.825.825,0,0,0,1.159,0l8.5-7.233a1.469,1.469,0,0,0-.534-.1H10.463Zm-1.448,1.25a1.511,1.511,0,0,0-.015.213v9.756a1.46,1.46,0,0,0,1.463,1.463H27.537A1.46,1.46,0,0,0,29,987.581v-9.756a1.51,1.51,0,0,0-.015-.213l-8.46,7.2a2.376,2.376,0,0,1-3.064,0Z" transform="translate(-9 -976.362)"></path></svg>				</span>
+
+				<div class="contact-info">
+					
+											<span class="contact-text">
+															<a href="mailto:contact@yourwebsite.com">
+							
+							contact@yourwebsite.com
+															</a>
+													</span>
+									</div>
+			</li>
+								<li>
+				<span class="cb__icon-container">
+					<svg xmlns="http://www.w3.org/2000/svg" width="18.823" height="19.788" viewBox="0 0 18.823 19.788"><path id="Phone" d="M15.925,19.741a8.537,8.537,0,0,1-3.747-1.51,20.942,20.942,0,0,1-3.524-3.094,51.918,51.918,0,0,1-3.759-4.28A13.13,13.13,0,0,1,2.75,6.867a6.3,6.3,0,0,1-.233-2.914,5.144,5.144,0,0,1,1.66-2.906A7.085,7.085,0,0,1,5.306.221,1.454,1.454,0,0,1,6.9.246a5.738,5.738,0,0,1,2.443,2.93,1.06,1.06,0,0,1-.117,1.072c-.283.382-.578.754-.863,1.136-.251.338-.512.671-.736,1.027a.946.946,0,0,0,.01,1.108c.564.791,1.11,1.607,1.723,2.36a30.024,30.024,0,0,0,3.672,3.8c.3.255.615.481.932.712a.892.892,0,0,0,.96.087,10.79,10.79,0,0,0,.989-.554c.443-.283.878-.574,1.314-.853a1.155,1.155,0,0,1,1.207-.024,5.876,5.876,0,0,1,2.612,2.572,1.583,1.583,0,0,1-.142,1.795,5.431,5.431,0,0,1-4.353,2.362A6.181,6.181,0,0,1,15.925,19.741Z" transform="translate(-2.441 0.006)"></path></svg>				</span>
+
+				<div class="contact-info">
+					
+											<span class="contact-text">
+															<a href="tel:123-456-7890">
+							
+							123-456-7890
+															</a>
+													</span>
+									</div>
+			</li>
+			</ul>
+
+	</div></div><div data-column="widget-area-2"><section id="nav_menu-1" class="widget hide_widget_title widget_nav_menu"><h2 class="widget-title" itemprop="name">Company</h2><div class="menu-footermenu1-container"><ul id="menu-footermenu1" class="widget-menu"><li id="menu-item-500" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1027 current_page_item menu-item-500"><a href="http://localhost:10013/" aria-current="page">Home</a></li>
+<li id="menu-item-501" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-501"><a href="http://localhost:10013/about/">About</a></li>
+<li id="menu-item-503" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-503"><a href="http://localhost:10013/services/">Services</a></li>
+<li id="menu-item-504" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-504"><a href="http://localhost:10013/testimonials/">Testimonials</a></li>
+</ul></div></section></div><div data-column="widget-area-3"><section id="nav_menu-2" class="widget hide_widget_title widget_nav_menu"><h2 class="widget-title" itemprop="name">Services</h2><div class="menu-footermenu2-container"><ul id="menu-footermenu2" class="widget-menu"><li id="menu-item-505" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-505"><a href="#">Web Design</a></li>
+<li id="menu-item-506" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-506"><a href="#">Marketing &amp; SEO</a></li>
+<li id="menu-item-507" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-507"><a href="#">Branding</a></li>
+<li id="menu-item-508" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-508"><a href="#">Packaging</a></li>
+<li id="menu-item-509" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-509"><a href="#">Product Launch</a></li>
+</ul></div></section></div><div data-column="widget-area-4"><section id="block-9" class="widget hide_widget_title widget_block">
+<h6 class="has-medium-font-size wp-block-heading" style="font-style:normal;font-weight:600">Socials</h6>
+</section>
+<div class="cb__footer-socials" data-id="socials">
+
+	
+		<div class="cb__social-box" data-icon-size="custom" data-color="custom" data-icons-type="rounded:outline">
+			
+							
+				<a href="#" target="_blank" rel="" data-network="linkedin" aria-label="LinkedIn">
+
+					<span class="cb__icon-container">
+						
+				<svg class="rt-icon" width="20" height="20" viewBox="0 0 24 24">
+					<path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"></path><path d="m.396 7.977h4.976v16.023h-4.976z"></path><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"></path>
+				</svg>
+								</span>
+
+					<span class="cb__label">LinkedIn</span>
+				</a>
+							
+				<a href="#" target="_blank" rel="" data-network="instagram" aria-label="Instagram">
+
+					<span class="cb__icon-container">
+						
+				<svg class="rt-icon" width="20" height="20" viewBox="0 0 511 511.9">
+					<path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"></path><path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"></path><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"></path>
+				</svg>
+								</span>
+
+					<span class="cb__label">Instagram</span>
+				</a>
+							
+				<a href="#" target="_blank" rel="" data-network="twitter" aria-label="Twitter">
+
+					<span class="cb__icon-container">
+						
+				<svg class="rt-icon" width="20" height="20" viewBox="0 0 20 20">
+					<path d="M20,3.8c-0.7,0.3-1.5,0.5-2.4,0.6c0.8-0.5,1.5-1.3,1.8-2.3c-0.8,0.5-1.7,0.8-2.6,1c-0.7-0.8-1.8-1.3-3-1.3c-2.3,0-4.1,1.8-4.1,4.1c0,0.3,0,0.6,0.1,0.9C6.4,6.7,3.4,5.1,1.4,2.6C1,3.2,0.8,3.9,0.8,4.7c0,1.4,0.7,2.7,1.8,3.4C2,8.1,1.4,7.9,0.8,7.6c0,0,0,0,0,0.1c0,2,1.4,3.6,3.3,4c-0.3,0.1-0.7,0.1-1.1,0.1c-0.3,0-0.5,0-0.8-0.1c0.5,1.6,2,2.8,3.8,2.8c-1.4,1.1-3.2,1.8-5.1,1.8c-0.3,0-0.7,0-1-0.1c1.8,1.2,4,1.8,6.3,1.8c7.5,0,11.7-6.3,11.7-11.7c0-0.2,0-0.4,0-0.5C18.8,5.3,19.4,4.6,20,3.8z"></path>
+				</svg>
+								</span>
+
+					<span class="cb__label">Twitter</span>
+				</a>
+							
+				<a href="#" target="_blank" rel="" data-network="facebook" aria-label="Facebook">
+
+					<span class="cb__icon-container">
+						
+				<svg class="rt-icon" width="20" height="20" viewBox="0 0 24 24">
+					<path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"></path>
+				</svg>
+								</span>
+
+					<span class="cb__label">Facebook</span>
+				</a>
+			
+			
+					</div>
+
+		</div>
+</div></div></div><div data-row="bottom"><div class="cb__container" data-stack="tablet:mobile"><div data-column="copyright"><div class="cb__footer-copyright" data-id="copyright">
+	Copyright © 2023 test site - Powered by <a href="https://rishitheme.com/" target="_blank" rel="nofollow noopener">Rishi Theme</a></div>
+</div><div data-column="menu">
+<nav id="footer-menu " class="footer-menu " data-id="menu" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+
+	<ul id="menu-footermenu3" class="menu"><li id="menu-item-518" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-518"><a href="#">Terms of Use</a></li>
+<li id="menu-item-519" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-519"><a href="#">Privacy Policy</a></li>
+</ul></nav>
+</div></div></div></footer>	</div><!-- #page -->
+			<div class="to_top active" data-button-type="type-1" data-icon-shape="square" data-button-alignment="right" data-scroll-style="filled">
+			<span class="icon-arrow-up-line"><svg xmlns="http://www.w3.org/2000/svg" width="15.666" height="18.898" viewBox="0 0 15.666 18.898"><g id="Group_5608" data-name="Group 5608" transform="translate(-1264.471 -499.965)"><path id="Path_26460" data-name="Path 26460" d="M-12476,4373.384l6.419-6.419,6.419,6.419" transform="translate(13741.885 -3866)"></path><path id="Path_26461" data-name="Path 26461" d="M-12469.8,4367.851v15.98" transform="translate(13742.106 -3865.969)"></path></g></svg></span>		</div>
+		<div class="cb__drawer-canvas"></div>		
+		<link rel="stylesheet" id="meafe-counter-css" href="test%20site_arquivos/counter.css" media="all">
+<link rel="stylesheet" id="meafe-testimonial-carousel-css" href="test%20site_arquivos/testimonial-carousel.css" media="all">
+<link rel="stylesheet" id="meafe-blog-css" href="test%20site_arquivos/blog.css" media="all">
+<link rel="stylesheet" id="e-animations-css" href="test%20site_arquivos/animations.min.css" media="all">
+<script src="test%20site_arquivos/imagesloaded.min.js" id="imagesloaded-js"></script>
+<script src="test%20site_arquivos/masonry.min.js" id="masonry-js"></script>
+<script src="test%20site_arquivos/index_002.js" id="swv-js"></script>
+<script id="contact-form-7-js-extra">
+var wpcf7 = {"api":{"root":"http:\/\/localhost:10013\/wp-json\/","namespace":"contact-form-7\/v1"}};
+</script>
+<script src="test%20site_arquivos/index.js" id="contact-form-7-js"></script>
+<script src="test%20site_arquivos/events.js" id="rt-custom-events-js"></script>
+<script id="rishi-companion-frontend-js-extra">
+var rishi_companion_data = {"public_url":"http:\/\/localhost:10013\/wp-content\/plugins\/rishi-companion\/\/assets\/build\/"};
+</script>
+<script src="test%20site_arquivos/public.js" id="rishi-companion-frontend-js"></script>
+<script src="test%20site_arquivos/postsTab.js" id="rishi-companion-custom-js"></script>
+<script id="rishi__cb_main-js-extra">
+var rishi__cb_localizations = {"gradients":[{"name":"Vivid cyan blue to vivid purple","gradient":"linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)","slug":"vivid-cyan-blue-to-vivid-purple"},{"name":"Light green cyan to vivid green cyan","gradient":"linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%)","slug":"light-green-cyan-to-vivid-green-cyan"},{"name":"Luminous vivid amber to luminous vivid orange","gradient":"linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%)","slug":"luminous-vivid-amber-to-luminous-vivid-orange"},{"name":"Luminous vivid orange to vivid red","gradient":"linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%)","slug":"luminous-vivid-orange-to-vivid-red"},{"name":"Cool to warm spectrum","gradient":"linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%)","slug":"cool-to-warm-spectrum"},{"name":"Blush light purple","gradient":"linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%)","slug":"blush-light-purple"},{"name":"Blush bordeaux","gradient":"linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%)","slug":"blush-bordeaux"},{"name":"Luminous dusk","gradient":"linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%)","slug":"luminous-dusk"},{"name":"Pale ocean","gradient":"linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%)","slug":"pale-ocean"},{"name":"Electric grass","gradient":"linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%)","slug":"electric-grass"},{"name":"Midnight","gradient":"linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%)","slug":"midnight"},{"name":"Juicy Peach","gradient":"linear-gradient(to right, #ffecd2 0%, #fcb69f 100%)","slug":"juicy-peach"},{"name":"Young Passion","gradient":"linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%)","slug":"young-passion"},{"name":"True Sunset","gradient":"linear-gradient(to right, #fa709a 0%, #fee140 100%)","slug":"true-sunset"},{"name":"Morpheus Den","gradient":"linear-gradient(to top, #30cfd0 0%, #330867 100%)","slug":"morpheus-den"},{"name":"Plum Plate","gradient":"linear-gradient(135deg, #667eea 0%, #764ba2 100%)","slug":"plum-plate"},{"name":"Aqua Splash","gradient":"linear-gradient(15deg, #13547a 0%, #80d0c7 100%)","slug":"aqua-splash"},{"name":"Love Kiss","gradient":"linear-gradient(to top, #ff0844 0%, #ffb199 100%)","slug":"love-kiss"},{"name":"New Retrowave","gradient":"linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%)","slug":"new-retrowave"},{"name":"Plum Bath","gradient":"linear-gradient(to top, #cc208e 0%, #6713d2 100%)","slug":"plum-bath"},{"name":"High Flight","gradient":"linear-gradient(to right, #0acffe 0%, #495aff 100%)","slug":"high-flight"},{"name":"Teen Party","gradient":"linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%)","slug":"teen-party"},{"name":"Fabled Sunset","gradient":"linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%)","slug":"fabled-sunset"},{"name":"Arielle Smile","gradient":"radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%)","slug":"arielle-smile"},{"name":"Itmeo Branding","gradient":"linear-gradient(180deg, #2af598 0%, #009efd 100%)","slug":"itmeo-branding"},{"name":"Deep Blue","gradient":"linear-gradient(to right, #6a11cb 0%, #2575fc 100%)","slug":"deep-blue"},{"name":"Strong Bliss","gradient":"linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%)","slug":"strong-bliss"},{"name":"Sweet Period","gradient":"linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%)","slug":"sweet-period"},{"name":"Purple Division","gradient":"linear-gradient(to top, #7028e4 0%, #e5b2ca 100%)","slug":"purple-division"},{"name":"Cold Evening","gradient":"linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%)","slug":"cold-evening"},{"name":"Mountain Rock","gradient":"linear-gradient(to right, #868f96 0%, #596164 100%)","slug":"mountain-rock"},{"name":"Desert Hump","gradient":"linear-gradient(to top, #c79081 0%, #dfa579 100%)","slug":"desert-hump"},{"name":"Eternal Constance","gradient":"linear-gradient(to top, #09203f 0%, #537895 100%)","slug":"ethernal-constance"},{"name":"Happy Memories","gradient":"linear-gradient(-60deg, #ff5858 0%, #f09819 100%)","slug":"happy-memories"},{"name":"Grown Early","gradient":"linear-gradient(to top, #0ba360 0%, #3cba92 100%)","slug":"grown-early"},{"name":"Morning Salad","gradient":"linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%)","slug":"morning-salad"},{"name":"Night Call","gradient":"linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%)","slug":"night-call"},{"name":"Mind Crawl","gradient":"linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%)","slug":"mind-crawl"},{"name":"Angel Care","gradient":"linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%)","slug":"angel-care"},{"name":"Juicy Cake","gradient":"linear-gradient(to top, #e14fad 0%, #f9d423 100%)","slug":"juicy-cake"},{"name":"Rich Metal","gradient":"linear-gradient(to right, #d7d2cc 0%, #304352 100%)","slug":"rich-metal"},{"name":"Mole Hall","gradient":"linear-gradient(-20deg, #616161 0%, #9bc5c3 100%)","slug":"mole-hall"},{"name":"Cloudy Knoxville","gradient":"linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)","slug":"cloudy-knoxville"},{"name":"Very light gray to cyan bluish gray","gradient":"linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%)","slug":"very-light-gray-to-cyan-bluish-gray"},{"name":"Soft Grass","gradient":"linear-gradient(to top, #c1dfc4 0%, #deecdd 100%)","slug":"soft-grass"},{"name":"Saint Petersburg","gradient":"linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)","slug":"saint-petersburg"},{"name":"Everlasting Sky","gradient":"linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%)","slug":"everlasting-sky"},{"name":"Kind Steel","gradient":"linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%)","slug":"kind-steel"},{"name":"Over Sun","gradient":"linear-gradient(60deg, #abecd6 0%, #fbed96 100%)","slug":"over-sun"},{"name":"Premium White","gradient":"linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%)","slug":"premium-white"},{"name":"Clean Mirror","gradient":"linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%)","slug":"clean-mirror"},{"name":"Wild Apple","gradient":"linear-gradient(to top, #d299c2 0%, #fef9d7 100%)","slug":"wild-apple"},{"name":"Snow Again","gradient":"linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%)","slug":"snow-again"},{"name":"Confident Cloud","gradient":"linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%)","slug":"confident-cloud"},{"name":"Glass Water","gradient":"linear-gradient(to top, #dfe9f3 0%, white 100%)","slug":"glass-water"},{"name":"Perfect White","gradient":"linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%)","slug":"perfect-white"}],"is_dev_mode":"","is_companion_active":"1","is_woocommerce_active":"","nonce":"c221c689f8","public_url":"http:\/\/localhost:10013\/wp-content\/themes\/rishi\/customizer-builder\/dist\/","static_public_url":"http:\/\/localhost:10013\/wp-content\/themes\/rishi\/js\/","ajax_url":"http:\/\/localhost:10013\/wp-admin\/admin-ajax.php","rest_url":"http:\/\/localhost:10013\/wp-json\/","customizer_url":"http:\/\/localhost:10013\/wp-admin\/customize.php?autofocus","search_url":"http:\/\/localhost:10013\/search\/QUERY_STRING\/","show_more_text":"Show more","dynamic_js_chunks":[{"id":"rishi_sticky_header","selector":"header [data-sticky]","url":"http:\/\/localhost:10013\/wp-content\/plugins\/rishi-companion\/assets\/build\/sticky.js"}]};
+var rishi_custom = {"url":"http:\/\/localhost:10013\/wp-admin\/admin-ajax.php","startPage":"1","maxPages":"0","nextLink":"http:\/\/localhost:10013\/page\/2\/","autoLoad":"numbered","bp_layout":"classic","rtl":""};
+</script>
+<script src="test%20site_arquivos/main.js" id="rishi__cb_main-js"></script>
+<script src="test%20site_arquivos/jquery-numerator.min.js" id="jquery-numerator-js"></script>
+<script src="test%20site_arquivos/waypoints.min.js" id="elementor-waypoints-js"></script>
+<script src="test%20site_arquivos/counter.js" id="meafe-counter-js"></script>
+<script src="test%20site_arquivos/testimonial-carousel.js" id="meafe-testimonial-carousel-js"></script>
+<script src="test%20site_arquivos/webpack-pro.runtime.min.js" id="elementor-pro-webpack-runtime-js"></script>
+<script src="test%20site_arquivos/webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
+<script src="test%20site_arquivos/frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
+<script src="test%20site_arquivos/wp-polyfill-inert.min.js" id="wp-polyfill-inert-js"></script>
+<script src="test%20site_arquivos/regenerator-runtime.min.js" id="regenerator-runtime-js"></script>
+<script src="test%20site_arquivos/wp-polyfill.min.js" id="wp-polyfill-js"></script>
+<script src="test%20site_arquivos/hooks.min.js" id="wp-hooks-js"></script>
+<script src="test%20site_arquivos/i18n.min.js" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"http:\/\/localhost:10013\/wp-admin\/admin-ajax.php","nonce":"377102aec3","urls":{"assets":"http:\/\/localhost:10013\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"http:\/\/localhost:10013\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"http:\/\/localhost:10013\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src="test%20site_arquivos/frontend.min.js" id="elementor-pro-frontend-js"></script>
+<script src="test%20site_arquivos/core.min.js" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Celular em modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Celular em modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Paisagem do tablet","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.15.3","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"container_grid":true,"theme_builder_v2":true,"landing-pages":true,"e_global_styleguide":true,"page-transitions":true,"notes":true,"loop":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"http:\/\/localhost:10013\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":1027,"title":"test%20site","excerpt":"","featuredImage":false}};
+</script>
+<script src="test%20site_arquivos/frontend.min_002.js" id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span>
+<script src="test%20site_arquivos/elements-handlers.min.js" id="pro-elements-handlers-js"></script><svg style="display: none;" class="e-font-icon-svg-symbols"></svg>
+
+
+
+
+<script src="test%20site_arquivos/dialog.min.js"></script><script src="test%20site_arquivos/swiper.min.js"></script></body></html>
