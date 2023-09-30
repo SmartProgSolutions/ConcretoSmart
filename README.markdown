@@ -55,11 +55,11 @@ Escrever Sobre o projeto!!------------------------------------------------------
 
 ## Tela de Dosagem Desktop ##
 
-<img src="./.github/NewHabit.png" alt="Imagem da tela de dosagem Desktop" />
+<img src="./.github/pagina_de_dosagem.png" alt="Imagem da tela de dosagem Desktop" />
 
 ## Tela de Contato  ##
 
-<img src="./.github/Login.png" alt="Imagem da tela de Contato" />
+<img src="./pagina_de_contato.png" alt="Imagem da tela de Contato" />
 
 ## Procurar mais telas do software ##
 
