@@ -59,7 +59,7 @@ Escrever Sobre o projeto!!------------------------------------------------------
 
 ## Tela de Contato  ##
 
-<img src="./pagina_de_contato.png" alt="Imagem da tela de Contato" />
+<img src="./.github/pagina_de_contato.png" alt="Imagem da tela de Contato" />
 
 ## Procurar mais telas do software ##
 
