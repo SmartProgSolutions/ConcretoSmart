@@ -1,13 +1,13 @@
 <div align="center" id="top">
-  <img src="./.github/Cover.png" alt="Ignite-NLW Setup - Habits (i)" />
+  <img src="./.github/homeweb.jpeg" alt="ConcretoSmart" />
 
   &#xa0;
 
 
-  <a href="">Demo</a>
+  <a href="https://concretosmart.vercel.app/">Demo</a>
 </div>
 
-<h1 align="center">NLW Setup - Trilha Ignite </h1>
+<h1 align="center">ConcretoSmart</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/juniorvilas/nlw-setup?color=56BEB8">
@@ -44,40 +44,35 @@
 
 ## 😸 Sobre ##
 
-Projeto desenvolvido durante as aulas do Ignite NLW Setup - Habits patrocinado pela <a href="https://rocketseat.com.br/"> Rocketseat</a>.
-Neste evento vimos como usar tecnologias atuais e poderosas na construção de sistemas simples ou avançados,este projeto é completo com parte web(ReactJs), server(Backend com Node) e mobile(ReactNative).
+Escrever Sobre o projeto!!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 ## Telas da aplicação
 
 ### Tela Home Desktop ##
 
-<img src="./.github/Home.png" alt="Imagem da tela Home Desktop" />
+<img src="./.github/homeweb.jpeg" alt="Imagem da tela Home Desktop" />
 
-## Tela Novo Hábito Desktop ##
+## Tela de Dosagem Desktop ##
 
-<img src="./.github/NewHabit.png" alt="Imagem da tela Novo Habito" />
+<img src="./.github/NewHabit.png" alt="Imagem da tela de dosagem Desktop" />
 
-## Tela Splash Mobile ##
+## Tela de Contato  ##
 
-<img src="./.github/Splash.png" alt="Imagem da Tela Splash Mobile" />
+<img src="./.github/Login.png" alt="Imagem da tela de Contato" />
 
-## Tela Home Mobile ##
+## Procurar mais telas do software ##
 
-<img src="./.github/Home_mobile.png" alt="Imagem da Tela Home Mobile" />
-
-## Tela dia especifico Mobile ##
-
-<img src="./.github/SpecificDay.png" alt="Imagem da Tela dia especifico Mobile" />
-
-## Tela criar hábito Mobile ##
-
-<img src="./.github/NewHabitMobile.png" alt="Imagem da Tela criar hábito Mobile" />
+<img src="./.github/Signup.png" alt="Colocar mais imagens para dar volume" />
 
 ## :skateboard: Funcionalidades ##
 
-:heavy_check_mark: Criar um novo Hábito\
-:heavy_check_mark: Mostrar tela home com hábitos criados e progresso\
-:heavy_check_mark: Marcar hábito como completo ou desmarcalo\
+:heavy_check_mark: Slides\
+:heavy_check_mark: Calculo de Dosagens\
+:heavy_check_mark: Envio de Tabela de Dosagem para o usuário\
+:heavy_check_mark: Formulário de contato\
+:heavy_check_mark: mais funcionalidae\
+:heavy_check_mark: mais funcionalidae\
 :heavy_check_mark: Aplicação responsiva
 
 ## :rocket: Tecnologias ##
@@ -87,15 +82,10 @@ Abaixo poderá ter acesso às principais tecnologias usadas neste projeto
 - [ReactNative](https://reactnative.dev/)
 - [NativeBase](https://nativebase.io/)
 - [Expo](https://expo.dev/)
-- [AndroidStudio](https://developer.android.com/studio)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Svg-Transformer](https://github.com/kristerkari/react-native-svg-transformer)
 - [Phosphor Icons](https://github.com/duongdev/phosphor-react-native)
-- [Prisma](https://www.prisma.io/)
-- [Fastfy](https://www.fastify.io/)
 - [Tailwindcss](https://tailwindcss.com/)
-- [NativeWind](https://www.nativewind.dev/)
-- [Radix-ui](https://www.radix-ui.com/)
 - [React-native-vector-icons](https://oblador.github.io/react-native-vector-icons/)
 - [React-Native-Reanimated](https://docs.swmansion.com/react-native-reanimated/)
 
@@ -109,10 +99,10 @@ Antes de iniciar :checkered_flag:, você precisa ter [Git](https://git-scm.com) 
 
 ```bash
 # Clone este projeto
-$ git clone https://github.com/juniorvilas/nlw-setup.git
+$ git clone https://github.com/AlcivanLucas/Behaviors.git
 
 # Acesse
-$ cd/nlw-setup/mobile
+$ cd/behaviors
 
 # Instale as dependências
 $ npm i
@@ -125,10 +115,10 @@ $ npx expo start
 
 ```bash
 # Clone este projeto
-$ git clone https://github.com/juniorvilas/nlw-setup.git
+$ git clone https://github.com/AlcivanLucas/Behaviors.git
 
 # Acesse
-$ cd/nlw-setup/web
+$ cd/Behaviors/web
 
 # Instale as dependências
 $ npm i
@@ -141,10 +131,10 @@ $ npm run dev
 
 ```bash
 # Clone este projeto
-$ git clone https://github.com/juniorvilas/nlw-setup.git
+$ git clone https://github.com/AlcivanLucas/Behaviors.git
 
 # Acesse
-$ cd/nlw-setup/server
+$ cd/Behaviors/server
 
 # Instale as dependências
 $ npm i
@@ -157,13 +147,12 @@ $ npm run dev
 
 ## 📡 Material complementar para o projeto ##
 
-- [Wallpapers-NLW-SETUP](https://drive.google.com/drive/folders/1F5ghUWdlaC_1IKFxkNUgGcTGqpqdpR29)
-- [Notion-Trilha-Ignite](https://efficient-sloth-d85.notion.site/Trilha-Ignite-562e3516c7574fb7be75ff01fbb41f54)
+
 ## :memo: Licença ##
 
-Este projeto está sob licença MIT. Para mais informações acesse [LICENSE](LICENSE.md).
+Este projeto está sob licença MIT. Para mais informações acesse [LICENSE]().
 
-Feito com :heart: por <a href="https://github.com/juniorvilas" target="_blank">Alcivan Lucas</a>
+Feito com :heart: por <a href="https://github.com/AlcivanLucas" target="_blank">Alcivan Lucas</a>
 
 &#xa0;
 
