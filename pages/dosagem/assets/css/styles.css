@@ -4,6 +4,7 @@
     flex-direction: column;
     margin: 0 auto;
     width: 60%;
+    margin-top: 90px;
    /*margin-top: 100px;*/ 
 }
 .conteudo{
@@ -32,7 +33,7 @@ Classe para estilo "semi-bold"
 
 
 /* Estilos CSS para a div e seus elementos */
-.container {
+.containeri {
     display: flex;
     flex-direction: column;
     width: 100%; /* Largura da div, ajuste conforme necessário */
