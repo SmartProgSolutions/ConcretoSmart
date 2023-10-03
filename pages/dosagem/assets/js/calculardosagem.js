@@ -97,6 +97,10 @@ function calcularDosagem() {
   var brita = volume * 1016.40;
   var agua = volume * 226;*/
 
+
+
+
+
   // Exibir os resultados
   document.getElementById("resultado-cimento").innerHTML = cimento.toFixed(2);
   document.getElementById("resultado-cimentom3").innerHTML = cimentom3.toFixed(3);
@@ -108,4 +112,12 @@ function calcularDosagem() {
   document.getElementById("resultado-britam3").innerHTML = britam3.toFixed(3);
 
   document.getElementById("resultado-agua").innerHTML = agua.toFixed(2);
+
+  // Mostre a div de resultado que estava oculta
+  document.getElementById("resultado").classList.remove("hidden");
+
+
+  // Role a página para a seção de resultados e centralize-a na tela
+  var resultadoDiv = document.getElementById("resultado");
+  resultadoDiv.scrollIntoView({ behavior: "smooth", block: "center" });
 }

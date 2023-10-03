@@ -24,7 +24,7 @@
 
 
 
-
+    <!--Cabeçario da página-->
     <header class="header">
 
         <div class="contenti">
@@ -53,8 +53,8 @@
     <div class="content">
         <h1>Formulário +18🔥</h1>
         <form id="form" action="https://formsubmit.co/1576cfc3e8ebf91d5850f91985e49c18" method="POST" >
-            <input type="hidden" name="_captcha" value="false"> 
-            <input type="hidden" name="_next" value="http://localhost:5173/index.html">
+            <input type="hidden" name="_captcha" value="false"> <!--Desativa o recaptcha da pagina-->
+            <input type="hidden" name="_next" value="https://concretosmartcontato.vercel.app/"> <!--Depois eu lembro-->
             <div>
                 <input type="text" name="nome" placeholder="Digite seu nome" class="inputs required" oninput="nameValidate()">
                 <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
@@ -78,18 +78,18 @@
             </div>
             -->
             <textarea class="inputs" name="descricao" id="descricao" cols="25" rows="10" placeholder="Sua mensagem...."></textarea>
-            <p>Sexo:</p>
+            <p>Profissão:</p>
             <div class="box-select">
                 <div>
-                    <input type="radio" id="m" value="masculino" name="sexo">
-                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="m" value="engenheiro civil" name="profissao">
+                    <label for="engenheiro civil">Engenheiro cívil</label>
                 </div>
                 <div>
-                    <input type="radio" id="f" value="feminino" name="sexo">
-                    <label for="feminino">Feminino</label>
+                    <input type="radio" id="f" value="Estudante de engenharia" name="profissao">
+                    <label for="feminino">Estudante de engenharia</label>
                 </div>
                 <div>
-                    <input type="radio" id="o" value="outro" name="sexo">
+                    <input type="radio" id="o" value="outro" name="profissao">
                     <label for="outro">Outro</label>
                 </div>
             </div>

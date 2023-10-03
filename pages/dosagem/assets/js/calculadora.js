@@ -14,7 +14,7 @@
             var volumeEmMetrosCubicos = comprimentoEmMetros * larguraEmMetros * alturaEmMetros;
           
             // Exibir o resultado
-            document.getElementById("resultado").innerHTML = "Volume: " + volumeEmMetrosCubicos + " m³";
+            document.getElementById("resultadoo").innerHTML = "Volume: " + volumeEmMetrosCubicos + " m³";
 
         }
 
