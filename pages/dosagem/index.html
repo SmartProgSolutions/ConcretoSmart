@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConcretoSmart - Página de Dosagem</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+
+
+    <link rel="stylesheet" href="./assets/css/style_cabecario.css">
+  
+
+
+
+</head>
+<body >
+
+
+    <header class="header">
+
+        <div class="content">
+      
+          <a href="https://concretosmart.vercel.app/" target="_blank" class="logo">
+             <img src="img/logo.png" style="height: 65px;" title="Loop Nerd">
+          </a>
+          
+          <input class="mobile-btn" type="checkbox" id="mobile-btn" />
+          <label class="mobile-icon" for="mobile-btn"><span class="hamburguer"></span></label>
+          
+          <ul class="nav">
+      
+            <li><a href="https://concretosmart.vercel.app/" title="Home">Home</a></li>
+            <li><a href="#" title="Sobre">Sobre</a></li>
+            <li><a href="#" title="Artigos">Dosar concreto</a></li>
+            <li><a href="https://concretosmartcontato.vercel.app/" title="Contato">Contato</a></li>
+          
+          </ul>
+      
+        </div><!--content-->
+      
+      </header>
+
+
+    <section class="conteiner">
+ 
+        <div id="div-titulo">
+            <h1 >Dosagem de Concreto</h1>
+        </div>
+       
+         <!-- Seleciona o Formato-->
+        <div  class="containerFormato">
+            <label for="meuSelect">Formato:</label>
+            <select class="select-transparent" id="meuSelect">
+                <option value="bloco">Bloco</option>
+                <option value="cilindro">Cilindro * Não funcional</option>
+            </select>
+        </div>
+
+
+
+           <!-- Primeira div com Select -->
+        <div class="containerFormato">
+            <label for="meuSelect1">Resistência do concreto</label>
+            <select class="select-transparent" id="opcoes-metodo">
+                <option value="informar">Informar traço de concreto *não funcional</option>      
+                <option value="fcj">Método FCJ</option>
+                <option value="fck">Método FCK</option>
+
+            </select>
+
+        </div>
+        <div>
+            <!-- Select (inicialmente oculta)  Método FCJ-->
+            <div class="containerOculto hidden" id="divfcj">
+                <label for="meuSelect1">Traço do concreto FCJ</label>
+                <select class="select-transparent" id="traco-fcj">
+                    <option value="opcaoA">Obras de responsabilidade de grande porte; 1 : 1 : 2 : 40 MPa</option>
+                    <option value="opcaoB">Estruturas de responsabilidade(Lajes,Pilares e Vigas)  1 : 1.5 : 3 : 35 MPa</option>
+                    <option value="opcaoC">Estruturas comuns(Sapatas, Estacas, Pilares, Vigas, Estacas)  1 : 2 : 3 : 25 MPa </option>
+                    <option value="opcaoD">Concreto comum de menor responsabilidade 1 : 2.5 : 4 : 18 MPa</option>
+                    <option value="opcaoE">Cinta de amarração e Vigas 1 : 3 : 5 : 12 MPa</option>
+                    <option value="opcaoF">Contrapiso, Calçados e Concreto Magro 1 : 3 : 6 : 10 MPa</option>
+                </select>
+            </div>
+
+                <!-- Select (inicialmente oculta) Metodo Método FCK-->
+            <div class="containerOculto hidden" id="divfck">
+                <label for="meuSelect1">Traço do concreto FCK</label>
+                <select class="select-transparent" id="traco-fck">
+                    <option value="opcaoG">Obras de responsabilidade de grande porte</option>
+                    <option value="opcaoH">Estruturas de responsabilidade(Lajes,Pilares e Vigas)</option>
+                    <option value="opcaoI">Estruturas comuns(Sapatas, Estacas, Pilares, Vigas, Estacas)</option>
+                    <option value="opcaoJ">Concreto comum de menor responsabilidade</option>
+                    <option value="opcaoK">Cinta de amarração e Vigas</option>
+                    <option value="opcaoL">Contrapiso, Calçados e Concreto Magro</option>
+                </select>
+            </div>
+
+
+            <!--Escolher o tipo de cimento e deixar um recomendado com base na função | Select (inicialmente oculta)-->
+
+            <div  class="containerOculto hidden" id="tiposCimento" style="margin-top: 8px;">
+                <label for="meuSelect">Tipo de cimento:</label>
+                <select class="select-transparent" id="meuSelect">
+                    <option value="cp-II-32-f">Padrão (cp-II-32-f)</option>
+                    <option value="cilindro">Cilindro * Não funcional</option>
+                </select>
+            </div>
+
+        </div>
+
+           
+
+        <!-- traço do cimento | Proporção da massa-->
+        <div class="proporcao">
+            <div class="inner-div">
+                <label for="label">Cimento:</label>
+                <input type="text" id="cimento" name="input1">
+            </div>
+            <div class="inner-div">
+                <label for="label">Areia:</label>
+                <input type="text" id="areia" name="input2">
+            </div>
+            <div class="inner-div">
+                <label for="label">Brita:</label>
+                <input type="text" id="brita" name="input3">
+            </div>
+            <div class="inner-div">
+                <label for="label">MPA:</label>
+                <input type="text" id="MPA" name="input4">
+            </div>
+
+
+           <!-- <div class="inner-div">
+                <label for="label">Água:</label>
+                <input type="text" id="input" name="input4">
+            </div>
+            -->
+
+        </div>
+
+        <div id="" class="">
+            <!--Select que define qual div sera exposta -->
+            <select class="select-volume" name="" id="select-volume">
+                <option value="volume-conhecido">Volume Conhecido</option>
+                <option value="volume-desconhecido">Volume Desconhecido *não funcional</option>
+            </select>
+
+            <!--Div Volume Conhecido, Inicialmente exposta-->
+            <div id="volume-conhecido" style="display: block;">
+                <div class="inner-div">
+                    <label for="label">Volume:</label>
+                    <input type="number" valu placeholder="Volume em (m³)" id="volume" name="input1" required>
+                </div>
+                <div class="inner-div">
+                    <label for="label">Quantidade:</label>
+                    <input type="number" value="1" placeholder="Quantidade em (un)" id="quantidade" name="input2" required>
+                </div>
+                <div class="inner-div">
+                    <label for="label">Taxa de perda:</label>
+                    <input type="number" value="10" placeholder="Taxa de perda em (%)" id="taxaperda" name="input3" required>
+                </div>
+            </div>
+
+            <!--Div Volume Desconhecido, inicialmente Oculta-->
+            <div id="volume-desconhecido"  style="display: none;">
+                <div class="inner-div">
+                    <label for="label">Altura:</label>
+                    <input type="text" placeholder="Altura em (cm)" id="altura" name="input1">
+                </div>
+                <div class="inner-div">
+                    <label for="label">Largura:</label>
+                    <input type="text" placeholder="Largura em (cm)" id="largura" name="input1">
+                </div>
+                <div class="inner-div">
+                    <label for="label">Comprimento:</label>
+                    <input type="text" placeholder="Comprimento em (cm)" id="comprimento" name="input1">
+                </div>
+                <div class="inner-div">
+                    <label for="label">Quantidade:</label>
+                    <input type="text" placeholder="Quantidade em (un)" id="input" name="input2">
+                </div>
+                <div class="inner-div">
+                    <label for="label">Taxa de perda:</label>
+                    <input type="text" placeholder="Taxa de perda em (%)"  id="input" name="input3">
+                </div>
+            </div>
+
+
+        </div>
+
+     
+        <div  id="botao-calculardosagem" class="div-botao-calcular">
+            <button  class="botao-calcular" onclick="calcularDosagem()">Calcular Dosagem</button>
+        </div>
+
+
+        <!--<div class="div-botao-calcular">
+            <button  class="botao-calcular" onclick="calcularVolume()">Calcular Volume</button>
+        </div>
+        pega as medidas do bloco e trasnforma em volume m³
+        <div id="resultadoo"></div>-->
+
+        <!--Div dos resultados Iniciamente oculta-->
+        <div id="resultado" class="hidden" style="margin-top: 50px;">
+            <div id="dados-gerais" class="centralizado">
+                <label style="font-size: 18px; ">Dados gerais</label>
+            </div>
+            <div class="descricao">
+                <div class="box">
+                    <label>Descrição</label>
+                </div>
+                <div class="box">
+                    <label>Quantidade</label>
+                </div>
+                <div class="box">
+                    <label>Unidade</label>
+                </div>
+            </div>
+
+            <!--Linha do cimento-->
+            <div id="div-cimento">
+
+                <div class="centralizado div-descricao">
+                            <label >Cimento</label>
+
+
+                </div>
+                <div class="div-quantidade">
+                        <label id="resultado-cimentom3" class="font-9"></label>
+                        <label id="resultado-cimento" class="font-9"></label>
+                                
+                </div>
+                <div class="div-unidade">
+                   
+                        <label class="font-9">m³</label>
+                        <label class="font-9">Kg</label>
+                </div>
+                
+            </div>
+
+            <!--Linha da Areia -->
+            <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
+
+                <div class="centralizado div-descricao" >
+
+                            <label>Areia</label>
+
+
+                </div>
+                <div class="div-quantidade">
+                        <label id="resultado-areiam3" class="font-9"></label>
+                        <label id="resultado-areia" class="font-9"></label>
+
+                    
+                </div>
+                <div class="div-unidade">
+                        <label class="font-9">m³</label>
+                        <label class="font-9">Kg</label>
+
+                    
+                </div>
+                
+            </div>
+
+            <!--Linha da Brita-->
+            <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
+
+                <div class="centralizado div-descricao" >
+
+                            <label>Brita</label>
+
+                </div>
+                <div class="div-quantidade">
+                        <label id="resultado-britam3" class="font-9"></label>                
+                        <label id="resultado-brita" class="font-9"></label>
+
+                    
+                </div>
+                <div class="div-unidade">
+                        <label class="font-9">m³</label>
+                        <label class="font-9">Kg</label>
+
+                    
+                </div>
+                
+            </div>
+
+            <!--Linha da Areia-->
+            <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
+
+                <div class="centralizado div-descricao" >
+                            <label>Água</label>
+
+
+                </div>
+                <div class="div-quantidade">
+                        <label id="resultado-agua" class="font-9"></label>
+
+                    
+                </div>
+                <div class="div-unidade">
+                    <label class="font-9">Litros</label>
+                </div>
+                
+            </div>
+        </div>
+
+
+
+
+
+        
+    </section>
+
+
+    <footer id="footerComponent">
+        <!-- O conteúdo do footer será inserido aqui usando JavaScript -->
+    </footer>
+    <script src="./assets/js/carrega_footer.js"></script>
+
+
+    <script src="./assets/js/calculadora.js"></script>
+    <script src="./assets/js/calculardosagem.js"></script>
+    <script src="./assets/js/preencheinput.js"></script>
+    <script src="./assets/js/divsOcultas.js"></script>
+</body>
+</html>

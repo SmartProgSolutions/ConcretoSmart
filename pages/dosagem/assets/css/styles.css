@@ -1,0 +1,172 @@
+.conteiner{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 90px;
+   /*margin-top: 100px;*/ 
+}
+.conteudo{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    align: auto;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    margin-left: 35%;
+}
+
+/* Classe para estilo "bold"
+.bold {
+    font-weight: bold;
+}
+
+Classe para estilo "semi-bold" 
+.semi-bold {
+    font-weight: 600; /* 600 é uma típica representação de semi-bold 
+}
+*/ 
+/* # é usado para id*/
+#dados-gerais{
+    background-color: #0583F2; 
+    color: white; 
+    margin-bottom: 1px; 
+}
+
+/* Estilos CSS para a div e seus elementos */
+.containerFormato {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Largura da div, ajuste conforme necessário */
+    background: #E9E9ED;
+    margin-bottom: 10px;
+    
+}
+
+
+select {
+    padding: 5px; /* Espaçamento interno para o select */
+    border-top: none;
+}
+/* Estilo para ocultar a segunda div por padrão */
+.hidden {
+    display: none;
+}
+.proporcao {
+    display: flex;
+}
+
+.inner-div {
+    /*configurações do imput*/
+    margin: 10px;
+    background: #E9E9ED;
+    margin-right: 5px;
+}
+
+/* Estilo para tornar o fundo do input transparente */
+.inner-div input {
+    background-color: transparent;
+    width: 95%;
+    border-color: transparent;
+}
+
+.inner-div input:focus{
+    width: 99%;
+    border: 2px solid rgb(142, 135, 135); /* Defina a cor da borda desejada quando o input está selecionado */
+    outline: none; /* Remove a borda padrão do navegador que geralmente aparece ao selecionar um input */
+}
+.div-botao-calcular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botao-calcular {
+    background-color: #0583F2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+    
+}
+/* Estilos para o select com a classe .transparent-select */
+.select-volume {
+    background: transparent; /* Define o fundo como transparente */
+    border: none; /* Remove as bordas */
+    outline: none; /* Remove a borda de foco ao clicar */
+    font-size: 18px; /* Tamanho do texto em cada option */
+}
+.select-transparent{
+    background: transparent; /* Define o fundo como transparente */
+    border: none; /* Remove as bordas */
+    outline: none; /* Remove a borda de foco ao clicar */
+}
+.centralizado{
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+.descricao{
+    display: flex; /* Torna as divs filhas flexíveis */
+    justify-content: space-between; /* Distribui as divs igualmente horizontalmente */
+    background-color: #007bff;
+}
+
+.box{
+    width: 33%;
+    display: flex; /* Torna o texto verticalmente centralizado */
+    color: white;
+    justify-content: center;  /* Centraliza horizontalmente */
+}
+.font-9{
+    font-size: 11px;
+
+}
+
+#div-cimento{
+    justify-content: space-between; 
+    display: flex; 
+    margin-bottom: 10px;
+}
+
+.div-descricao{
+    background-color: red;
+    height: 50px;
+    width: 33%
+}
+
+.div-quantidade{
+    
+    background-color: rgb(0, 255, 4); 
+    height: 50px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; /* Centraliza horizontalmente */
+
+}
+.div-unidade{
+    background-color: rgb(200, 255, 0); 
+    height: 50px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+#resultado {
+    border: 2px solid #007bff; /* Define uma borda azul com 2px de espessura */
+    margin-bottom: 50px;
+}
+#botao-calculardosagem{
+    margin-bottom: 40px;
+}
+.containerOculto{
+    background-color: #E9E9ED ;
+}
