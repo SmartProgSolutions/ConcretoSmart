@@ -18,22 +18,6 @@
 
         }
 
-        // Adicione um evento de escuta ao select, e mostra opçẽs de traçoes de acordo com o metodo
-        document.getElementById('opcoes-metodo').addEventListener('change', function() {
-            var divfcj = document.getElementById('divfcj');
-            var divfck = document.getElementById('divfck');
-
-            if (this.value === 'fcj') {
-                divfcj.style.display = 'block';
-                divfck.style.display = 'none';
-            } else if (this.value === 'fck') {
-                divfcj.style.display = 'none';
-                divfck.style.display = 'block';
-            } else {
-                divfcj.style.display = 'none';
-                divfck.style.display = 'none';
-            }
-        });
 
 
 

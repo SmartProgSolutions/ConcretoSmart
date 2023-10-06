@@ -49,7 +49,7 @@
         </div>
        
          <!-- Seleciona o Formato-->
-        <div  class="containeri">
+        <div  class="containerFormato">
             <label for="meuSelect">Formato:</label>
             <select class="select-transparent" id="meuSelect">
                 <option value="bloco">Bloco</option>
@@ -57,8 +57,10 @@
             </select>
         </div>
 
-            <!-- Primeira div com Select -->
-        <div class="containeri">
+
+
+           <!-- Primeira div com Select -->
+        <div class="containerFormato">
             <label for="meuSelect1">Resistência do concreto</label>
             <select class="select-transparent" id="opcoes-metodo">
                 <option value="informar">Informar traço de concreto *não funcional</option>      
@@ -66,33 +68,49 @@
                 <option value="fck">Método FCK</option>
 
             </select>
-        </div>
 
+        </div>
+        <div>
             <!-- Select (inicialmente oculta)  Método FCJ-->
-        <div class="container hidden" id="divfcj" class="hidden">
-            <label for="meuSelect1">Traço do concreto FCJ</label>
-            <select class="select-transparent" id="traco-fcj">
-                <option value="opcaoA">Obras de responsabilidade de grande porte; 1 : 1 : 2 : 40 MPa</option>
-                <option value="opcaoB">Estruturas de responsabilidade(Lajes,Pilares e Vigas)  1 : 1.5 : 3 : 35 MPa</option>
-                <option value="opcaoC">Estruturas comuns(Sapatas, Estacas, Pilares, Vigas, Estacas)  1 : 2 : 3 : 25 MPa </option>
-                <option value="opcaoD">Concreto comun de menor responsabilidade 1 : 2.5 : 4 : 18 MPa</option>
-                <option value="opcaoE">Cinta de amarração e Vigas 1 : 3 : 5 : 12 MPa</option>
-                <option value="opcaoF">Contrapiso, Calçados e Concreto Magro 1 : 3 : 6 : 10 MPa</option>
-            </select>
+            <div class="containerOculto hidden" id="divfcj">
+                <label for="meuSelect1">Traço do concreto FCJ</label>
+                <select class="select-transparent" id="traco-fcj">
+                    <option value="opcaoA">Obras de responsabilidade de grande porte; 1 : 1 : 2 : 40 MPa</option>
+                    <option value="opcaoB">Estruturas de responsabilidade(Lajes,Pilares e Vigas)  1 : 1.5 : 3 : 35 MPa</option>
+                    <option value="opcaoC">Estruturas comuns(Sapatas, Estacas, Pilares, Vigas, Estacas)  1 : 2 : 3 : 25 MPa </option>
+                    <option value="opcaoD">Concreto comum de menor responsabilidade 1 : 2.5 : 4 : 18 MPa</option>
+                    <option value="opcaoE">Cinta de amarração e Vigas 1 : 3 : 5 : 12 MPa</option>
+                    <option value="opcaoF">Contrapiso, Calçados e Concreto Magro 1 : 3 : 6 : 10 MPa</option>
+                </select>
+            </div>
+
+                <!-- Select (inicialmente oculta) Metodo Método FCK-->
+            <div class="containerOculto hidden" id="divfck">
+                <label for="meuSelect1">Traço do concreto FCK</label>
+                <select class="select-transparent" id="traco-fck">
+                    <option value="opcaoG">Obras de responsabilidade de grande porte</option>
+                    <option value="opcaoH">Estruturas de responsabilidade(Lajes,Pilares e Vigas)</option>
+                    <option value="opcaoI">Estruturas comuns(Sapatas, Estacas, Pilares, Vigas, Estacas)</option>
+                    <option value="opcaoJ">Concreto comum de menor responsabilidade</option>
+                    <option value="opcaoK">Cinta de amarração e Vigas</option>
+                    <option value="opcaoL">Contrapiso, Calçados e Concreto Magro</option>
+                </select>
+            </div>
+
+
+            <!--Escolher o tipo de cimento e deixar um recomendado com base na função | Select (inicialmente oculta)-->
+
+            <div  class="containerOculto hidden" id="tiposCimento" style="margin-top: 8px;">
+                <label for="meuSelect">Tipo de cimento:</label>
+                <select class="select-transparent" id="meuSelect">
+                    <option value="cp-II-32-f">Padrão (cp-II-32-f)</option>
+                    <option value="cilindro">Cilindro * Não funcional</option>
+                </select>
+            </div>
+
         </div>
 
-            <!-- Select (inicialmente oculta) Metodo Método FCK-->
-        <div class="container hidden" id="divfck" class="hidden">
-            <label for="meuSelect1">Traço do concreto FCK</label>
-            <select class="select-transparent" id="traco-fck">
-                <option value="opcaoG">Obras de responsabilidade de grande porte</option>
-                <option value="opcaoH">Estruturas de responsabilidade(Lajes,Pilares e Vigas)</option>
-                <option value="opcaoI">Estruturas comuns(Sapatas, Estacas, Pilares, Vigas, Estacas)</option>
-                <option value="opcaoJ">Concreto comun de menor responsabilidade</option>
-                <option value="opcaoK">Cinta de amarração e Vigas</option>
-                <option value="opcaoL">Contrapiso, Calçados e Concreto Magro</option>
-            </select>
-        </div>
+           
 
         <!-- traço do cimento | Proporção da massa-->
         <div class="proporcao">
@@ -133,15 +151,15 @@
             <div id="volume-conhecido" style="display: block;">
                 <div class="inner-div">
                     <label for="label">Volume:</label>
-                    <input type="number" placeholder="Volume em (m³)" id="volume" name="input1" required>
+                    <input type="number" valu placeholder="Volume em (m³)" id="volume" name="input1" required>
                 </div>
                 <div class="inner-div">
                     <label for="label">Quantidade:</label>
-                    <input type="number" placeholder="Quantidade em (un)" id="quantidade" name="input2" required>
+                    <input type="number" value="1" placeholder="Quantidade em (un)" id="quantidade" name="input2" required>
                 </div>
                 <div class="inner-div">
                     <label for="label">Taxa de perda:</label>
-                    <input type="number" placeholder="Taxa de perda em (%)" id="taxaperda" name="input3" required>
+                    <input type="number" value="10" placeholder="Taxa de perda em (%)" id="taxaperda" name="input3" required>
                 </div>
             </div>
 
@@ -173,7 +191,7 @@
         </div>
 
      
-        <div class="div-botao-calcular">
+        <div  id="botao-calculardosagem" class="div-botao-calcular">
             <button  class="botao-calcular" onclick="calcularDosagem()">Calcular Dosagem</button>
         </div>
 
@@ -185,14 +203,8 @@
         <div id="resultadoo"></div>-->
 
         <!--Div dos resultados Iniciamente oculta-->
-        <div id="resultado" class="hidden" style="
-                                                margin-top: 50px;
-                                            ">
-            <div id="dados-gerais" class="centralizado" style="
-                                                            background-color: #0583F2; 
-                                                            color: white; 
-                                                            margin-bottom: 1px; "  
-                                                        >
+        <div id="resultado" class="hidden" style="margin-top: 50px;">
+            <div id="dados-gerais" class="centralizado">
                 <label style="font-size: 18px; ">Dados gerais</label>
             </div>
             <div class="descricao">
@@ -206,72 +218,44 @@
                     <label>Unidade</label>
                 </div>
             </div>
-            <div style="justify-content: space-between; display: flex; margin-bottom: 10px;">
 
-                <div style="background-color: red;
-                            height: 50px;
-                            width: 33%;    
-                            "
-                    class="centralizado">
+            <!--Linha do cimento-->
+            <div id="div-cimento">
+
+                <div class="centralizado div-descricao">
                             <label >Cimento</label>
 
 
                 </div>
-                <div style="background-color: rgb(0, 255, 4); 
-                            height: 50px;
-                            width: 33%;
-                            display: flex;
-                            flex-direction: column;
-                            text-align: center;
-                    ">
+                <div class="div-quantidade">
                         <label id="resultado-cimentom3" class="font-9"></label>
                         <label id="resultado-cimento" class="font-9"></label>
                                 
                 </div>
-                <div style="background-color: rgb(200, 255, 0); 
-                            height: 50px;
-                            width: 33%;
-                            display: flex;
-                            flex-direction: column;
-                            text-align: center;
-                    ">
+                <div class="div-unidade">
+                   
                         <label class="font-9">m³</label>
                         <label class="font-9">Kg</label>
                 </div>
                 
             </div>
 
+            <!--Linha da Areia -->
             <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
 
-                <div style="background-color: red;
-                            height: 50px;
-                            width: 33%;   
-                            "
-                    class="centralizado">
+                <div class="centralizado div-descricao" >
 
                             <label>Areia</label>
 
 
                 </div>
-                <div style="background-color: rgb(0, 255, 4); 
-                            height: 50px;
-                            width: 33%;
-                            display: flex;
-                            flex-direction: column;
-                            text-align: center
-                    ">
+                <div class="div-quantidade">
                         <label id="resultado-areiam3" class="font-9"></label>
                         <label id="resultado-areia" class="font-9"></label>
 
                     
                 </div>
-                <div style="background-color: rgb(200, 255, 0); 
-                            height: 50px;
-                            width: 33%;
-                            display: flex;
-                            flex-direction: column;
-                            text-align: center;
-                            ">
+                <div class="div-unidade">
                         <label class="font-9">m³</label>
                         <label class="font-9">Kg</label>
 
@@ -280,37 +264,21 @@
                 
             </div>
 
+            <!--Linha da Brita-->
             <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
 
-                <div style="background-color: red;
-                            height: 50px;
-                            width: 33%;
-            
-                            "
-                    class="centralizado">
+                <div class="centralizado div-descricao" >
 
                             <label>Brita</label>
 
                 </div>
-                <div style="background-color: rgb(0, 255, 4); 
-                            height: 50px;
-                            width: 33%;
-                            display: flex;
-                            flex-direction: column;
-                            text-align: center
-                    ">
+                <div class="div-quantidade">
                         <label id="resultado-britam3" class="font-9"></label>                
                         <label id="resultado-brita" class="font-9"></label>
 
                     
                 </div>
-                <div style="background-color: rgb(200, 255, 0); 
-                            height: 50px;
-                            width: 33%;
-                            display: flex;
-                            flex-direction: column;
-                            text-align: center;
-                            ">
+                <div class="div-unidade">
                         <label class="font-9">m³</label>
                         <label class="font-9">Kg</label>
 
@@ -319,35 +287,21 @@
                 
             </div>
 
+            <!--Linha da Areia-->
             <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
 
-                <div style="background-color: red;
-                            height: 50px;
-                            width: 33%;
-        
-                            "
-                    class="centralizado">
+                <div class="centralizado div-descricao" >
                             <label>Água</label>
 
 
                 </div>
-                <div style="background-color: rgb(0, 255, 4); 
-                            height: 50px;
-                            width: 33%;
-                            
-                    ">
+                <div class="div-quantidade">
                         <label id="resultado-agua" class="font-9"></label>
 
                     
                 </div>
-                <div style="background-color: rgb(200, 255, 0); 
-                            height: 50px;
-                            width: 33%;
-                            
-                            ">
-                            
-
-                    
+                <div class="div-unidade">
+                    <label class="font-9">Litros</label>
                 </div>
                 
             </div>
@@ -359,8 +313,17 @@
 
         
     </section>
+
+
+    <footer id="footerComponent">
+        <!-- O conteúdo do footer será inserido aqui usando JavaScript -->
+    </footer>
+    <script src="./assets/js/carrega_footer.js"></script>
+
+
     <script src="./assets/js/calculadora.js"></script>
     <script src="./assets/js/calculardosagem.js"></script>
     <script src="./assets/js/preencheinput.js"></script>
+    <script src="./assets/js/divsOcultas.js"></script>
 </body>
 </html>

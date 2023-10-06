@@ -29,11 +29,16 @@ Classe para estilo "semi-bold"
 .semi-bold {
     font-weight: 600; /* 600 é uma típica representação de semi-bold 
 }
-*/
-
+*/ 
+/* # é usado para id*/
+#dados-gerais{
+    background-color: #0583F2; 
+    color: white; 
+    margin-bottom: 1px; 
+}
 
 /* Estilos CSS para a div e seus elementos */
-.containeri {
+.containerFormato {
     display: flex;
     flex-direction: column;
     width: 100%; /* Largura da div, ajuste conforme necessário */
@@ -110,6 +115,7 @@ select {
     justify-content: space-between; /* Distribui as divs igualmente horizontalmente */
     background-color: #007bff;
 }
+
 .box{
     width: 33%;
     display: flex; /* Torna o texto verticalmente centralizado */
@@ -119,4 +125,48 @@ select {
 .font-9{
     font-size: 11px;
 
+}
+
+#div-cimento{
+    justify-content: space-between; 
+    display: flex; 
+    margin-bottom: 10px;
+}
+
+.div-descricao{
+    background-color: red;
+    height: 50px;
+    width: 33%
+}
+
+.div-quantidade{
+    
+    background-color: rgb(0, 255, 4); 
+    height: 50px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; /* Centraliza horizontalmente */
+
+}
+.div-unidade{
+    background-color: rgb(200, 255, 0); 
+    height: 50px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+#resultado {
+    border: 2px solid #007bff; /* Define uma borda azul com 2px de espessura */
+    margin-bottom: 50px;
+}
+#botao-calculardosagem{
+    margin-bottom: 40px;
+}
+.containerOculto{
+    background-color: #E9E9ED ;
 }
