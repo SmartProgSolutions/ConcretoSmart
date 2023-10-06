@@ -1,4 +1,2 @@
-linguist-vendored
-.html linguist-vendored=false
-.python linguist-detectable=true
-.typescript linguist-detectable=true
+pages/dosagem/assets/js/* linguist-vendored
+pages/dosagem/assets/css/* linguist-vendored
