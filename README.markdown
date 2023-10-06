@@ -142,26 +142,6 @@ $ npm i
 # Execute o projeto
 $ npm run dev
 ```
-
-## :checkered_flag: Comandos mais usados (Git)  ##
-
-```bash
-# Mostra qual repositório esta sendo utilizado
-$ git remote -v 
-
-# Ignora conflitos e forçar um push para o seu repositório no GitHub
-$ git push -f origin main
-
-# Acesse
-$ cd/Behaviors/server
-
-# Instale as dependências
-$ npm i
-
-# Execute o projeto
-$ npm run dev
-```
-
 ## 📡 Material complementar para o projeto ##
 
 
