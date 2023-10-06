@@ -37,7 +37,7 @@
   <a href="#checkered_flag-iniciando">Iniciando</a> &#xa0; | &#xa0;
   <a href="#-configurações-adicionais-ao-projeto">Schemas</a> &#xa0; | &#xa0;
   <a href="#memo-licença">Licença</a> &#xa0; | &#xa0;
-  <a href="https://github.com/juniorvilas" target="_blank">Autor</a>
+  <a href="https://github.com/AlcivanLucas" target="_blank">Autor</a>
 </p>
 
 <br>
@@ -159,10 +159,10 @@ $ git remote -v
 Este projeto está sob licença MIT. Para mais informações acesse [LICENSE]().
 
 Feito com :heart: por <a href="https://github.com/AlcivanLucas" target="_blank">Alcivan Lucas</a> <br>
-Feito com :heart: por <a href="" target="_blank">Wendrill Gabriel</a> <br>
-Feito com :heart: por <a href="" target="_blank">João Filho</a> <br>
-Feito com :heart: por <a href="https://github.com/heitorviana-dev" target="_blank">Heitor Viana ⬜🟥⬛</a> <br>
-Feito com :heart: por <a href="" target="_blank">Kevilla Águia🦅</a> <br>
+Feito com :heart: por <a href="https://github.com/WendrilXX" target="_blank">Wendrill Gabriel</a> <br>
+Feito com :heart: por <a href="https://github.com/Joap-Filho" target="_blank">João Filho</a> <br>
+Feito com :heart: por <a href="https://github.com/heitorviana-dev" target="_blank">Heitor Viana</a> <br>
+Feito com :heart: por <a href="https://github.com/KevillaAguiar" target="_blank">Kevilla Aguiar🦅</a> <br>
 &#xa0;
 
 <a href="#top">Voltar ao topo</a>
