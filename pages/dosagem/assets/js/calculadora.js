@@ -39,7 +39,7 @@
             // Calcular o volume em metros cúbicos (m³)
             const volumeEmMetrosCubicos = Math.PI * (raioEmMetros ** 2) * alturaEmMetros;
             
-            return volumeEmMetrosCubicos.toFixed(2);           
+            return volumeEmMetrosCubicos.toFixed(4);           
             // Exibir o resultado
             // document.getElementById("resultadoo").innerHTML = "Volume: " + volumeEmMetrosCubicos + " m³";
 
