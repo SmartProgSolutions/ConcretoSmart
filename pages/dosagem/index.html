@@ -50,10 +50,10 @@
        
          <!-- Seleciona o Formato-->
         <div  class="containerFormato">
-            <label for="meuSelect">Formato:</label>
-            <select class="select-transparent" id="meuSelect">
+            <label for="selectFormato">Formato:</label>
+            <select class="select-transparent" id="selectFormato">
                 <option value="bloco">Bloco</option>
-                <option value="cilindro">Cilindro * Não funcional</option>
+                <option value="cilindro">Cilindro</option>
             </select>
         </div>
 
@@ -144,38 +144,42 @@
             <!--Select que define qual div sera exposta -->
             <select class="select-volume" name="" id="select-volume">
                 <option value="volume-conhecido">Volume Conhecido</option>
-                <option value="volume-desconhecido">Volume Desconhecido *não funcional</option>
+                <option value="volume-desconhecido">Volume Desconhecido</option>
             </select>
 
             <!--Div Volume Conhecido, Inicialmente exposta-->
             <div id="volume-conhecido" style="display: block;">
                 <div class="inner-div">
                     <label for="label">Volume:</label>
-                    <input type="number" valu placeholder="Volume em (m³)" id="volume" name="input1" required>
+                    <input type="number" value = "" placeholder="Volume em (m³)" id="volume" name="input1" required>
                 </div>
                 <div class="inner-div">
                     <label for="label">Quantidade:</label>
-                    <input type="number" value="1" placeholder="Quantidade em (un)" id="quantidade" name="input2" required>
+                    <input type="number" value="" placeholder="Quantidade em (un)" id="quantidade" name="input2" required>
                 </div>
                 <div class="inner-div">
                     <label for="label">Taxa de perda:</label>
-                    <input type="number" value="10" placeholder="Taxa de perda em (%)" id="taxaperda" name="input3" required>
+                    <input type="number" value="" placeholder="Taxa de perda em (%)" id="taxaperda" name="input3" required>
                 </div>
             </div>
 
-            <!--Div Volume Desconhecido, inicialmente Oculta-->
+            <!--Div Volume Desconhecido caso o formato seja bloco, inicialmente Oculta-->
             <div id="volume-desconhecido"  style="display: none;">
-                <div class="inner-div">
+                <div class="inner-div" id="altura">
                     <label for="label">Altura:</label>
-                    <input type="text" placeholder="Altura em (cm)" id="altura" name="input1">
+                    <input type="text" placeholder="Altura em (cm)" id="inputAltura" name="input1">
                 </div>
-                <div class="inner-div">
+                <div class="inner-div" id="raio">
+                    <label for="label">Raio:</label>
+                    <input type="text" placeholder="Raio em (cm)" id="inputRaio" name="input1">
+                </div>
+                <div class="inner-div" id="largura">
                     <label for="label">Largura:</label>
-                    <input type="text" placeholder="Largura em (cm)" id="largura" name="input1">
+                    <input type="text" placeholder="Largura em (cm)" id="inputLargura" name="input1">
                 </div>
-                <div class="inner-div">
+                <div class="inner-div" id="comprimento">
                     <label for="label">Comprimento:</label>
-                    <input type="text" placeholder="Comprimento em (cm)" id="comprimento" name="input1">
+                    <input type="text" placeholder="Comprimento em (cm)" id="inputComprimento" name="input1">
                 </div>
                 <div class="inner-div">
                     <label for="label">Quantidade:</label>
@@ -187,7 +191,6 @@
                 </div>
             </div>
 
-
         </div>
 
      
@@ -195,12 +198,6 @@
             <button  class="botao-calcular" onclick="calcularDosagem()">Calcular Dosagem</button>
         </div>
 
-
-        <!--<div class="div-botao-calcular">
-            <button  class="botao-calcular" onclick="calcularVolume()">Calcular Volume</button>
-        </div>
-        pega as medidas do bloco e trasnforma em volume m³
-        <div id="resultadoo"></div>-->
 
         <!--Div dos resultados Iniciamente oculta-->
         <div id="resultado" class="hidden" style="margin-top: 50px;">
@@ -321,7 +318,7 @@
     <script src="./assets/js/carrega_footer.js"></script>
 
 
-    <script src="./assets/js/calculadora.js"></script>
+    <script src="./assets/js/calculadora.js" type="module"></script>
     <script src="./assets/js/calculardosagem.js"></script>
     <script src="./assets/js/preencheinput.js"></script>
     <script src="./assets/js/divsOcultas.js"></script>

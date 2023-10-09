@@ -23,4 +23,4 @@ selecionarMetodo.addEventListener('change', function() {
 
 //Deve-se verificar o método utilizado e verificar o tipo de estrutura escohida
 // Adicione um evento de escuta ao select e mostra as opções de tipo de cimento com base no tipo de método e no tipo de estrutura
-const selecionarTipoDeConcreto = document.getElementById() 
+// const selecionarTipoDeConcreto = document.getElementById() 
