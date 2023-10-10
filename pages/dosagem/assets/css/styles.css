@@ -56,6 +56,7 @@ select {
 .hidden {
     display: none;
 }
+
 .proporcao {
     display: flex;
 }
@@ -167,6 +168,9 @@ select {
 #botao-calculardosagem{
     margin-bottom: 40px;
 }
+
 .containerOculto{
     background-color: #E9E9ED ;
+    width: 100%;
+    
 }
