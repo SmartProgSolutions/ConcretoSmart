@@ -20,15 +20,15 @@
          <!-- O conteúdo do header será inserido aqui usando JavaScript -->
     </header>
 
-    
-    <section class="conteiner">
+    <!-- Formulário de dossagem -->
+    <section class="formDosagem">
  
         <div id="div-titulo">
             <h1 >Dosagem de Concreto</h1>
         </div>
        
          <!-- Seleciona o Formato-->
-        <div  class="containerFormato">
+        <div  class="divFormato">
             <label for="selectFormato">Formato:</label>
             <select class="select-transparent" id="selectFormato">
                 <option value="bloco">Bloco</option>
@@ -39,7 +39,7 @@
 
 
            <!-- Primeira div com Select -->
-        <div class="containerFormato">
+        <div class="divFormato">
             <label for="meuSelect1">Resistência do concreto</label>
             <select class="select-transparent" id="opcoes-metodo">
                 <option value="informar">Informar traço de concreto</option>      
@@ -182,110 +182,7 @@
         </div>
 
 
-        <!--Div dos resultados Iniciamente oculta-->
-        <div id="resultado" class="hidden" style="margin-top: 50px;">
-            <div id="dados-gerais" class="centralizado">
-                <label style="font-size: 18px; ">Dados gerais</label>
-            </div>
-            <div class="descricao">
-                <div class="box">
-                    <label>Descrição</label>
-                </div>
-                <div class="box">
-                    <label>Quantidade</label>
-                </div>
-                <div class="box">
-                    <label>Unidade</label>
-                </div>
-            </div>
 
-            <!--Linha do cimento-->
-            <div id="div-cimento">
-
-                <div class="centralizado div-descricao">
-                            <label >Cimento</label>
-
-
-                </div>
-                <div class="div-quantidade">
-                        <label id="resultado-cimentom3" class="font-9"></label>
-                        <label id="resultado-cimento" class="font-9"></label>
-                                
-                </div>
-                <div class="div-unidade">
-                   
-                        <label class="font-9">m³</label>
-                        <label class="font-9">Kg</label>
-                </div>
-                
-            </div>
-
-            <!--Linha da Areia -->
-            <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
-
-                <div class="centralizado div-descricao" >
-
-                            <label>Areia</label>
-
-
-                </div>
-                <div class="div-quantidade">
-                        <label id="resultado-areiam3" class="font-9"></label>
-                        <label id="resultado-areia" class="font-9"></label>
-
-                    
-                </div>
-                <div class="div-unidade">
-                        <label class="font-9">m³</label>
-                        <label class="font-9">Kg</label>
-
-                    
-                </div>
-                
-            </div>
-
-            <!--Linha da Brita-->
-            <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
-
-                <div class="centralizado div-descricao" >
-
-                            <label>Brita</label>
-
-                </div>
-                <div class="div-quantidade">
-                        <label id="resultado-britam3" class="font-9"></label>                
-                        <label id="resultado-brita" class="font-9"></label>
-
-                    
-                </div>
-                <div class="div-unidade">
-                        <label class="font-9">m³</label>
-                        <label class="font-9">Kg</label>
-
-                    
-                </div>
-                
-            </div>
-
-            <!--Linha da Areia-->
-            <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
-
-                <div class="centralizado div-descricao" >
-                            <label>Água</label>
-
-
-                </div>
-                <div class="div-quantidade">
-                        <label id="resultado-agua" class="font-9"></label>
-
-                    
-                </div>
-                <div class="div-unidade">
-                    <label class="font-9">Litros</label>
-                </div>
-                
-            </div>
-        </div>
 
 
 
@@ -293,7 +190,112 @@
 
         
     </section>
+    <!-- Fim do Formulario de dosasem  -->
 
+        <!--Div dos resultados Iniciamente oculta-->
+    <div id="resultado" class="hidden formDosagem" style="margin-top: 50px;">
+        <div id="dados-gerais" class="centralizado">
+            <label style="font-size: 18px; ">Dados gerais</label>
+        </div>
+        <div class="descricao">
+            <div class="box">
+                <label>Descrição</label>
+            </div>
+            <div class="box">
+                <label>Quantidade</label>
+            </div>
+            <div class="box">
+                <label>Unidade</label>
+            </div>
+        </div>
+
+        <!--Linha do cimento-->
+        <div id="div-cimento">
+
+            <div class="centralizado div-descricao">
+                        <label >Cimento</label>
+
+
+            </div>
+            <div class="div-quantidade">
+                    <label id="resultado-cimentom3" class="font-9"></label>
+                    <label id="resultado-cimento" class="font-9"></label>
+                            
+            </div>
+            <div class="div-unidade">
+                
+                    <label class="font-9">m³</label>
+                    <label class="font-9">Kg</label>
+            </div>
+            
+        </div>
+
+        <!--Linha da Areia -->
+        <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
+
+            <div class="centralizado div-descricao" >
+
+                        <label>Areia</label>
+
+
+            </div>
+            <div class="div-quantidade">
+                    <label id="resultado-areiam3" class="font-9"></label>
+                    <label id="resultado-areia" class="font-9"></label>
+
+                
+            </div>
+            <div class="div-unidade">
+                    <label class="font-9">m³</label>
+                    <label class="font-9">Kg</label>
+
+                
+            </div>
+            
+        </div>
+
+        <!--Linha da Brita-->
+        <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
+
+            <div class="centralizado div-descricao" >
+
+                        <label>Brita</label>
+
+            </div>
+            <div class="div-quantidade">
+                    <label id="resultado-britam3" class="font-9"></label>                
+                    <label id="resultado-brita" class="font-9"></label>
+
+                
+            </div>
+            <div class="div-unidade">
+                    <label class="font-9">m³</label>
+                    <label class="font-9">Kg</label>
+
+                
+            </div>
+            
+        </div>
+
+        <!--Linha da Areia-->
+        <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
+
+            <div class="centralizado div-descricao" >
+                        <label>Água</label>
+
+
+            </div>
+            <div class="div-quantidade">
+                    <label id="resultado-agua" class="font-9"></label>
+
+                
+            </div>
+            <div class="div-unidade">
+                <label class="font-9">Litros</label>
+            </div>
+            
+        </div>
+    </div>
 
     <footer id="footerComponent">
         <!-- O conteúdo do footer será inserido aqui usando JavaScript -->
