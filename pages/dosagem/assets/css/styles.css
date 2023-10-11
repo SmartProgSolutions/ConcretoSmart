@@ -14,6 +14,7 @@ body{
     border-radius: 1%;
 } */
 
+/* Estilos padrão para a div formDosagem */
 .formDosagem{
     display: flex;
     justify-content: center;
@@ -31,6 +32,16 @@ body{
     overflow: auto;
     margin-top: 10%;
 }
+
+  
+  /* Estilos para dispositivos móveis (telas menores) */
+  @media (max-width: 768px) {
+    #formDosagem {
+      width: 100%; /* Faça a div ocupar 100% da largura da tela em dispositivos móveis com largura máxima de 768px */
+    }
+  }
+  
+
 
 .conteudo{
     display: flex;
