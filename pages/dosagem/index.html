@@ -16,286 +16,291 @@
 
 </head>
 <body >
+
+    <!--Cabeçario da página-->
     <header id="headerComponent">
-         <!-- O conteúdo do header será inserido aqui usando JavaScript -->
+        <!-- O conteúdo do header será inserido aqui usando JavaScript -->
     </header>
 
-    <!-- Formulário de dossagem -->
-    <section class="formDosagem">
- 
-        <div id="div-titulo" class="centralizado">
-            <h1 >Dosagem de Concreto</h1>
-        </div>
-       
-         <!-- Seleciona o Formato-->
-        <div  class="divFormato">
-            <label for="selectFormato">Formato:</label>
-            <select class="select-transparent" id="selectFormato">
-                <option value="bloco">Bloco</option>
-                <option value="cilindro">Cilindro</option>
-            </select>
-        </div>
-
-
-
-           <!-- Primeira div com Select -->
-        <div class="divFormato">
-            <label for="meuSelect1">Resistência do concreto</label>
-            <select class="select-transparent" id="opcoes-metodo">
-                <option value="informar">Informar traço de concreto</option>      
-                <option value="fcj">Método FCJ</option>
-                <option value="fck">Método FCK</option>
-
-            </select>
-
-        </div>
-
-        <div >
-            <!-- Select (inicialmente oculta)  Método FCJ-->
-            <div class="containerOculto hidden containerFormato" id="divfcj">
-                <label for="meuSelect1">Traço do concreto FCJ</label>
-                <select class="select-transparent" id="traco-fcj">
-                    <option value="opcaoA">Obras de responsabilidade de grande porte; 1 : 1 : 2 : 40 MPa</option>
-                    <option value="opcaoB">Estruturas de responsabilidade(Lajes,Pilares e Vigas)  1 : 1.5 : 3 : 35 MPa</option>
-                    <option value="opcaoC">Estruturas comuns(Sapatas, Estacas, Pilares, Vigas, Estacas)  1 : 2 : 3 : 25 MPa </option>
-                    <option value="opcaoD">Concreto comum de menor responsabilidade 1 : 2.5 : 4 : 18 MPa</option>
-                    <option value="opcaoE">Cinta de amarração e Vigas 1 : 3 : 5 : 12 MPa</option>
-                    <option value="opcaoF">Contrapiso, Calçados e Concreto Magro 1 : 3 : 6 : 10 MPa</option>
-                </select>
+    <div class="divs-centrais">
+        <!-- Formulário de dossagem -->
+        <section class="formDosagem">
+    
+            <div id="div-titulo" class="centralizado">
+                <h1 >Dosagem de Concreto</h1>
             </div>
-
-                <!-- Select (inicialmente oculta) Metodo Método FCK-->
-            <div class="containerOculto hidden containerFormato" id="divfck">
-                <label for="meuSelect1">Traço do concreto FCK</label>
-                <select class="select-transparent" id="traco-fck">
-                    <option value="opcaoG">Obras de responsabilidade de grande porte; 1 : 2,5 : 3,9 : 40 MPa </option>
-                    <option value="opcaoH">Estruturas de responsabilidade(Lajes,Pilares e Vigas); 1 : 3,8 : 5,9 : 35 MPa</option>
-                    <option value="opcaoI">Estruturas comuns(Sapatas, Estacas, Pilares, Vigas, Estacas); 1 : 5 : 5,9 : 25 MPa</option>
-                    <option value="opcaoJ">Concreto comum de menor responsabilidade; 1: 6,3 : 7,9 : 15 MPa</option>
-                    <option value="opcaoK">Cinta de amarração e Vigas; 1 : 7,5 : 9,8 :  12 MPa</option>
-                    <option value="opcaoL">Contrapiso, Calçados e Concreto Magro; 1 : 7,5 : 11,7 : 10 MPa </option>
+        
+            <!-- Seleciona o Formato-->
+            <div  class="divFormato">
+                <label for="selectFormato">Formato:</label>
+                <select class="select-transparent" id="selectFormato">
+                    <option value="bloco">Bloco</option>
+                    <option value="cilindro">Cilindro</option>
                 </select>
             </div>
 
 
-            <!--Escolher o tipo de cimento e deixar um recomendado com base na função | Select (inicialmente oculta)-->
 
-            <div  class="containerOculto hidden" id="tiposCimento" style="margin-top: 8px;">
-                <label for="meuSelect">Tipo de cimento:</label>
-                <select class="select-transparent" id="meuSelect">
-                    <option value="cp-I"> CP-I</option>
-                    <option value="cp-II" selected>Padrão CP-II</option>
-                    <option value="cp-III">CP-III</option>
-                    <option value="cp-IV">CP-IV</option>
-                    <option value="cp-V">CP-V</option>
+            <!-- Primeira div com Select -->
+            <div class="divFormato">
+                <label for="meuSelect1">Resistência do concreto</label>
+                <select class="select-transparent" id="opcoes-metodo">
+                    <option value="informar">Informar traço de concreto</option>      
+                    <option value="fcj">Método FCJ</option>
+                    <option value="fck">Método FCK</option>
+
                 </select>
+
             </div>
 
-        </div>
+            <div >
+                <!-- Select (inicialmente oculta)  Método FCJ-->
+                <div class="containerOculto hidden containerFormato" id="divfcj">
+                    <label for="meuSelect1">Traço do concreto FCJ</label>
+                    <select class="select-transparent" id="traco-fcj">
+                        <option value="opcaoA">Obras de responsabilidade de grande porte; 1 : 1 : 2 : 40 MPa</option>
+                        <option value="opcaoB">Estruturas de responsabilidade(Lajes,Pilares e Vigas)  1 : 1.5 : 3 : 35 MPa</option>
+                        <option value="opcaoC">Estruturas comuns(Sapatas, Estacas, Pilares, Vigas, Estacas)  1 : 2 : 3 : 25 MPa </option>
+                        <option value="opcaoD">Concreto comum de menor responsabilidade 1 : 2.5 : 4 : 18 MPa</option>
+                        <option value="opcaoE">Cinta de amarração e Vigas 1 : 3 : 5 : 12 MPa</option>
+                        <option value="opcaoF">Contrapiso, Calçados e Concreto Magro 1 : 3 : 6 : 10 MPa</option>
+                    </select>
+                </div>
 
-           
+                    <!-- Select (inicialmente oculta) Metodo Método FCK-->
+                <div class="containerOculto hidden containerFormato" id="divfck">
+                    <label for="meuSelect1">Traço do concreto FCK</label>
+                    <select class="select-transparent" id="traco-fck">
+                        <option value="opcaoG">Obras de responsabilidade de grande porte; 1 : 2,5 : 3,9 : 40 MPa </option>
+                        <option value="opcaoH">Estruturas de responsabilidade(Lajes,Pilares e Vigas); 1 : 3,8 : 5,9 : 35 MPa</option>
+                        <option value="opcaoI">Estruturas comuns(Sapatas, Estacas, Pilares, Vigas, Estacas); 1 : 5 : 5,9 : 25 MPa</option>
+                        <option value="opcaoJ">Concreto comum de menor responsabilidade; 1: 6,3 : 7,9 : 15 MPa</option>
+                        <option value="opcaoK">Cinta de amarração e Vigas; 1 : 7,5 : 9,8 :  12 MPa</option>
+                        <option value="opcaoL">Contrapiso, Calçados e Concreto Magro; 1 : 7,5 : 11,7 : 10 MPa </option>
+                    </select>
+                </div>
 
-        <!-- traço do cimento | Proporção da massa-->
-        <div class="proporcao">
-            <div class="inner-div">
-                <label for="label">Cimento:</label>
-                <input type="text" id="cimento" name="input1">
+
+                <!--Escolher o tipo de cimento e deixar um recomendado com base na função | Select (inicialmente oculta)-->
+
+                <div  class="containerOculto hidden" id="tiposCimento" style="margin-top: 8px;">
+                    <label for="meuSelect">Tipo de cimento:</label>
+                    <select class="select-transparent" id="meuSelect">
+                        <option value="cp-I"> CP-I</option>
+                        <option value="cp-II" selected>Padrão CP-II</option>
+                        <option value="cp-III">CP-III</option>
+                        <option value="cp-IV">CP-IV</option>
+                        <option value="cp-V">CP-V</option>
+                    </select>
+                </div>
+
             </div>
-            <div class="inner-div">
-                <label for="label">Areia:</label>
-                <input type="text" id="areia" name="input2">
-            </div>
-            <div class="inner-div">
-                <label for="label">Brita:</label>
-                <input type="text" id="brita" name="input3">
-            </div>
-            <div class="inner-div">
-                <label for="label">MPA:</label>
-                <input type="text" id="MPA" name="input4">
-            </div>
 
+            
 
-           <!-- <div class="inner-div">
-                <label for="label">Água:</label>
-                <input type="text" id="input" name="input4">
-            </div>
-            -->
-
-        </div>
-
-        <div id="" class="">
-            <!--Select que define qual div sera exposta -->
-            <select class="select-volume" name="" id="select-volume">
-                <option value="volume-conhecido">Volume Conhecido</option>
-                <option value="volume-desconhecido">Volume Desconhecido</option>
-            </select>
-
-            <!--Div Volume Conhecido, Inicialmente exposta-->
-            <div id="volume-conhecido" style="display: block;">
+            <!-- traço do cimento | Proporção da massa-->
+            <div class="proporcao">
                 <div class="inner-div">
-                    <label for="label">Volume:</label>
-                    <input type="number" value = "" placeholder="Volume em (m³)" id="volume" name="input1" required>
-                </div>
-                <div class="inner-div">
-                    <label for="label">Quantidade:</label>
-                    <input type="number" value="" placeholder="Quantidade em (un)" id="quantidade" name="input2" required>
-                </div>
-                <div class="inner-div">
-                    <label for="label">Taxa de perda:</label>
-                    <input type="number" value="" placeholder="Taxa de perda em (%)" id="taxaperda" name="input3" required>
-                </div>
-            </div>
-
-            <!--Div Volume Desconhecido caso o formato seja bloco, inicialmente Oculta-->
-            <div id="volume-desconhecido"  style="display: none;">
-                <div class="inner-div" id="altura">
-                    <label for="label">Altura:</label>
-                    <input type="text" placeholder="Altura em (cm)" id="inputAltura" name="input1">
-                </div>
-                <div class="inner-div" id="raio">
-                    <label for="label">Raio:</label>
-                    <input type="text" placeholder="Raio em (cm)" id="inputRaio" name="input1">
-                </div>
-                <div class="inner-div" id="largura">
-                    <label for="label">Largura:</label>
-                    <input type="text" placeholder="Largura em (cm)" id="inputLargura" name="input1">
-                </div>
-                <div class="inner-div" id="comprimento">
-                    <label for="label">Comprimento:</label>
-                    <input type="text" placeholder="Comprimento em (cm)" id="inputComprimento" name="input1">
+                    <label for="label">Cimento:</label>
+                    <input type="text" id="cimento" name="input1">
                 </div>
                 <div class="inner-div">
-                    <label for="label">Quantidade:</label>
-                    <input type="text" placeholder="Quantidade em (un)" id="input" name="input2">
+                    <label for="label">Areia:</label>
+                    <input type="text" id="areia" name="input2">
                 </div>
                 <div class="inner-div">
-                    <label for="label">Taxa de perda:</label>
-                    <input type="text" placeholder="Taxa de perda em (%)"  id="input" name="input3">
+                    <label for="label">Brita:</label>
+                    <input type="text" id="brita" name="input3">
                 </div>
+                <div class="inner-div">
+                    <label for="label">MPA:</label>
+                    <input type="text" id="MPA" name="input4">
+                </div>
+
+
+            <!-- <div class="inner-div">
+                    <label for="label">Água:</label>
+                    <input type="text" id="input" name="input4">
+                </div>
+                -->
+
             </div>
 
-        </div>
+            <div id="" class="">
+                <!--Select que define qual div sera exposta -->
+                <select class="select-volume" name="" id="select-volume">
+                    <option value="volume-conhecido">Volume Conhecido</option>
+                    <option value="volume-desconhecido">Volume Desconhecido</option>
+                </select>
 
-     
-        <div  id="botao-calculardosagem" class="div-botao-calcular">
-            <button  class="botao-calcular" onclick="calcularDosagem()">Calcular Dosagem</button>
-        </div>
+                <!--Div Volume Conhecido, Inicialmente exposta-->
+                <div id="volume-conhecido" style="display: block;">
+                    <div class="inner-div">
+                        <label for="label">Volume:</label>
+                        <input type="number" value = "" placeholder="Volume em (m³)" id="volume" name="input1" required>
+                    </div>
+                    <div class="inner-div">
+                        <label for="label">Quantidade:</label>
+                        <input type="number" value="" placeholder="Quantidade em (un)" id="quantidade" name="input2" required>
+                    </div>
+                    <div class="inner-div">
+                        <label for="label">Taxa de perda:</label>
+                        <input type="number" value="" placeholder="Taxa de perda em (%)" id="taxaperda" name="input3" required>
+                    </div>
+                </div>
 
+                <!--Div Volume Desconhecido caso o formato seja bloco, inicialmente Oculta-->
+                <div id="volume-desconhecido"  style="display: none;">
+                    <div class="inner-div" id="altura">
+                        <label for="label">Altura:</label>
+                        <input type="text" placeholder="Altura em (cm)" id="inputAltura" name="input1">
+                    </div>
+                    <div class="inner-div" id="raio">
+                        <label for="label">Raio:</label>
+                        <input type="text" placeholder="Raio em (cm)" id="inputRaio" name="input1">
+                    </div>
+                    <div class="inner-div" id="largura">
+                        <label for="label">Largura:</label>
+                        <input type="text" placeholder="Largura em (cm)" id="inputLargura" name="input1">
+                    </div>
+                    <div class="inner-div" id="comprimento">
+                        <label for="label">Comprimento:</label>
+                        <input type="text" placeholder="Comprimento em (cm)" id="inputComprimento" name="input1">
+                    </div>
+                    <div class="inner-div">
+                        <label for="label">Quantidade:</label>
+                        <input type="text" placeholder="Quantidade em (un)" id="input" name="input2">
+                    </div>
+                    <div class="inner-div">
+                        <label for="label">Taxa de perda:</label>
+                        <input type="text" placeholder="Taxa de perda em (%)"  id="input" name="input3">
+                    </div>
+                </div>
 
-
-
-
-
-
+            </div>
 
         
-    </section>
-    <!-- Fim do Formulario de dosasem  -->
-
-        <!--Div dos resultados Iniciamente oculta-->
-    <div id="resultado" class="hidden formDosagem" style="margin-top: 50px;">
-        <div id="dados-gerais" class="centralizado">
-            <label style="font-size: 18px; ">Dados gerais</label>
-        </div>
-        <div class="descricao">
-            <div class="box">
-                <label>Descrição</label>
+            <div  id="botao-calculardosagem" class="div-botao-calcular">
+                <button  class="botao-calcular" onclick="calcularDosagem()">Calcular Dosagem</button>
             </div>
-            <div class="box">
-                <label>Quantidade</label>
-            </div>
-            <div class="box">
-                <label>Unidade</label>
-            </div>
-        </div>
-
-        <!--Linha do cimento-->
-        <div id="div-cimento">
-
-            <div class="centralizado div-descricao">
-                        <label >Cimento</label>
 
 
-            </div>
-            <div class="div-quantidade">
-                    <label id="resultado-cimentom3" class="font-9"></label>
-                    <label id="resultado-cimento" class="font-9"></label>
-                            
-            </div>
-            <div class="div-unidade">
-                
-                    <label class="font-9">m³</label>
-                    <label class="font-9">Kg</label>
-            </div>
+
+
+
+
+
+
             
-        </div>
+        </section>
+        <!-- Fim do Formulario de dosasem  -->
 
-        <!--Linha da Areia -->
-        <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
-
-            <div class="centralizado div-descricao" >
-
-                        <label>Areia</label>
-
-
+         <!--Div dos resultados Iniciamente oculta-->
+        <div id="resultado" class="hidden formDosagem" style="margin-top: 50px;">
+            <div id="dados-gerais" class="centralizado">
+                <label style="font-size: 18px; ">Dados gerais</label>
             </div>
-            <div class="div-quantidade">
-                    <label id="resultado-areiam3" class="font-9"></label>
-                    <label id="resultado-areia" class="font-9"></label>
+            <div class="descricao">
+                <div class="box">
+                    <label>Descrição</label>
+                </div>
+                <div class="box">
+                    <label>Quantidade</label>
+                </div>
+                <div class="box">
+                    <label>Unidade</label>
+                </div>
+            </div>
 
+            <!--Linha do cimento-->
+            <div id="div-cimento">
+
+                <div class="centralizado div-descricao">
+                            <label >Cimento</label>
+
+
+                </div>
+                <div class="div-quantidade">
+                        <label id="resultado-cimentom3" class="font-9"></label>
+                        <label id="resultado-cimento" class="font-9"></label>
+                                
+                </div>
+                <div class="div-unidade">
+                    
+                        <label class="font-9">m³</label>
+                        <label class="font-9">Kg</label>
+                </div>
                 
             </div>
-            <div class="div-unidade">
-                    <label class="font-9">m³</label>
-                    <label class="font-9">Kg</label>
 
+            <!--Linha da Areia -->
+            <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
+
+                <div class="centralizado div-descricao" >
+
+                            <label>Areia</label>
+
+
+                </div>
+                <div class="div-quantidade">
+                        <label id="resultado-areiam3" class="font-9"></label>
+                        <label id="resultado-areia" class="font-9"></label>
+
+                    
+                </div>
+                <div class="div-unidade">
+                        <label class="font-9">m³</label>
+                        <label class="font-9">Kg</label>
+
+                    
+                </div>
                 
             </div>
-            
-        </div>
 
-        <!--Linha da Brita-->
-        <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
+            <!--Linha da Brita-->
+            <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
 
-            <div class="centralizado div-descricao" >
+                <div class="centralizado div-descricao" >
 
-                        <label>Brita</label>
+                            <label>Brita</label>
 
-            </div>
-            <div class="div-quantidade">
-                    <label id="resultado-britam3" class="font-9"></label>                
-                    <label id="resultado-brita" class="font-9"></label>
+                </div>
+                <div class="div-quantidade">
+                        <label id="resultado-britam3" class="font-9"></label>                
+                        <label id="resultado-brita" class="font-9"></label>
 
+                    
+                </div>
+                <div class="div-unidade">
+                        <label class="font-9">m³</label>
+                        <label class="font-9">Kg</label>
+
+                    
+                </div>
                 
             </div>
-            <div class="div-unidade">
-                    <label class="font-9">m³</label>
-                    <label class="font-9">Kg</label>
 
+            <!--Linha da Areia-->
+            <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
+
+                <div class="centralizado div-descricao" >
+                            <label>Água</label>
+
+
+                </div>
+                <div class="div-quantidade">
+                        <label id="resultado-agua" class="font-9"></label>
+
+                    
+                </div>
+                <div class="div-unidade">
+                    <label class="font-9">Litros</label>
+                </div>
                 
             </div>
-            
-        </div>
-
-        <!--Linha da Areia-->
-        <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
-
-            <div class="centralizado div-descricao" >
-                        <label>Água</label>
-
-
-            </div>
-            <div class="div-quantidade">
-                    <label id="resultado-agua" class="font-9"></label>
-
-                
-            </div>
-            <div class="div-unidade">
-                <label class="font-9">Litros</label>
-            </div>
-            
         </div>
     </div>
+
 
     <footer id="footerComponent">
         <!-- O conteúdo do footer será inserido aqui usando JavaScript -->

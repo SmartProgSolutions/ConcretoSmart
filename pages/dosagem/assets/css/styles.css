@@ -2,17 +2,6 @@ body{
     background-color: #E6E6E6;
 }
 
-/* .formDosagem{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 50%;
-    margin-top: 130px;
-    margin-bottom: 40px ;
-    background-color: white;
-    border-radius: 1%;
-} */
 
 /* Estilos padrão para a div formDosagem */
 .formDosagem{
@@ -20,27 +9,51 @@ body{
     justify-content: center;
     flex-direction: column;
     width: 40%;
-    margin-top: 130px;
+    margin-top: 6%;
     margin-bottom: 40px ;
     background-color: white;
     border-radius: 1%;
-    margin-left: 25%;
 
     padding: 1rem;
     border-radius: 10px;
-    min-width: 30%;
+    /* min-width: 30%; */
     overflow: auto;
-    margin-top: 10%;
+}
+.divs-centrais{
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Alteração para flex-direction: column */
+    justify-content: center;
+    align-items: center;
+
 }
 
-  
-  /* Estilos para dispositivos móveis (telas menores) */
-  @media (max-width: 768px) {
-    #formDosagem {
-      width: 100%; /* Faça a div ocupar 100% da largura da tela em dispositivos móveis com largura máxima de 768px */
+/* Se [largura do dispositivo] for menor ou igual a 768px, então execute o {...} */
+@media (max-width: 768px) {
+    .formDosagem {
+      color: #ff0000; /* elemento que vai ser modificado/adicionado/sobrescrito nessa resolução */
+      width: 100%;
     }
   }
-  
+
+/* Se [largura do dispositivo] for entre 768px e 600px, então execute o {...} */
+
+@media (max-width: 768px) and (min-width: 600px) {
+    .formDosagem {
+    color: #32ff09; /* elemento que vai ser modificado/adicionado/sobrescrito nessa resolução */
+    width: 80%;
+  }
+}
+
+  /* Se [largura do dispositivo] for maior ou igual a 768px, então execute o {...} */
+@media (min-width: 768px) {
+  .formDosagem {
+    color: #1e00fd; /* elemento que vai ser modificado/adicionado/sobrescrito nessa resolução */
+    width: 40%;
+  }
+}
+
+
 
 
 .conteudo{
