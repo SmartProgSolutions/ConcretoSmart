@@ -2,7 +2,7 @@ body{
     background-color: #E6E6E6;
 }
 
-.formDosagem{
+/* .formDosagem{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -12,7 +12,26 @@ body{
     margin-bottom: 40px ;
     background-color: white;
     border-radius: 1%;
+} */
+
+.formDosagem{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 130px;
+    margin-bottom: 40px ;
+    background-color: white;
+    border-radius: 1%;
+    margin-left: 25%;
+
+    padding: 1rem;
+    border-radius: 10px;
+    min-width: 30%;
+    overflow: auto;
+    margin-top: 10%;
 }
+
 .conteudo{
     display: flex;
     justify-content: center;
@@ -22,9 +41,9 @@ body{
 body {
     font-family: 'Open Sans', sans-serif;
 }
-h1{
-    margin-left: 35%;
-}
+/* h1{
+    margin-left: 25%;
+} */
 
 /* Classe para estilo "bold"
 .bold {
@@ -173,7 +192,7 @@ select {
     margin-bottom: 50px;
 }
 #botao-calculardosagem{
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
 .containerOculto{
