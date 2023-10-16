@@ -1,0 +1,80 @@
+.content-img img{
+     width: 100%;
+     margin-top: 20%;
+
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.slider {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slide {
+    width: 100%;
+    display: none;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Style da div animada */
+.content-animated{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.animated-div{
+  width: 100%;  /* Largura da div */
+  height: 0;  /* Altura inicial da div */
+  background-color: #6E21D0;   /* Cor de fundo da div */
+  position: absolute;   /* Posicionamento da div */
+  bottom: 0; /* Posicionamento da div */
+  left: 50%;   /* Centralizar a div */
+  transform: translateX(-50%); /* Centralizar a div */
+  border-top-left-radius: 15%;  /* Arredondamento dos cantos */
+  border-top-right-radius: 15%; /* Arredondamento dos cantos */
+  transition: height 1.5s ease-in-out; /* Tempo da animação */
+}
+
+/* Conteudo da div animada  */
+
+
+.animated-div-content-text {
+  display: flex;
+  flex-direction: column;
+  margin: 10px; /* Espaçamento entre os elementos */
+  text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+.animated-div-content-text h2{
+  margin-top: 11%;
+  color: white;
+  font-size: 300%;
+
+
+}
+.animated-div-content-text p{
+  color: white;
+  font-size: 140%;
+}
+
+.animated-div-content-button {
+  text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+.animated-div-content-button button{
+
+  width: 40%;
+  background-color: #FBCC61;
+  border-radius: 300px; /* Define as bordas arredondadas */
+  color: white; /* Define a cor do texto como branco */
+  text-align: center; /* Centraliza o texto horizontalmente */
+  font-size: 30px;
+
+  padding: 10px; /* Adiciona espaço interno ao botão para melhor aparência */
+  margin-top: 10%; /* Define um espaçamento superior para separá-lo dos outros elementos */
+}
