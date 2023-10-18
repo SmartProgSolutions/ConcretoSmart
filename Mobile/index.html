@@ -13,42 +13,58 @@
 
 </head>
 <body>
-    <div class="content-img">
-        <div class="slider">
-            <div><img src="assets/img/conversa_cliente_engenheiro.png" alt="Imagem 1"></div>
-            <div><img src="assets/img/enginner.png" alt="Imagem 2"></div>
-            <div><img src="assets/img/vetor.png" alt="Imagem 3"></div>
+    <div class="content">
+
+        <div class="content-img">
+            <div class="slider">
+                <div><img src="assets/img/conversa_cliente_engenheiro.png" alt="Imagem 1"></div>
+                <div><img src="assets/img/enginner.png" alt="Imagem 2"></div>
+                <div><img src="assets/img/vetor.png" alt="Imagem 3"></div>
+            </div>
+            
+
+            <!-- <div class="slider-counter">
+                <span class="current-slide">1</span>/<span class="total-slides">3</span>
+            </div> -->
+            
         </div>
-        
-        <div class="slider-counter">
-            <span class="current-slide">1</span>/<span class="total-slides">3</span>
+
+        <!--  Div que sobe no abrir do App-->
+        <div class="content-animated">
+            <div class="animated-div">
+
+                    <div class="animated-div-content-text">
+                        <h2 class="title">Seja bem vindo!</h2>
+
+                        <p class="texto">   
+                             Conheça o nosso aplicativo e veja como podemos te ajudar.
+                            pelos URLs das suas próprias imagens. Você pode personalizar ainda 
+                            mais o slider ajustando as opções do Slick Slider de acordo com suas necessidades.
+                        </p>
+                    </div>
+                    
+                    <a href="https://servicesmobile.vercel.app/">
+
+                        <div class="animated-div-content-button">
+                            <button >Começar</button>
+                        </div>
+
+                    </a>
+
+            </div>
         </div>
     </div>
 
-    <!--  Div que sobe no abrir do App-->
-    <div class="content-animated">
-        <div class="animated-div">
 
-                <div class="animated-div-content-text">
-                    <h2>Seja bem vindo!</h2>
-                    <p>     Conheça o nosso aplicativo e veja como podemos te ajudar.
-                        pelos URLs das suas próprias imagens. Você pode personalizar ainda 
-                        mais o slider ajustando as opções do Slick Slider de acordo com suas necessidades.
-                    </p>
-                </div>
-                
-                <div class="animated-div-content-button">
-                    <button >Começar</button>
-                </div>
-
-        </div>
-    </div>
+    
 
 
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/script.js"></script>
+
+    <script src="./assets/js/slider_counter.js"></script>
 
     <!-- Adicione o JavaScript do Slick Slider, que faz subir a div de apresentação -->
     <script src="./assets/js/animated.js"></script>

@@ -3,30 +3,37 @@
      margin-top: 20%;
 
 }
+
 body{
   font-family: Arial, Helvetica, sans-serif;
 }
-.slider {
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .slide {
-    width: 100%;
-    display: none;
-  }
-  
-  img {
-    width: 100%;
-    height: auto;
-  }
 
-  /* Style da div animada */
-.content-animated{
-  margin: 0;
-  padding: 0;
+.content-img{
+  height: 40vh;
+}
+
+.slider {
+  width: 100%;
   overflow: hidden;
 }
+
+.slide {
+  width: 100%;
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style da div animada */
+.content-animated{
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
 .animated-div{
   width: 100%;  /* Largura da div */
   height: 0;  /* Altura inicial da div */
@@ -51,15 +58,16 @@ body{
 }
 
 .animated-div-content-text h2{
-  margin-top: 11%;
+  /* margin-top: 11%; */
   color: white;
-  font-size: 300%;
+  font-size: 190%;
 
 
 }
+
 .animated-div-content-text p{
   color: white;
-  font-size: 140%;
+  font-size: 90%;
 }
 
 .animated-div-content-button {
@@ -68,13 +76,18 @@ body{
 
 .animated-div-content-button button{
 
-  width: 40%;
-  background-color: #FBCC61;
+  width: 30%;
+  background-color: #F19B68;
   border-radius: 300px; /* Define as bordas arredondadas */
   color: white; /* Define a cor do texto como branco */
   text-align: center; /* Centraliza o texto horizontalmente */
-  font-size: 30px;
+  margin-top: 5%;
+  font-size: 25px;
 
-  padding: 10px; /* Adiciona espaço interno ao botão para melhor aparência */
-  margin-top: 10%; /* Define um espaçamento superior para separá-lo dos outros elementos */
+/*   padding: 10px; Adiciona espaço interno ao botão para melhor aparência */
+  /* margin-top: 10%; Define um espaçamento superior para separá-lo dos outros elementos */
 }
+.hidden{
+  display: none;
+}
+
