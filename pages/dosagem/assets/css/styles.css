@@ -31,7 +31,7 @@ body{
 /* Se [largura do dispositivo] for menor ou igual a 768px, então execute o {...} */
 @media (max-width: 768px) {
     .formDosagem {
-      color: #ff0000; /* elemento que vai ser modificado/adicionado/sobrescrito nessa resolução */
+      color: #000000; /* elemento que vai ser modificado/adicionado/sobrescrito nessa resolução */
       width: 100%;
     }
   }
@@ -40,7 +40,7 @@ body{
 
 @media (max-width: 768px) and (min-width: 600px) {
     .formDosagem {
-    color: #32ff09; /* elemento que vai ser modificado/adicionado/sobrescrito nessa resolução */
+    color: #000000; /* elemento que vai ser modificado/adicionado/sobrescrito nessa resolução */
     width: 80%;
   }
 }
@@ -48,7 +48,7 @@ body{
   /* Se [largura do dispositivo] for maior ou igual a 768px, então execute o {...} */
 @media (min-width: 768px) {
   .formDosagem {
-    color: #1e00fd; /* elemento que vai ser modificado/adicionado/sobrescrito nessa resolução */
+    color: #000000; /* elemento que vai ser modificado/adicionado/sobrescrito nessa resolução */
     width: 40%;
   }
 }
@@ -185,14 +185,16 @@ select {
 }
 
 .div-descricao{
-    background-color: red;
+    /* background-color: red; */
+    background-color: #E6E6E6;
     height: 50px;
     width: 33%
 }
 
 .div-quantidade{
     
-    background-color: rgb(0, 255, 4); 
+    /* background-color: rgb(0, 255, 4);  */
+    background-color: #E6E6E6;
     height: 50px;
     width: 33%;
     display: flex;
@@ -202,7 +204,8 @@ select {
 
 }
 .div-unidade{
-    background-color: rgb(200, 255, 0); 
+    /* background-color: rgb(200, 255, 0);  */
+    background-color: #E6E6E6;
     height: 50px;
     width: 33%;
     display: flex;
@@ -226,3 +229,82 @@ select {
 }
 
 /* Tentando tornar o formulario de dosagem responsivo  */
+
+
+
+
+
+/* Pop Op */
+
+.button-popup {
+    font-size: 1em;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #06D85F;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  .button-popup:hover {
+    background: #06D85F;
+  }
+  
+  .overlay {
+    position: fixed;
+    padding-top: 200px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 2s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content-popup {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
