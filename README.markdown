@@ -3,8 +3,6 @@
 
   &#xa0;
 
-
-
   <a href="https://concretosmart.vercel.app/">Demo</a>
 </div>
 
