@@ -1,7 +1,8 @@
 /.github
 /.vite
 /README.markdown
-/assets
+# /assets
+
 /components
 /includes
 /index.html
