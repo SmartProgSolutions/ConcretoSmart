@@ -1,0 +1,75 @@
+/*------------------------------*/
+/* Accordion Widget
+/*------------------------------*/
+
+.meafe-accordion .meafe-accordion-list{
+  margin-bottom: 15px;
+}
+.meafe-accordion .meafe-accordion-list:last-of-type{
+  margin-bottom: 0;
+}
+.meafe-accordion .meafe-accordion-header{
+  padding: 16px 30px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  background: none;
+  border: 1px solid rgba(0,0,0,0.05);
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.meafe-accordion .meafe-accordion-header:focus{
+  outline: none;
+}
+.meafe-accordion .meafe-accordion-header:hover,
+.meafe-accordion .meafe-accordion-header.active{
+  background: rgba(53,118,212,0.24);
+  border-color: rgba(53,118,212,0.1);
+}
+.meafe-accordion .meafe-accordion-header{
+  padding-left: 66px;
+  position: relative;
+}
+.meafe-accordion .meafe-accordion-header .blsm-default-icon,
+.meafe-accordion .meafe-accordion-header .blsm-active-icon{
+  position: absolute;
+  top: 16px;
+  left: 33px;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.meafe-accordion .meafe-accordion-header .blsm-active-icon{
+  opacity: 0;
+  visibility: hidden;
+}
+.meafe-accordion .meafe-accordion-header.active .blsm-default-icon{
+  visibility: hidden;
+  opacity: 0;
+}
+.meafe-accordion .meafe-accordion-header.active .blsm-active-icon{
+  visibility: visible;
+  opacity: 1;
+}
+.meafe-accordion .meafe-accordion-list .meafe-accordion-content {
+  display: none;
+  border: 1px solid #eee;
+  padding: 30px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 2.125;
+  font-weight: 400;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+.meafe-accordion .meafe-accordion-list .meafe-accordion-content p {
+  margin: 0;
+  line-height: inherit;
+}
+.meafe-accordion .meafe-accordion-list .meafe-accordion-content.active {
+  display: block;
+}

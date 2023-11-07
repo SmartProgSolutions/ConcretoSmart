@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+button {
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+.meafe--tabs--wrapper .tab-button.active svg path {
+    fill: #fff;
+}
+
+.meafe--tabs--wrapper .meafe-tabs-button-wrapper {
+    display: block;
+    width: 23%;
+}
+
+.meafe--tabs--wrapper.layout-1 {
+    display: flex;
+}
+
+.meafe--tabs--wrapper.layout-1 .menu .tab-button span {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+.meafe--tabs--wrapper .menu .tab-button {
+    padding: 12px 15px 13px 15px;
+    color: #161616;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.meafe--tabs--wrapper .menu .tab-button a {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.meafe--tabs--wrapper .menu .tab-button a svg {
+    vertical-align: middle;
+}
+
+.meafe--tabs--wrapper .menu .tab-button span {
+    margin-right: 19px;
+}
+
+.meafe--tabs--wrapper .menu .tab-button.active a {
+    color: #ffffff;
+}
+
+.meafe--tabs--wrapper .meafe-tabs-content .meafe--content--wrapper {
+    font-size: 16px;
+    line-height: 1.6875;
+}
+
+.meafe--tabs--wrapper .meafe-tabs-content {
+    display: flex;
+    grid-gap: 30px;
+}
+
+.meafe--tabs--wrapper .meafe-tabs-content .image-wrapper {
+    width: 50%;
+}
+
+.meafe--tabs--wrapper .meafe--content--wrapper {
+    flex: 60%;
+}
+
+.meafe--tabs--wrapper .menu div.active {
+    color: #fff;
+    background-color: #161616;
+}
+
+.meafe--tabs--wrapper div.nacc {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.meafe--tabs--wrapper div.nacc .nacc--wrapper {
+    display: none;
+    border-left: 3px solid #f3f3f3;
+    padding-left: 30px;
+    list-style: none;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.meafe--tabs--wrapper div.nacc .nacc--wrapper.active {
+    transition-delay: 0.3s;
+    z-index: 2;
+    display: block;
+}
+
+
+/* Layout 2  */
+
+.meafe--tabs--wrapper.layout-2 .tab-button {
+    text-align: center;
+}
+
+.meafe--tabs--wrapper.layout-2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.meafe--tabs--wrapper.layout-2 .meafe-tabs-content {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.meafe--tabs--wrapper.layout-2 div.nacc .nacc--wrapper {
+    padding-left: 0;
+    border-left: 0;
+    border-right: 3px solid #f3f3f3;
+}
+
+.meafe--tabs--wrapper.layout-2 .menu .tab-button a span svg path {
+    fill: #121212;
+}
+
+.meafe--tabs--wrapper.layout-2 .meafe--content--wrapper {
+    margin-right: 30px;
+}
+
+.meafe--tabs--wrapper.layout-2 .menu div.active {
+    background-color: transparent;
+    color: #161616;
+    border-left: 3px solid #121212;
+}
+
+.meafe--tabs--wrapper.layout-2 .menu .tab-button.active a {
+    color: #121212;
+}
+
+.meafe--tabs--wrapper.layout-2 .menu .tab-button.active a span svg path {
+    fill: #121212;
+}
+
+
+/* Layout-3 */
+
+.meafe--tabs--wrapper.layout-3 .meafe-tabs-button-wrapper {
+    width: 100%;
+}
+
+.meafe--tabs--wrapper.layout-3 .menu .tab-button {
+    padding: 12px 77px;
+}
+
+.meafe--tabs--wrapper.layout-3 .meafe-content--wrapper {
+    margin: 30px 0 0;
+}
+
+.meafe--tabs--wrapper.layout-3 .menu.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    grid-gap: 15px;
+}
+
+.meafe--tabs--wrapper.layout-3 .menu.button-group .tab-button:not(:last-child) {
+    margin-right: 30px;
+}
+
+.meafe--tabs--wrapper.layout-3 div.nacc .nacc--wrapper {
+    padding-left: 0;
+    border-left: 0;
+}
+
+.meafe-content--wrapper {
+    flex: 1;
+}
+
+.meafe--tabs--wrapper.layout-3 .meafe-tabs-content {
+    flex-direction: row-reverse;
+}
+
+
+/* Place items according to the selection */
+
+.meafe--tabs--wrapper.layout-2 .tab-button span {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.meafe--tabs--wrapper .button-group .tab-button {
+    display: flex;
+    align-items: center;
+}
+
+.button-group.place-right .tab-button {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.meafe--tabs--wrapper .button-group.place-top .tab-button {
+    flex-direction: column;
+}
+
+.meafe--tabs--wrapper .button-group.place-bottom .tab-button {
+    flex-direction: column-reverse;
+}
+
+.meafe--tabs--wrapper .button-group.place-bottom .tab-button span,
+.meafe--tabs--wrapper .button-group.place-top .tab-button span {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.meafe--tabs--wrapper.layout-3 .tab-button span {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+@media only screen and (max-width: 1199px) {
+    .meafe--tabs--wrapper .meafe-tabs-content {
+        flex-direction: column;
+    }
+    .meafe--tabs--wrapper.layout-2 .meafe-tabs-content {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .meafe--tabs--wrapper.layout-1 {
+        display: block;
+    }
+
+    .meafe--tabs--wrapper .meafe-tabs-content .image-wrapper {
+        width: 100%;
+    }
+    .meafe--tabs--wrapper .meafe-tabs-button-wrapper {
+        width: 100%;
+    }
+    .meafe--tabs--wrapper.layout-1 .meafe-content--wrapper {
+        text-align: center;
+    }
+    /* Layout-2 */
+    .meafe--tabs--wrapper.layout-2 {
+        flex-direction: column;
+    }
+    .meafe--tabs--wrapper.layout-2 .meafe--content--wrapper {
+        margin-right: 0;
+    }
+    /* Layout-3 */
+    .meafe--tabs--wrapper.layout-3 .meafe-tabs-button-wrapper {
+        display: block;
+    }
+    .meafe--tabs--wrapper.layout-3 .tab-button {
+        text-align: center;
+    }
+    .meafe--tabs--wrapper .tab-button:not(:last-child) {
+        margin-bottom: 12px;
+    }
+    .meafe--tabs--wrapper.layout-3 .menu.button-group {
+        display: block;
+    }
+    .meafe--tabs--wrapper.layout-3 .menu.button-group .tab-button:not(:last-child) {
+        margin-right: 0;
+    }
+    .meafe--tabs--wrapper.layout-2 .meafe-tabs-content {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 40px;
+    }
+    .meafe--tabs--wrapper.layout-2 div.nacc .nacc--wrapper {
+        border: 0;
+    }
+    .meafe--tabs--wrapper div.nacc .nacc--wrapper {
+        padding-left: 0;
+        border: 0;
+    }
+    .meafe--tabs--wrapper.layout-3 .meafe-tabs-content {
+        flex-direction: column-reverse;
+    }
+    .meafe--tabs--wrapper.layout-3 .meafe-content--wrapper {
+        text-align: center;
+    }
+}

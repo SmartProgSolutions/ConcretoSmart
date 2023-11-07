@@ -1,0 +1,123 @@
+/*------------------------------*/
+/* About Widget
+/*------------------------------*/
+
+.elementor-widget-meafe-about .meafe-grid-post-holder{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.elementor-widget-meafe-about.meafe-media-align-right .meafe-grid-post-holder{
+    -webkit-flex-flow: row-reverse;
+    -ms-flex-flow: row-reverse;
+    flex-flow: row-reverse;
+}
+.elementor-widget-meafe-about .meafe-grid-post-holder .meafe-entry-media{
+    width: 43%
+}
+.elementor-widget-meafe-about .meafe-grid-post-holder .meafe-entry-media + .meafe-grid-post-holder-inner{
+    width: 57%;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+.elementor-widget-meafe-about.meafe-media-align-right .meafe-grid-post-holder .meafe-grid-post-holder-inner{
+   padding-left: 0;
+   padding-right: 10%;
+}
+.elementor-widget-meafe-about .meafe-entry-header{
+    display: block;
+}
+.elementor-widget-meafe-about .meafe-entry-content{
+    display: block;
+    margin-top: 30px;
+}
+.elementor-widget-meafe-about .meafe-entry-subtitle{
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    background: rgba(0,0,0,0.03);
+    padding: 5px 10px;
+    display: inline-block;
+}
+.elementor-widget-meafe-about .meafe-entry-title{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.35;
+    margin: 10px 0 0;
+}
+.elementor-widget-meafe-about .meafe-entry-title a{
+    color: #000;
+}
+.elementor-widget-meafe-about .meafe-grid-post-excerpt p{
+    font-size: 18px;
+    line-height: 1.7778;
+    font-weight: 400;
+    color: rgba(49,49,49,0.85);
+    display: block;
+    width: 100%;
+}
+.elementor-widget-meafe-about .meafe-grid-post-excerpt .meafe-about-elements-readmore-btn{
+    display: inline-block;
+    font-size: 16px;
+    padding: 12px 70px;
+    color: #FFF;
+    background: #000;
+    margin-top: 40px;
+}
+.meafe-about-content-align-left .meafe-entry-wrapper{
+    text-align: left;
+}
+.meafe-about-content-align-center .meafe-entry-wrapper{
+    text-align: center;
+}
+.meafe-about-content-align-right .meafe-entry-wrapper{
+    text-align: right;
+}
+.meafe-about-content-align-justify .meafe-entry-wrapper{
+    text-align: justify;
+}
+
+/*Responsive Styles*/
+@media only screen and (max-width: 768px){
+    .elementor-widget-meafe-about .meafe-grid-post-holder .meafe-grid-post-holder-inner{
+        padding-left: 60px;
+        padding-right: 30px;
+    }
+    .elementor-widget-meafe-about.meafe-media-align-right .meafe-grid-post-holder .meafe-grid-post-holder-inner{
+        padding-right: 60px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .elementor-widget-meafe-about.meafe-media-align-right .meafe-grid-post-holder{
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column;
+    }
+    .elementor-widget-meafe-about .meafe-grid-post-holder .meafe-grid-post-holder-inner{
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .elementor-widget-meafe-about.meafe-media-align-right .meafe-grid-post-holder .meafe-grid-post-holder-inner{
+        padding-right: 0;
+        width: 100%;
+    }
+    .elementor-widget-meafe-about .meafe-grid-post-holder .meafe-entry-media{
+        width: 100%;
+    }
+    .elementor-widget-meafe-about .meafe-grid-post-excerpt a{
+        margin-top: 30px;
+    }
+    .elementor-widget-meafe-about .meafe-entry-content{
+        margin-top: 20px;
+    }
+
+}

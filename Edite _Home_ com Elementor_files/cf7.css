@@ -1,0 +1,45 @@
+/*------------------------------*/
+
+
+/* Contact Form 7 Widget
+/*------------------------------*/
+
+.elementor-widget-meafe-cf7 button:hover,
+.elementor-widget-meafe-cf7 input[type="button"]:hover,
+.elementor-widget-meafe-cf7 input[type="reset"]:hover,
+.elementor-widget-meafe-cf7 input[type="submit"]:hover {
+    text-decoration: none;
+}
+
+.elementor-widget-meafe-cf7 .wpcf7-form-control.wpcf7-file,
+.elementor-widget-meafe-cf7 .wpcf7-form-control.wpcf7-acceptance {
+    border-color: transparent !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.elementor-widget-meafe-cf7 .wpcf7-form-control.wpcf7-submit {
+    width: 100%;
+}
+
+form.meafe-cf7-form.break-column {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+form.meafe-cf7-form.break-column p {
+    padding: 0 15px;
+}
+
+form.meafe-cf7-form.break-column p,
+form.meafe-cf7-form.break-column p input {
+    width: 100%;
+}
+
+@media only screen and (min-width:768px) {
+    form.meafe-cf7-form.break-column p:nth-last-child(4),
+    form.meafe-cf7-form.break-column p:nth-last-child(5) {
+        width: 50%;
+    }
+}

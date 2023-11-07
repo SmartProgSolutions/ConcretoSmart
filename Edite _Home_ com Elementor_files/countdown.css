@@ -1,0 +1,52 @@
+/*------------------------------*/
+/* Countdown Widget
+/*------------------------------*/
+.meafe-countdown-main .pre_countdown-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.meafe-countdown-main .pre_countdown-row *{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.meafe-countdown-main .pre_countdown-section{
+    /*display: inline-block;*/
+    position: relative;
+    background: rgba(53,118,212, 0.02);
+    padding: 28px 56px;
+    margin: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.meafe-countdown-main .pre-countdown_separator {
+    position: absolute;
+    top: 50%;
+    right: -27px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.meafe-countdown-main .pre_countdown-section:last-child .pre-countdown_separator {
+    display: none;
+}
+.meafe-countdown-main .pre_countdown-amount{
+    display: block;
+    text-align: center;
+    background: none !important;
+    font-size: 36px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: #000000;
+}
+.meafe-countdown-main .pre_countdown-period{
+    display: block;
+    text-align: center;
+    font-size: 19px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: #606060;
+}

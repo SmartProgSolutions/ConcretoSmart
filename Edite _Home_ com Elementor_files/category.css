@@ -1,0 +1,105 @@
+/*------------------------------*/
+/* Category Widget
+/*------------------------------*/
+.meafe-post-grid-container:not(.col-1) .meafe-categories-wrap {
+    overflow: hidden;
+}
+
+.meafe-post-grid-container .meafe-categories-meta-wrap {
+	margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.meafe-post-grid-container:not(.col-1) .meafe-categories-meta-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1.5%;
+}
+
+.meafe-post-grid-container:not(.col-1) .meafe-categories-meta-wrap li {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+.meafe-post-grid-container ul.meafe-categories-meta-wrap li {
+	margin: 0 0 40px 0;
+}
+
+.col-2 .meafe-categories-meta-wrap li {
+    width: 50%;
+}
+
+.col-3 .meafe-categories-meta-wrap li {
+    width: 33.33%;
+}
+
+.col-4 .meafe-categories-meta-wrap li {
+    width: 25%;
+}
+
+.col-5 .meafe-categories-meta-wrap li {
+    width: 20%;
+}
+
+.col-6 .meafe-categories-meta-wrap li {
+    width: 16.66%;
+}
+
+.meafe-post-grid-container .meafe-categories-meta-wrap li a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.meafe-post-grid-container .meafe-categories-meta-wrap li a svg {
+    vertical-align: top;
+}
+
+.ba-category-one .meafe-categories-meta-wrap li .title-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: -webkit-linear-gradient(transparent, rgba(0,0,0,0.7));
+    background: -moz-linear-gradient(transparent, rgba(0,0,0,0.7));
+    background: -ms-linear-gradient(transparent, rgba(0,0,0,0.7));
+    background: -o-linear-gradient(transparent, rgba(0,0,0,0.7));
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    padding: 60px 30px 25px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ba-category-two .meafe-categories-meta-wrap li .title-wrapper {
+    padding-top: 20px;
+}
+
+.meafe-categories-meta-wrap li .title-wrapper .meafe-entry-title {
+    color: #000;
+    font-weight: 600;
+    font-size: 1.1112em;
+    display: block;
+    line-height: 1.5;
+}
+
+.ba-category-one .meafe-categories-meta-wrap li .title-wrapper .meafe-entry-title {
+	color: #fff;
+}
+
+.meafe-categories-meta-wrap li .title-wrapper .meafe-entry-meta {
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.ba-category-one .meafe-categories-meta-wrap li .title-wrapper .meafe-entry-meta {
+	color: #fff;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 10px;
+}
+
+.ba-category-two .meafe-categories-meta-wrap li .meafe-entry-title, 
+.ba-category-two .meafe-categories-meta-wrap li .meafe-entry-meta {
+    color: #000;
+}

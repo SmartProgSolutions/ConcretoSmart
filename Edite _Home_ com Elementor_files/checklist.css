@@ -1,0 +1,84 @@
+/*------------------------------*/
+/* Todo Widget
+/*------------------------------*/
+.elementor-widget-meafe-checklist .meafe-icon-list-items{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.elementor-widget-meafe-checklist .meafe-icon-list-items li{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.elementor-widget-meafe-checklist .meafe-icon-list-items:not(.enabled-divider) li {
+    margin-bottom: 15px;
+}
+.meafe-icon-list-items .meafe-icon-list-item a {
+    color: inherit;
+}
+.elementor-widget-meafe-checklist .meafe-icon-list-items li .meafe-icon-list-icon{
+    display: inline-block;
+    
+}
+.elementor-widget-meafe-checklist .meafe-icon-list-items li .meafe-icon-list-text{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    color: #141414;
+}
+
+.elementor-widget-meafe-checklist .meafe-icon-list-items li .meafe-icon-list-icon + .meafe-icon-list-text {
+    padding-left: 13px;
+}
+
+.meafe-icon-list-items .meafe-icon-list-item svg {
+    height: auto;
+    width: 15px;
+}
+
+.meafe-icon-list-items.icon-select {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.meafe-icon-list-items li::after {
+    display: block;
+}
+
+.meafe-icon-list-items.counter-select {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: bil-counter;
+}
+
+.meafe-icon-list-items.counter-select li {
+    display: block;
+    counter-increment: bil-counter;
+}
+
+.meafe-icon-list-items.counter-select li::before {
+    content: counter(bil-counter) ".";
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.meafe-align-center .meafe-icon-list-items {
+    text-align: center;
+}
+
+.meafe-align-center .meafe-icon-list-items li::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.meafe-align-right .meafe-icon-list-items {
+    text-align: right;
+}
+
+.meafe-align-right .meafe-icon-list-items li::after {
+    margin-left: auto;
+}

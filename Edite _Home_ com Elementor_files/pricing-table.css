@@ -1,0 +1,627 @@
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-container {
+    box-shadow: 0 3px 40px rgb(55 55 55 / 5%);
+    padding: 50px;
+    position: relative;
+}
+
+.meafe-pricing-table {
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s linear 0s;
+}
+
+.meafe-pricing-table .meafe-pricing-table-head {
+    padding: 0 0 22px 0;
+}
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-icon-wrap {
+    text-align: left;
+}
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-icon-wrap .meafe-pricing-table-icon {
+    display: block;
+    margin: 0 10px 20px 0;
+}
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-title {
+    color: #161616;
+    font-family: inherit;
+    font-size: 24px;
+    text-align: left;
+}
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-subtitle {
+    color: #A5A5A5;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 22px;
+    text-align: left;
+}
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table .meafe-pricing-table-price {
+    align-items: center;
+    color: #161616;
+    display: flex;
+    font-family: inherit;
+    font-size: 60px;
+    line-height: 1em;
+    margin: 0 0 38px 0;
+}
+
+.elementor-widget-meafe-pricing-table.meafe-pricing-table-price-duration-nowrap .meafe-pricing-table-price {
+    flex-flow: nowrap;
+}
+
+.elementor-widget-meafe-pricing-table.meafe-pricing-table-price-duration-wrap .meafe-pricing-table-price {
+    flex-flow: wrap;
+}
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-price-original {
+    color: #A5A5A5;
+    font-size: 16px;
+    text-decoration: line-through;
+    word-break: normal;
+}
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-price-prefix {
+    font-size: 24px;
+    margin-left: 10px;
+    top: -25px;
+}
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table .meafe-pricing-table-price-value {
+    display: flex;
+    margin-left: 5px;
+    word-break: normal;
+}
+
+.meafe-pricing-table-price-value .meafe-pricing-table-after-part {
+    font-size: 24px;
+    top: -25px;
+}
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-price-duration {
+    align-self: flex-end;
+    color: #A5A5A5;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    text-align: left;
+}
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-additional-info {
+    font-family: inherit;
+    font-size: 16px;
+    padding: 0 0 20px 0;
+    text-align: left;
+}
+
+.meafe-pricing-table-feature-content .meafe-pricing-table-fature-icon {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-features {
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.685;
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: left;
+}
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-features li {
+    border-bottom: 1px dashed transparent;
+    line-height: 1.3;
+    position: relative;
+    width: auto;
+    display: inline-block;
+    transition: border ease .2s;
+}
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-features li:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-features .meafe-pricing-table-tooptip:hover .meafe-pricing-table-feature-text,
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-features .meafe-pricing-table-tooptip:focus .meafe-pricing-table-feature-text {
+    border-bottom: 1px dotted #000000;
+}
+
+.meafe-pricing-table .meafe-pricing-table-footer {
+    padding: 20px 0 0 0;
+    text-align: left;
+}
+
+.elementor-widget-meafe-pricing-table .elementor-button {
+    background-color: #5081F5;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 16px 39px 17px 39px;
+    text-decoration: none;
+}
+
+
+/*** Tooltip ****/
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-features .meafe-pricing-table-tooptip {
+    cursor: pointer;
+}
+
+.meafe-tooltip {
+    display: none;
+    position: absolute;
+    min-width: 50px;
+    max-width: 200px;
+    min-height: 16px;
+    max-height: 200px;
+    z-index: 3000;
+    font-size: 14px;
+    opacity: 0.01;
+    transition: top 0.2s ease, opacity 0.3s ease;
+}
+
+.meafe-tooltip .meafe-tooltip-content {
+    background-color: #5081F5;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
+
+.meafe-tooltip .meafe-tooltip-callout {
+    position: absolute;
+}
+
+.meafe-tooltip .meafe-tooltip-callout:before,
+.meafe-tooltip .meafe-tooltip-callout:after {
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.meafe-tooltip.tt-top .meafe-tooltip-callout:before {
+    top: 100%;
+}
+
+.meafe-tooltip.tt-top .meafe-tooltip-callout:after {
+    top: 100%;
+    border-color: transparent;
+    border-top-color: #5081F5;
+    border-width: 5px;
+    left: 50%;
+    margin-left: -5px;
+}
+
+.meafe-tooltip.tt-bottom .meafe-tooltip-callout:before {
+    bottom: 100%;
+}
+
+.meafe-tooltip.tt-bottom .meafe-tooltip-callout:after {
+    bottom: 100%;
+    border-color: transparent;
+    border-bottom-color: #5081F5;
+    border-width: 5px;
+    left: 50%;
+    margin-left: -5px;
+}
+
+.meafe-tooltip.tt-left .meafe-tooltip-callout:before {
+    left: 100%;
+}
+
+.meafe-tooltip.tt-left .meafe-tooltip-callout:after {
+    left: 100%;
+    border-color: transparent;
+    border-left-color: #5081F5;
+    border-width: 5px;
+    top: 50%;
+    margin-top: -5px;
+}
+
+.meafe-tooltip.tt-right .meafe-tooltip-callout:before {
+    right: 100%;
+}
+
+.meafe-tooltip.tt-right .meafe-tooltip-callout:after {
+    right: 100%;
+    border-color: transparent;
+    border-right-color: #5081F5;
+    border-width: 5px;
+    top: 50%;
+    margin-top: -5px;
+}
+
+
+/* Ribbon Design */
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-ribbon .meafe-pricing-table-ribbon-inner {
+    background-color: #161616;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 13px 25px;
+    width: fit-content;
+}
+
+
+/* Right ribbon */
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-ribbon-right .meafe-pricing-table-ribbon-inner {
+    position: absolute;
+    transform: rotateZ( 270deg);
+    transform-origin: right top;
+    top: -9px;
+    right: 47px;
+}
+
+
+/* Left ribbon */
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-ribbon-left .meafe-pricing-table-ribbon-inner {
+    position: absolute;
+    transform: rotateZ(270deg) translateX(-100%);
+    transform-origin: top left;
+    top: -9px;
+    left: 0px;
+}
+
+
+/* Center ribbon */
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-ribbon-center .meafe-pricing-table-ribbon-inner {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: -23px;
+    right: 0;
+    z-index: 99;
+}
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-ribbon-center .meafe-pricing-table-ribbon-title {
+    display: inline;
+}
+
+
+/* Text align Center */
+
+.meafe-pricing-table-align-center.elementor-widget-meafe-pricing-table .meafe-pricing-table-icon-wrap,
+.meafe-pricing-table-align-center.elementor-widget-meafe-pricing-table .meafe-pricing-table-subtitle,
+.meafe-pricing-table-align-center.elementor-widget-meafe-pricing-table .meafe-pricing-table-title,
+.meafe-pricing-table-align-center.meafe-pricing-table-price-duration-wrap .meafe-pricing-table-price-duration,
+.meafe-pricing-table-align-center.elementor-widget-meafe-pricing-table .meafe-pricing-table .meafe-pricing-table-footer {
+    text-align: center;
+}
+
+.meafe-pricing-table-align-center.elementor-widget-meafe-pricing-table .meafe-pricing-table .meafe-pricing-table-price {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.meafe-pricing-table-align-center.elementor-widget-meafe-pricing-table .meafe-pricing-table-features {
+    display: inline-grid;
+    column-count: 1;
+    list-style: none;
+    position: relative;
+    text-align: left;
+    padding: 0;
+}
+
+
+/***** Text align right****/
+
+.meafe-pricing-table-align-right.elementor-widget-meafe-pricing-table .meafe-pricing-table-icon-wrap,
+.meafe-pricing-table-align-right.elementor-widget-meafe-pricing-table .meafe-pricing-table-subtitle,
+.meafe-pricing-table-align-right.elementor-widget-meafe-pricing-table .meafe-pricing-table-title,
+.meafe-pricing-table-align-right.meafe-pricing-table-price-duration-wrap .meafe-pricing-table-price-duration,
+.meafe-pricing-table-align-right.elementor-widget-meafe-pricing-table .meafe-pricing-table .meafe-pricing-table-footer,
+.meafe-pricing-table-align-right.elementor-widget-meafe-pricing-table .meafe-pricing-table,
+.meafe-pricing-table-align-right .meafe-pricing-table-features .meafe-pricing-table-additional-info {
+    text-align: right;
+}
+
+.meafe-pricing-table-align-right .meafe-pricing-table-price-wrap .meafe-pricing-table-price {
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.meafe-pricing-table-align-right.elementor-widget-meafe-pricing-table .meafe-pricing-table-features {
+    display: inline-grid;
+    column-count: 1;
+    list-style: none;
+    position: relative;
+    text-align: right;
+    padding: 0;
+}
+
+.meafe-pricing-table-align-right.elementor-widget-meafe-pricing-table .meafe-pricing-table-tooptip::after {
+    left: 0;
+    text-align: center;
+}
+
+
+/***** Pricing Layout Two ********/
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-container.layout-2 {
+    padding: 50px 0;
+}
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-container.layout-2 .meafe-pricing-table-ribbon {
+    display: none;
+}
+
+.meafe-pricing-table-container.layout-2 .meafe-pricing-table-price-title-wrap {
+    align-items: center;
+    border-bottom: 1px solid #F3F3F3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 40px 30px;
+    position: relative;
+    width: 100%;
+}
+
+.meafe-pricing-table-container.layout-2 .meafe-pricing-table-head {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    position: relative;
+}
+
+.elementor-widget-meafe-pricing-table .layout-2 .meafe-pricing-table-price-prefix,
+.elementor-widget-meafe-pricing-table .layout-2 .meafe-pricing-table-after-part {
+    font-size: 12px;
+}
+
+.elementor-widget-meafe-pricing-table .layout-2 .meafe-pricing-table-price {
+    font-size: 30px;
+    line-height: 1em;
+    margin: 0;
+}
+
+.elementor-widget-meafe-pricing-table .layout-2 .meafe-pricing-table-subtitle {
+    padding: 25px 40px 0;
+    margin: 0;
+}
+
+.elementor-widget-meafe-pricing-table .layout-2 .meafe-pricing-table-features,
+.elementor-widget-meafe-pricing-table .layout-2 .meafe-pricing-table-footer {
+    padding: 0 40px 0;
+}
+
+
+/***** Pricing Layout Three ********/
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-container.layout-3 {
+    margin-top: 40px;
+    padding: 50px 40px;
+}
+
+.elementor-widget-meafe-pricing-table .layout-3 .meafe-pricing-table-head {
+    display: flex;
+    position: relative;
+}
+
+.elementor-widget-meafe-pricing-table .layout-3 .meafe-pricing-table-title,
+.elementor-widget-meafe-pricing-table .layout-3 .meafe-pricing-table-subtitle {
+    text-align: left;
+}
+
+.elementor-widget-meafe-pricing-table .layout-3 .meafe-pricing-table-subtitle {
+    margin-top: 6px;
+}
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-container.layout-3 .meafe-pricing-table-ribbon {
+    display: none;
+}
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-container.layout-3 .meafe-pricing-table-price-wrap {
+    display: flex;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 100%;
+    margin-top: -40px;
+    text-align: center;
+    width: 100%;
+}
+
+.elementor-widget-meafe-pricing-table .layout-3 .meafe-pricing-table-price {
+    background: #5183f526;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 30px;
+    padding: 5px 10px;
+    margin: 0;
+    vertical-align: middle;
+    width: auto;
+}
+
+.elementor-widget-meafe-pricing-table .layout-3 .meafe-pricing-table-price-prefix,
+.elementor-widget-meafe-pricing-table .layout-3 .meafe-pricing-table-after-part {
+    font-size: 12px;
+}
+
+.elementor-widget-meafe-pricing-table .layout-3 .meafe-pricing-table-price-duration {
+    font-size: 14px;
+}
+
+.meafe-pricing-table-align-center .meafe-pricing-table-container.layout-3 .meafe-pricing-table-price {
+    margin: 0 auto;
+}
+
+.meafe-pricing-table-align-right .layout-3 .meafe-pricing-table-head {
+    justify-content: flex-end;
+}
+
+.meafe-pricing-table-align-center .layout-3 .meafe-pricing-table-head {
+    justify-content: center;
+}
+
+.meafe-pricing-table-align-right .meafe-pricing-table-container.layout-3 .meafe-pricing-table-price {
+    margin-left: auto;
+}
+
+
+/***** Pricing Layout Four ********/
+
+.elementor-widget-meafe-pricing-table .meafe-pricing-table-container.layout-4 {
+    padding: 50px 40px;
+}
+
+.meafe-pricing-table-container.layout-4 .meafe-pricing-table-ribbon-inner {
+    padding: 5px 15px;
+}
+
+.meafe-pricing-table-container.layout-4 .meafe-pricing-table-ribbon-left .meafe-pricing-table-ribbon-inner {
+    transform: none;
+}
+
+.meafe-pricing-table-container.layout-4 .meafe-pricing-table-ribbon-center .meafe-pricing-table-ribbon-inner {
+    bottom: 95%;
+    top: auto;
+    margin-bottom: -1px;
+}
+
+.meafe-pricing-table-container.layout-4 .meafe-pricing-table-ribbon-right .meafe-pricing-table-ribbon-inner {
+    transform: none;
+    right: 0;
+}
+
+.meafe-pricing-table-container.layout-4 .meafe-pricing-table-head {
+    display: flex;
+    position: relative;
+}
+
+.meafe-pricing-table-align-center .meafe-pricing-table-container.layout-4 .meafe-pricing-table-head {
+    justify-content: center;
+}
+
+.meafe-pricing-table-align-right .meafe-pricing-table-container.layout-4 .meafe-pricing-table-head {
+    justify-content: flex-end;
+}
+
+.elementor-widget-meafe-pricing-table .layout-4 .meafe-pricing-table-subtitle {
+    margin-top: 6px;
+}
+
+
+/*********** Responsive ***********/
+
+@media screen and ( max-width: 1025px) {
+    .elementor-widget-meafe-pricing-table .meafe-pricing-table-container,
+    .meafe-pricing-table-container.layout-2 .meafe-pricing-table-price-title-wrap,
+    .elementor-widget-meafe-pricing-table .meafe-pricing-table-container.layout-2 .meafe-pricing-table-subtitle,
+    .elementor-widget-meafe-pricing-table .meafe-pricing-table-container.layout-2 .meafe-pricing-table-features,
+    .elementor-widget-meafe-pricing-table .meafe-pricing-table-container.layout-2 .meafe-pricing-table-footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and ( max-width: 767px) {
+    .elementor-widget-meafe-pricing-table .meafe-pricing-table-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .elementor-widget-meafe-pricing-table .meafe-pricing-table .meafe-pricing-table-price-value {
+        font-size: 40px;
+    }
+}
+
+
+/* Adding css for the bottom */
+
+.meafe-tooltip.tt-top {
+    transform: translateY(0);
+}
+
+.meafe-tooltip.meafe-tooltip-0b892f2.tt-bottom {
+    transform: translateY(0);
+}
+
+.elementor-widget-meafe-pricing-table.meafe-pricing-table-align-right .meafe-pricing-table-icon {
+    margin-left: auto;
+}
+
+.elementor-widget-meafe-pricing-table.meafe-pricing-table-align-center .meafe-pricing-table-icon {
+    margin: auto;
+}
+
+
+/* Tool tip size design  */
+
+.meafe-tooltip.meafe-tooltip-large {
+    width: 100%;
+}
+
+.meafe-tooltip.meafe-tooltip-small {
+    width: 25%;
+}
+
+.meafe-tooltip.meafe-tooltip-small .meafe-tooltip {
+    max-width: 100px;
+}
+
+
+/* Ribbon Style  */
+
+.meafe-pricing-table-ribbon.meafe-pricing-table-ribbon-2 .meafe-pricing-table-ribbon-inner {
+    border-radius: 50%;
+}
+
+.meafe-pricing-table-ribbon.meafe-pricing-table-ribbon-3 .meafe-pricing-table-ribbon-inner:after {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    bottom: 11.5px;
+    left: -27px;
+    border-left: 16px solid #F47530;
+    border-right: 16px solid #F47530;
+    border-top: 0 !important;
+    border-bottom: 24px solid transparent !important;
+    transform: rotate( 90deg);
+}
+
+.meafe-pricing-table-ribbon.meafe-pricing-table-ribbon-3.meafe-pricing-table-ribbon-center .meafe-pricing-table-ribbon-inner::before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    bottom: 11.5px;
+    left: 77px;
+    border-left: 16px solid #F47530;
+    border-right: 16px solid #F47530;
+    border-bottom: 24px solid transparent !important;
+    border-top: 0px !important;
+    transform: rotate( 270deg);
+}
+
+
+/* Size for the button Style  */
+
+.elementor-widget-meafe-pricing-table .elementor-button.elementor-size-xl {
+    width: 100%;
+}
+
+.elementor-widget-meafe-pricing-table .elementor-button.elementor-size-lg {
+    width: 80%;
+    margin: auto;
+}
+
+.elementor-widget-meafe-pricing-table .elementor-button.elementor-size-sm {
+    width: 50%;
+}

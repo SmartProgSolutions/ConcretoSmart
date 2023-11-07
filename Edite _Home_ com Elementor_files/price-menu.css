@@ -1,0 +1,341 @@
+.meafe-pricing-menu-wrapper {
+    clear: both;
+    position: relative;
+}
+
+.meafe-pricing-menu-wrapper .meafe-pricing-menu-wrap {
+    align-items: center;
+    display: flex;
+    flex-flow: nowrap;
+    padding: 20px 0;
+    position: relative;
+}
+
+.meafe-pricing-menu-wrapper .meafe-pricing-menu-head {
+    position: relative;
+}
+
+.meafe-pricing-menu-wrapper .meafe-pricing-menu-head .menu-image img {
+    border: 5px solid #F3F3F3;
+    border-radius: 100%;
+    position: relative;
+    width: 170px;
+}
+
+.meafe-pricing-menu-wrapper .meafe-pricing-menu-info {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.meafe-pricing-menu-wrapper .meafe-pricing-menu-info .meafe-pricing-menu-title {
+    clear: both;
+    color: #A5A5A5;
+    display: inline-flex;
+    margin: 0 0 20px 0;
+    position: relative;
+    width: 100%;
+}
+
+.meafe-pricing-menu-wrapper .meafe-pricing-menu-info .pricing-menu-title {
+    display: flex;
+    width: auto;
+}
+
+.meafe-pricing-menu-wrapper .meafe-pricing-menu-info .title {
+    color: #161616;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.375;
+    margin: 0;
+}
+
+.meafe-pricing-menu-wrapper .pricing-menu-title .menu-icon {
+    margin-left: 10px;
+}
+
+.meafe-pricing-menu-wrapper .pricing-menu-title .tag {
+    background: #5081F5;
+    border-radius: 20px;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin-left: 15px;
+    padding: 0px 15px;
+}
+
+.meafe-pricing-menu-info .menu-price {
+    color: #5081F5;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.6875;
+    width: auto;
+}
+
+.meafe-pricing-menu-info .menu-price .original-price {
+    color: #A5A5A5;
+    margin-right: 10px;
+    text-decoration: line-through;
+}
+
+.meafe-pricing-menu-wrapper .meafe-pricing-menu-content {
+    clear: both;
+    color: #161616;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.6875;
+    width: 85%;
+}
+
+.meafe-pricing-menu-title .divider {
+    display: block;
+    background: transparent;
+    border-bottom: 1px dashed #A5A5A5;
+    content: "";
+    top: -15px;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    width: 77%;
+    z-index: 1;
+}
+
+
+/***** Layout Two ****/
+
+.meafe-pricing-menu-wrapper.layout-2 .meafe-pricing-menu-wrap {
+    flex-flow: row-reverse;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.meafe-pricing-menu-wrapper.layout-2 .meafe-pricing-menu-head figure.menu-image {
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+
+/***** Layout Three ****/
+.meafe-pricing-menu-wrapper.layout-3 .meafe-pricing-menu-info .meafe-pricing-menu-title .pricing-menu-title:after {
+    display: none;
+}
+
+.meafe-pricing-menu-wrapper.layout-3 .meafe-pricing-menu-info .pricing-menu-title {
+    float: none;
+}
+
+.meafe-pricing-menu-wrapper.layout-3 .meafe-pricing-menu-content {
+    width: 100%;
+}
+
+.meafe-pricing-menu-wrapper.layout-3 .meafe-pricing-menu-info .menu-price {
+    float: none;
+    padding: 5px 0 0 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .meafe-pricing-menu-wrapper .meafe-pricing-menu-wrap {
+        align-items: flex-start;
+    }
+    .meafe-pricing-menu-title .divider {
+        display: none;
+    }
+    .meafe-pricing-menu-wrapper .meafe-pricing-menu-info .meafe-pricing-menu-title {
+        display: block;
+    }
+    .meafe-pricing-menu-wrapper .meafe-pricing-menu-info .pricing-menu-title {
+        float: none;
+    }
+    .meafe-pricing-menu-info .menu-price {
+        float: none;
+        padding: 10px 0 0;
+    }
+    .meafe-pricing-menu-wrapper .meafe-pricing-menu-info {
+        padding: 5px 0;
+    }
+    .meafe-pricing-menu-wrapper .meafe-pricing-menu-content {
+        width: 100%;
+    }
+}
+
+.meafe-pricing-menu-wrapper {
+    clear: both;
+    position: relative;
+}
+
+.meafe-pricing-menu-wrapper .meafe-pricing-menu-wrap {
+    align-items: center;
+    display: flex;
+    flex-flow: nowrap;
+    padding: 20px 0;
+    position: relative;
+}
+
+.meafe-pricing-menu-wrapper .meafe-pricing-menu-head {
+    position: relative;
+}
+
+.elementor .meafe-pricing-menu-wrapper .meafe-pricing-menu-head figure.menu-image {
+    margin: 0 20px 0 0;
+    overflow: hidden;
+}
+
+.meafe-pricing-menu-wrapper .meafe-pricing-menu-head .menu-image img {
+    border: 5px solid #F3F3F3;
+    border-radius: 100%;
+    position: relative;
+    width: 170px;
+}
+
+.meafe-pricing-menu-wrapper .meafe-pricing-menu-info {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.meafe-pricing-menu-wrapper .meafe-pricing-menu-info .meafe-pricing-menu-title {
+    clear: both;
+    color: #A5A5A5;
+    display: inline-block;
+    margin: 0 0 20px 0;
+    position: relative;
+    width: 100%;
+}
+
+.meafe-pricing-menu-wrapper .meafe-pricing-menu-info .pricing-menu-title {
+    display: flex;
+    float: left;
+    z-index: 1;
+}
+
+.meafe-pricing-menu-wrapper .meafe-pricing-menu-info .title {
+    color: #161616;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.375;
+    margin: 0;
+}
+
+.meafe-pricing-menu-wrapper .pricing-menu-title .menu-icon {
+    margin-left: 10px;
+}
+
+.meafe-pricing-menu-wrapper .pricing-menu-title .tag {
+    background: #5081F5;
+    border-radius: 20px;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin-left: 15px;
+    padding: 4px 15px;
+}
+
+.meafe-pricing-menu-info .menu-price {
+    color: #5081F5;
+    float: right;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.6875;
+}
+
+.meafe-pricing-menu-info .menu-price .original-price {
+    color: #A5A5A5;
+    margin-right: 10px;
+    text-decoration: line-through;
+}
+
+.meafe-pricing-menu-wrapper .meafe-pricing-menu-content {
+    clear: both;
+    color: #161616;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.6875;
+    width: 85%;
+}
+
+.meafe-pricing-menu-title .divider {
+    display: flex;
+    background: transparent;
+    border-bottom: 3px dashed #A5A5A5;
+    content: "";
+    top: 15px;
+    left: 15px;
+    position: relative;
+    width: auto;
+    z-index: 1;
+    margin: 0;
+    margin-right: 14%;
+}
+
+
+/***** Layout Two ****/
+
+.meafe-pricing-menu-wrapper.layout-2 .meafe-pricing-menu-wrap {
+    flex-flow: row-reverse;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.meafe-pricing-menu-wrapper.layout-2 .meafe-pricing-menu-head figure.menu-image {
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+
+/***** Layout Three ****/
+
+.meafe-pricing-menu-wrapper.layout-3 .meafe-pricing-menu-info .meafe-pricing-menu-title .pricing-menu-title:after {
+    display: none;
+}
+
+.meafe-pricing-menu-wrapper.layout-3 .meafe-pricing-menu-info .pricing-menu-title {
+    float: none;
+}
+
+.meafe-pricing-menu-wrapper.layout-3 .meafe-pricing-menu-content {
+    width: 100%;
+}
+
+.meafe-pricing-menu-wrapper.layout-3 .meafe-pricing-menu-info .menu-price {
+    float: none;
+    padding: 5px 0 0 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .meafe-pricing-menu-wrapper .meafe-pricing-menu-wrap {
+        align-items: flex-start;
+    }
+    .meafe-pricing-menu-title .divider {
+        display: none;
+    }
+    .meafe-pricing-menu-wrapper .meafe-pricing-menu-info .meafe-pricing-menu-title {
+        display: block;
+    }
+    .meafe-pricing-menu-wrapper .meafe-pricing-menu-info .pricing-menu-title {
+        float: none;
+    }
+    .meafe-pricing-menu-info .menu-price {
+        float: none;
+        padding: 10px 0 0;
+    }
+    .meafe-pricing-menu-wrapper .meafe-pricing-menu-info {
+        padding: 5px 0;
+    }
+    .meafe-pricing-menu-wrapper .meafe-pricing-menu-content {
+        width: 100%;
+    }
+}

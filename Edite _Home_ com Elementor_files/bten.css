@@ -1,0 +1,63 @@
+/*------------------------------*/
+
+
+/* Blossom Themes Email Newsletter
+/*------------------------------*/
+
+.blossomthemes-email-newsletter-wrapper h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.blossomthemes-email-newsletter-wrapper .text-holder span {
+    display: block;
+}
+
+.blossomthemes-email-newsletter-wrapper.layout-2 {}
+
+.blossomthemes-email-newsletter-wrapper.layout-2 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blossomthemes-email-newsletter-wrapper.layout-2 form {
+    display: flex;
+}
+
+.blossomthemes-email-newsletter-wrapper.layout-2 form input[type="submit"] {
+    border-radius: 45px;
+    margin-top: 0;
+    margin-left: -43px;
+    position: relative;
+    width: auto;
+}
+
+.blossomthemes-email-newsletter-wrapper.layout-2 form input[type="text"] {
+    border: 0;
+}
+
+.blossomthemes-email-newsletter-wrapper.layout-2 form input[type="text"] {
+    margin-top: 0;
+    padding-right: 45px;
+    border-radius: 45px;
+    outline: none;
+    border: 1px solid #000;
+}
+
+@media only screen and (max-width:767px) {
+    .blossomthemes-email-newsletter-wrapper.layout-2 .container {
+        flex-direction: column;
+    }
+    .blossomthemes-email-newsletter-wrapper.layout-2 .blossomthemes-email-newsletter-window-861 {
+        flex-direction: column;
+        width: 100%;
+    }
+    .blossomthemes-email-newsletter-wrapper.layout-2 form input[type="submit"] {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}

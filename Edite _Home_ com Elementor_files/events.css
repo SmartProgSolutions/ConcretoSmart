@@ -1,0 +1,335 @@
+
+
+/* All styles */
+
+.meafe--event--main--wrapper img {
+    width: 100%;
+}
+
+.meafe--event--main--wrapper {
+    flex: 0 0 33.33%;
+}
+
+.meafe--event--main--wrapper .meafe--event--wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.meafe--event--main--wrapper .month--details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 18px 10px 18px;
+    color: #fff;
+    background-color: #5081f5;
+}
+
+.meafe--event--main--wrapper .month--details .date {
+    display: block;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 30px;
+}
+
+.meafe--event--main--wrapper .month--details .month {
+    display: block;
+    font-size: 16px;
+    margin-top: 2px;
+    line-height: normal;
+}
+
+.meafe--event--main--wrapper .meafe--title {
+    font-size: 20px;
+    line-height: 1.35;
+    color: #161616;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.meafe--event--main--wrapper .meafe--event--details {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 5px 0;
+}
+
+.meafe--event--main--wrapper .meafe--event--details span {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #a5a5a5;
+}
+
+.meafe--event--main--wrapper .meafe--event--details .meafe--event--time {
+    margin-right: 33px;
+}
+
+.meafe--event--main--wrapper .meafe--event--details span svg {
+    margin-right: 8px;
+}
+
+.meafe--event--main--wrapper .meafe--event--details span i {
+    margin-right: 8px;
+}
+
+.meafe--event--main--wrapper .meafe-event--content {
+    font-size: 16px;
+    line-height: 1.6875;
+    color: #161616;
+    margin-bottom: 17px;
+}
+
+.meafe--event--main--wrapper .image--wrapper {
+    overflow: hidden;
+}
+
+.meafe--event--main--wrapper .event-btn {
+    font-size: inherit;
+    color: #5081f5;
+}
+
+.meafe--event--main--wrapper .event-btn svg {
+    margin-left: 5px;
+}
+
+
+/* Layout 1 with border radius */
+
+.meafe--event--main--wrapper.layout-1.radius .image--wrapper {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.meafe--event--main--wrapper.layout-1.radius .month--details {
+    background-color: #f0c90f;
+    border-radius: 10px;
+}
+
+.meafe--event--main--wrapper .meafe--event-button {
+    display: inline-block;
+    transition: 0.3s ease all;
+}
+
+.meafe--event--main--wrapper .meafe--event-button .event-btn:hover i {
+    margin-left: 12px;
+}
+
+.meafe--event--main--wrapper .meafe--event-button i {
+    margin-left: 8px;
+    transition: 0.3s ease all;
+}
+
+.meafe--event--main--wrapper .meafe--event-place {
+    display: flex;
+    align-items: center;
+}
+
+.meafe--event--main--wrapper .meafe--event-place i,
+.meafe--event--main--wrapper .meafe--event-place svg {
+    margin-right: 8px;
+}
+
+.meafe--event--main--wrapper .rishi--event--wrapper {
+    display: flex;
+    grid-gap: 15px;
+    align-items: center
+}
+
+.meafe--event--main--wrapper .meafe--event--wrapper--details {
+    padding: 25px 15px 20px 12px;
+}
+
+/* Layout 1 */
+
+.meafe--event--main--wrapper.layout-1.box-shadow .event--image--wrapper {
+    margin-bottom: 0;
+}
+
+.meafe--event--main--wrapper.layout-1.box-shadow .meafe--event--wrapper--details {
+    padding: 25px 15px 20px 12px;
+    box-shadow: 0px 3px 40px rgba(55, 55, 55, 0.05);
+}
+
+
+/* Layout 2 */
+
+.meafe--event--main--wrapper.layout-2 .meafe--event--details {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.meafe--event--main--wrapper.layout-2 .meafe--event-details-main-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.meafe--event--main--wrapper.layout-2 .meafe--event--wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.meafe--event--main--wrapper.layout-2 .month--details {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: transparent;
+    padding: 0;
+}
+
+.meafe--event--main--wrapper.layout-2 .meafe--event-content {
+    padding: 16px 0;
+}
+
+.meafe--event--main--wrapper.layout-2 .month--details .month {
+    background-color: #000;
+    padding: 3px 18px 3px 18px;
+    width: 100%;
+    text-align: center;
+}
+
+.meafe--event--main--wrapper.layout-2 .month--details .date {
+    padding: 8px 18px 8px 18px;
+    width: 100%;
+    background-color: #5081f5;
+    line-height: 30px;
+}
+
+.meafe--event--main--wrapper.layout-2 .month--details .month {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5;
+    flex: 1;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.meafe--event--main--wrapper.layout-2 .month--details .month:after,
+.meafe--event--main--wrapper.layout-2 .month--details .month:before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    height: 6px;
+    width: 3px;
+    background-color: #161616;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.meafe--event--main--wrapper.layout-2 .month--details .month:after {
+    right: 13px;
+}
+
+.meafe--event--main--wrapper.layout-2 .month--details .month:before {
+    left: 13px;
+}
+
+.meafe--event--main--wrapper.layout-2 .meafe-event--content {
+    padding-top: 16px;
+}
+
+.meafe--event--main--wrapper.layout-2 .meafe--event--details .meafe--event--time {
+    margin-right: 25px;
+}
+
+.meafe--event--main--wrapper.layout-2.no-image .month {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.meafe--event--main--wrapper.layout-2.no-image .date {
+    background-color: #f0c90f;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+/* layout 2 with no image */
+
+.meafe--event--main--wrapper.layout-2.box-shadow .meafe--event--wrapper--details {
+    padding: 25px 15px 20px 15px;
+    box-shadow: 0px 3px 40px rgb(55 55 55 / 5%);
+}
+
+.meafe--event--main--wrapper.layout-2.box-shadow .event--image--wrapper {
+    margin-bottom: 0;
+}
+
+
+/* Layout-3 */
+.meafe--event--main--wrapper.layout-3 .event--image--wrapper {
+    position: relative;
+    min-height: 70px;
+}
+
+.meafe--event--main--wrapper.layout-3 .meafe--event--wrapper--details {
+    box-shadow: none !important;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.meafe--event--main--wrapper.layout-3 .meafe--event--wrapper--details .meafe--event-content {
+    order: 3;
+}
+
+.meafe--event--main--wrapper.layout-3 .meafe--event--wrapper--details .meafe--event--details {
+    order: 2;
+}
+
+.meafe--event--main--wrapper.layout-3 .meafe--event--wrapper--details .meafe--event-button {
+    order: 4;
+}
+
+.meafe--event--main--wrapper.layout-3 .event--image--wrapper {
+    margin-bottom: 20px;
+}
+
+.meafe--event--main--wrapper.layout-3 .month--details {
+    display: block;
+    text-align: center;
+    position: absolute;
+    width: auto;
+    bottom: 0;
+    min-width: 70px;
+}
+
+.meafe--event--main--wrapper.layout-3.radius .image--wrapper {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.meafe--event--main--wrapper.layout-3.radius .month--details {
+    background-color: #F0C90F;
+}
+
+.meafe--event--main--wrapper.layout-3 .month--details {
+    margin-right: 0;
+}
+
+@media only screen and (max-width: 1199px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .meafe--event--main--wrapper {
+        flex: 0 0 50%;
+    }
+    .meafe--event--main--wrapper .rishi--event--wrapper {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        max-width: 420px;
+    }
+
+    .meafe--event--main--wrapper {
+        flex: 0 0 100%;
+    }
+}

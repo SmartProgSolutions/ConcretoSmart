@@ -1,0 +1,116 @@
+.meafe-adv-testimonial-main .swiper-container {
+    overflow-x: clip;
+}
+
+.meafe-adv-testimonial-main .swiper-slide {
+    transition: all 250ms ease-in-out;
+}
+
+.meafe-adv-testimonial-main.layout-1 .swiper-slide {
+    width: 80%;
+}
+
+.meafe-adv-testimonial-main.layout-1 .swiper-slide.swiper-slide-active {
+    box-shadow: 10px 10px 100px rgb(224, 224, 224);
+}
+
+.meafe-adv-testimonial-main .swiper-wrapper {
+    align-items: center;
+}
+
+.meafe-adv-testimonial-main .meafe-testimonial-tst-inner-wrap {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.meafe-adv-testimonial-main .meafe-testimonial-inner-wrap {
+    position: relative;
+}
+
+.meafe-adv-testimonial-main.content-align-center :is(.meafe-testimonial-title, .meafe-testimonial-content) {
+    text-align: center;
+}
+
+.meafe-adv-testimonial-main.content-align-right :is(.meafe-testimonial-title, .meafe-testimonial-content) {
+    text-align: right;
+}
+
+.meafe-adv-testimonial-main.content-align-center .meafe-testimonial-tst-inner-wrap {
+    justify-content: center;
+}
+
+.meafe-adv-testimonial-main.content-align-right .meafe-testimonial-tst-inner-wrap {
+    justify-content: flex-end;
+}
+/* 
+.meafe-adv-testimonial-main .adv-testimonial.meafa-swiper-pagination {
+    margin-block-start: clamp(25px, 5vw, 48px);
+} */
+
+.meafe-adv-testimonial-main .meafa-navigation-wrap .nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    transition: all ease-in-out 250ms;
+}
+
+.meafe-adv-testimonial-main .meafa-navigation-wrap .nav:hover {
+    cursor: pointer;
+}
+
+.meafe-adv-testimonial-main .meafa-navigation-wrap .meafa-navigation-prev {
+    left: 0;
+}
+
+.meafe-adv-testimonial-main .meafa-navigation-wrap .meafa-navigation-next {
+    right: 0;
+}
+
+.meafe-adv-testimonial-main .swiper-pagination-bullet {
+    opacity: 1;
+}
+
+@media only screen and (min-width: 1200px) {
+    .meafe-adv-testimonial-main .meafa-navigation-wrap .meafa-navigation-prev {
+        left: -60px;
+    }
+
+    .meafe-adv-testimonial-main .meafa-navigation-wrap .meafa-navigation-next {
+        right: -60px;
+    }
+}
+
+.meafe-adv-testimonial-main .swiper-pagination-bullet-active {
+    vertical-align: middle;
+}
+
+
+
+.meafe-adv-testimonial-main :is(.meafe-testimonial-title .meafe-entry-title, .meafe-testimonial-reviewer-name) {
+    line-height: 1.33;
+    font-weight: 700;
+    color: #121212;
+}
+
+.meafe-adv-testimonial-main :is(.meafe-testimonial-content, .meafe-testimonial-reviewer-title) {
+    line-height: 1.5;
+    color: rgba(18, 18, 18, 0.8);
+}
+
+.meafe-adv-testimonial-main .meafe-testimonial-title .meafe-entry-title {
+    font-size: 18px;
+}
+
+.meafe-adv-testimonial-main :is(.meafe-testimonial-content, .meafe-testimonial-reviewer-name) {
+    font-size: 16px;
+}
+
+.meafe-adv-testimonial-main .meafe-testimonial-reviewer-title {
+    font-size: 12px;
+}

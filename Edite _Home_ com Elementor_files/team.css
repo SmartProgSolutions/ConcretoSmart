@@ -1,0 +1,225 @@
+/*------------------------------*/
+
+
+/* Team Widget
+/*------------------------------*/
+
+
+/* .elementor-widget-meafe-team .meafe-member-body {
+    padding-top: 35px;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+svg,
+iframe {
+    vertical-align: middle;
+}
+
+.elementor-widget-meafe-team .meafe-member-figure img {
+    object-fit: cover;
+}
+
+.elementor-widget-meafe-team .meafe-member-name {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #161616;
+    margin: 0;
+    padding-top: 5px 0 3px 0;
+}
+
+.elementor-widget-meafe-team .meafe-member-position {
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #A5A5A5;
+    font-weight: 300;
+}
+
+.elementor-widget-meafe-team .meafe-member-bio p {
+    margin-top: 0em;
+    margin-bottom: 0;
+}
+
+.elementor-widget-meafe-team .meafe-team-member-social-profiles {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.elementor-widget-meafe-team .meafe-team-member-social-profiles .meafe-team-member-social-link {
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 15px;
+    -webkit-transition: all ease 0.35s;
+    -moz-transition: all ease 0.35s;
+    transition: all ease 0.35s;
+    cursor: pointer;
+}
+
+.elementor-widget-meafe-team .meafe-member-bio {
+    font-size: 16px;
+    line-height: 1.6875;
+    color: #161616;
+    padding: 14px 0 0;
+    word-wrap: break-word;
+}
+
+.elementor-widget-meafe-team .meafe-team-member-social-profiles .meafe-team-member-social-link a {
+    color: inherit;
+    display: block;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+
+.elementor-widget-meafe-team .meafe-team-fig {
+    margin-bottom: 20px;
+}
+
+.elementor-widget-meafe-team.meafe-team-name-align-left .meafe-member-name,
+.elementor-widget-meafe-team.meafe-team-name-align-left .meafe-member-position,
+.elementor-widget-meafe-team.meafe-team-bio-align-left .meafe-member-bio,
+.elementor-widget-meafe-team.meafe-team-social-align-left .meafe-team-member-social-profiles {
+    text-align: left;
+}
+
+.elementor-widget-meafe-team.meafe-team-name-align-center .meafe-member-name,
+.elementor-widget-meafe-team.meafe-team-name-align-center .meafe-member-position,
+.elementor-widget-meafe-team.meafe-team-bio-align-center .meafe-member-bio,
+.elementor-widget-meafe-team.meafe-team-social-align-center .meafe-team-member-social-profiles {
+    text-align: center;
+}
+
+.elementor-widget-meafe-team.meafe-team-name-align-right .meafe-member-name,
+.elementor-widget-meafe-team.meafe-team-name-align-right .meafe-member-position,
+.elementor-widget-meafe-team.meafe-team-bio-align-right .meafe-member-bio,
+.elementor-widget-meafe-team.meafe-team-social-align-right .meafe-team-member-social-profiles {
+    text-align: right;
+}
+
+.meafe-team-wrapper-main .meafe-team-member-social-link i {
+    font-size: 12px;
+}
+
+
+/* Layout-1 */
+
+.meafe-team-wrapper-main.layout-1 .meafe-team-member-social-link:first-child {
+    margin-left: 0;
+}
+
+
+/* Layout-2 */
+
+.elementor-widget-meafe-team .meafe-team-wrapper-main.layout-2 {
+    flex: 0 0 31.33%;
+    padding: 40px 29px 40px 29px;
+    box-shadow: 0 3px 40px rgb(55 55 55 / 5%);
+}
+
+.elementor-widget-meafe-team .meafe-team-wrapper-main.layout-2 .meafe-member-figure img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+}
+
+.elementor-widget-meafe-team .meafe-team-wrapper-main.layout-2 .meafe-team-fig {
+    margin-bottom: 9px;
+}
+
+.elementor-widget-meafe-team .meafe-team-wrapper-main.layout-2 .meafe-member-name {
+    font-size: 22px;
+    line-height: 1.2227;
+    padding-bottom: 4px;
+}
+
+
+/* Layout-3  */
+
+.elementor-widget-meafe-team .meafe-team-wrapper-main.layout-3 .meafe-team-flip-card-inner {
+    position: relative;
+}
+
+.elementor-widget-meafe-team .meafe-team-wrapper-main.layout-3 .meafe-member-body {
+    position: absolute;
+    z-index: 99;
+    bottom: 0px;
+    padding: 20px;
+    left: 0;
+    width: 100%;
+    background: rgba(22, 22, 22, 0.5);
+}
+
+.meafe-team-wrapper-main.layout-3 .meafe-team-member-social-link:first-child {
+    margin-left: 0;
+}
+
+.meafe-team-wrapper-main.layout-3 .meafe-member-name,
+.meafe-team-wrapper-main.layout-3 .meafe-team-member-social-link,
+.meafe-team-wrapper-main.layout-3 .meafe-member-position {
+    color: #fff
+}
+
+.meafe-team-wrapper-main.layout-3 .meafe-team-flip-card-outer {
+    background-color: #161616;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    transition: .3s all ease-in;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.meafe-team-wrap-inner:hover .meafe-team-flip-card-outer {
+    visibility: visible;
+    opacity: 1;
+}
+
+.meafe-team-wrapper-main.layout-3 .meafe-member-bio {
+    font-size: 16px;
+    line-height: 1.6875;
+    text-align: left;
+    color: white;
+    padding: 20px;
+}
+
+.elementor-widget-meafe-team .meafe-team-wrapper-main.layout-3 .meafe-team-fig {
+    margin-bottom: 0;
+}
+
+.meafe-team-wrap-inner:hover .meafe-team-flip-card-outer::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.meafe-team-wrap-inner:hover .meafe-team-flip-card-outer::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.meafe-team-wrap-inner:hover .meafe-team-flip-card-outer::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+@media only screen and (max-width:767px) {
+    .elementor-widget-meafe-team .meafe-member-figure img {
+        width: 100%;
+    }
+}

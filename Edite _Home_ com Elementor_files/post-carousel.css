@@ -1,0 +1,202 @@
+.meafe-post-carousel-wrapper .swiper-container {
+    overflow: hidden;
+}
+
+.meafe-post-carousel-wrapper .meafe-entry-wrapper .meafe-entry-content {
+    margin: 16px 0;
+}
+
+.meafe-post-carousel-alignment-center :is(.category--wrapper, .meafe-entry-meta.details, .meafe-post-elements-readmore-btn) {
+    justify-content: center;
+}
+
+.meafe-post-carousel-alignment-right :is(.category--wrapper, .meafe-entry-meta.details, .meafe-post-elements-readmore-btn) {
+    justify-content: flex-end;
+}
+
+.meafe-post-carousel-alignment-center .meafe-entry-wrapper {
+    text-align: center;
+}
+
+.meafe-post-carousel-alignment-right .meafe-entry-wrapper {
+    text-align: right;
+}
+
+.meafe-post-carousel-wrapper .meafe-entry-wrapper-media {
+    display: grid;
+    grid-template-areas: 'stack';
+}
+
+.meafe-post-carousel-wrapper .meafe-entry-wrapper-media>* {
+    grid-area: stack;
+}
+
+.meafe-post-carousel-wrapper .category--wrapper {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    flex-wrap: wrap;
+}
+
+.meafe-post-carousel-wrapper.layout-1 .category--wrapper {
+    align-self: end;
+    margin: 0 27px 18px 27px;
+}
+
+.meafe-post-carousel-wrapper.layout-1 .category--wrapper a {
+    padding: 6px 12px;
+    background-color: #F3F3F3;
+}
+
+.meafe-post-carousel-wrapper.layout-1 .meafe-entry-title {
+    margin: 0 0 16px 0;
+}
+.meafe-post-carousel-wrapper.layout-2 .meafe-entry-title {
+    margin: 16px 0 16px 0;
+}
+
+.meafe-post-carousel-wrapper img {
+    width: 100%;
+}
+
+.meafe-post-carousel-wrapper .meafe-entry-meta.details {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.meafe-post-carousel-wrapper .meafe-posted-by.author {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.meafe-post-carousel-wrapper .meafe-entry-meta.details :is(.meafe-author-avatar, div) {
+    position: relative;
+}
+
+.meafe-post-carousel-wrapper .meafe-entry-meta.details :is(div:not(:last-child), .meafe-author-avatar)::after {
+    aspect-ratio: 1;
+    background: #F3F3F3;
+    border-radius: 50%;
+    content: "";
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    right: -13px;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+.meafe-post-carousel-wrapper .meafe-post-elements-readmore-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.meafe-post-carousel-wrapper .meafe-post-elements-readmore-btn svg {
+    transform: translateX(0);
+    transition: all ease-in-out 250ms;
+}
+
+.meafe-post-carousel-wrapper .meafe-post-elements-readmore-btn:hover svg {
+    transform: translateX(10px);
+}
+
+.meafe-post-carousel-wrapper .meafe-testimonial-inner-wrap {
+    position: relative;
+}
+
+@media only screen and (max-width:768px) {
+    .meafe-post-carousel-wrapper .meafe-navigation-wrap{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+}
+
+.meafe-post-carousel-wrapper .meafe-navigation-wrap .nav {
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    transition: all ease-in-out 250ms;
+}
+
+@media only screen and (min-width: 768px) {
+    .meafe-post-carousel-wrapper .meafe-navigation-wrap .nav{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.meafe-post-carousel-wrapper .meafe-navigation-wrap .nav.swiper-button-disabled {
+    opacity: 0.3;
+}
+
+.meafe-post-carousel-wrapper .meafe-navigation-wrap .nav:not(.swiper-button-disabled):hover {
+    cursor: pointer;
+}
+
+.meafe-post-carousel-wrapper .meafe-navigation-wrap .meafe-navigation-prev {
+    left: -15px;
+}
+
+.meafe-post-carousel-wrapper .meafe-navigation-wrap .meafe-navigation-next {
+    right: -15px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .meafe-post-carousel-wrapper .meafe-navigation-wrap .meafe-navigation-prev {
+        left: -60px;
+    }
+
+    .meafe-post-carousel-wrapper .meafe-navigation-wrap .meafe-navigation-next {
+        right: -60px;
+    }
+}
+
+.meafe-post-carousel-wrapper .post-carousel.meafe-swiper-pagination {
+    margin-block-start: clamp(25px, 5vw, 48px);
+}
+
+.meafe-post-carousel-wrapper .swiper-pagination-bullet-active{
+    vertical-align: middle;
+}
+
+
+/* Default Typography */
+.meafe-post-carousel-wrapper .meafe-entry-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4em;
+}
+
+.meafe-post-carousel-wrapper .meafe-entry-meta>div,
+.category--wrapper a {
+    font-size: 14px;
+    line-height: 1.14em;
+}
+
+.meafe-post-carousel-wrapper .meafe-entry-meta.details a,
+.category--wrapper a {
+    color: #121212CC;
+}
+
+.meafe-post-carousel-wrapper .meafe-content p {
+    color: #121212CC;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.meafe-post-carousel-wrapper .meafe-post-carousel-button.read-more a {
+    color: #5081F5;
+}
+
+.meafe-post-carousel-wrapper .meafe-post-elements-readmore-btn {
+    font-size: 14px;
+    line-height: 1.7em;
+}

@@ -1,0 +1,252 @@
+/*------------------------------*/
+/* CTA Widget
+/*------------------------------*/
+
+.meafe-cta-type-classic .meafe-cta{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+}
+.meafe-cta-type-classic .meafe-cta-bg-wrapper{
+    max-width: 42%;
+    width: 100%;
+}
+.meafe-cta-type-classic .meafe-cta-bg-wrapper .meafe-cta-bg{
+    height: 100% !important;
+    object-fit: cover;
+    display: block !important;
+    width: 100%;
+}
+.meafe-cta-type-classic .meafe-cta-content{
+    max-width: 58%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    padding: 5% 10%;
+}
+.meafe-cta-type-classic .meafe-cta-content .meafe-cta-title{
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #000000;
+}
+.meafe-cta-type-classic .meafe-cta-content .meafe-cta-description{
+    font-size: 18px;
+    line-height: 1.778;
+    font-weight: 400;
+    color: rgba(49,49,49,0.85);
+    display: block;
+    margin-bottom: 30px;
+}
+.meafe-cta-type-classic .meafe-cta .meafe-cta-button-wrapper, 
+.meafe-cta-type-classic .meafe-cta .meafe-cta-button-two-wrapper {
+    margin-top: 10px;
+}
+
+.meafe-cta-type-classic .meafe-cta .meafe-cta-button, 
+.meafe-cta-type-classic .meafe-cta .meafe-cta-button-two {
+    background: #000;
+    border-color: #000;
+    color: #fff;
+}
+
+.meafe-cta-type-classic .meafe-cta .meafe-cta-button:hover, 
+.meafe-cta-type-classic .meafe-cta .meafe-cta-button-two {
+    background: none;
+    color: #000;
+}
+
+.meafe-cta-type-classic .meafe-cta .meafe-cta-button-two:hover {
+    background: #000;
+    color: #fff;
+}
+
+.meafe-cta-type-cover *{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+}
+
+.meafe-cta-type-cover .meafe-cta {
+    position: relative;
+}
+
+.meafe-cta-type-cover .meafe-cta-bg-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.meafe-cta-type-cover .meafe-cta-bg{
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.meafe-cta-type-cover .meafe-cta .meafe-cta-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+}
+
+.meafe-cta-type-cover .meafe-cta .meafe-cta-content {
+    padding: 80px;
+    position: relative;
+    z-index: 9;
+    max-width: 800px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.meafe-cta-valign-middle .meafe-cta .meafe-cta-content {
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.meafe-cta-valign-bottom .meafe-cta .meafe-cta-content {
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+.meafe-cta-type-cover .meafe-cta .meafe-cta-title {
+    margin: 0 0 30px 0;
+    padding-bottom: 0;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+}
+
+.meafe-cta-type-cover .meafe-cta p.meafe-cta-title, 
+.meafe-cta-type-cover .meafe-cta span.meafe-cta-title, 
+.meafe-cta-type-cover .meafe-cta div.meafe-cta-title {
+    font-weight: normal;
+}
+
+.meafe-cta-type-cover .meafe-cta .meafe-cta-description {
+    margin-bottom: 60px;
+    color: rgba(255,255,255,0.7);
+    font-size: 1.1112em;
+    line-height: 1.85;
+}
+
+.meafe-cta .meafe-cta-description p {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.meafe-cta .meafe-cta-description p:last-child {
+    margin-bottom: 0;
+}
+
+.meafe-cta .meafe-cta-button-wrapper, 
+.meafe-cta .meafe-cta-button-two-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 0;
+    margin-right: 10px;
+}
+
+.meafe-cta .meafe-cta-button, 
+.meafe-cta .meafe-cta-button-two {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    background: #fff;
+    border: 1px solid #fff;
+    color: #000;
+    padding: 0.8em 2em;
+    text-decoration: none;
+}
+
+.meafe-cta .meafe-size-sm {
+    padding: 0.5em 1em;
+}
+
+.meafe-cta .meafe-cta-button:hover, 
+.meafe-cta .meafe-cta-button-two {
+    background: none;
+    color: #fff; 
+}
+
+.meafe-cta .meafe-cta-button-two:hover {
+    background: #fff;
+    color: #000;
+}
+
+.meafe-cta-type-classic.meafe-cta-valign-top .meafe-cta {
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+
+.meafe-cta-type-classic.meafe-cta-valign-middle .meafe-cta {
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.meafe-cta-type-classic.meafe-cta-valign-bottom .meafe-cta {
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+}
+
+.meafe-cta-type-classic.meafe-cta-layout-image-center .meafe-cta {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.meafe-cta-type-classic.meafe-cta-layout-image-center .meafe-cta-bg-wrapper, 
+.meafe-cta-type-classic.meafe-cta-layout-image-center .meafe-cta-content {
+    max-width: 100%;
+}
+
+.meafe-cta-type-classic.meafe-cta-layout-image-right .meafe-cta {
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 768px) {
+    .meafe-cta-type-classic .meafe-cta-bg-wrapper, 
+    .meafe-cta-type-classic .meafe-cta-content {
+        max-width: 100%;
+    }
+
+    .meafe-cta-type-cover .meafe-cta .meafe-cta-content {
+        padding: 60px 30px;
+    }
+
+    .meafe-cta .meafe-cta-button-wrapper, 
+    .meafe-cta .meafe-cta-button-two-wrapper {
+        margin: 5px;
+    }
+}

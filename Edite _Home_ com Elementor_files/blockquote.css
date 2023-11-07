@@ -1,0 +1,94 @@
+/*------------------------------*/
+/* Blockquote Widget
+/*------------------------------*/
+
+.meafe-blockquote-type-quotation .meafe-blockquote{
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-align: center;
+    font-size: 35px;
+    line-height: 1.657;
+    font-weight: 400;
+    color: #313131;
+    position: relative;
+}
+
+.elementor-widget-meafe-blockquote .meafe-blockquote.meafe-blockquote-bg {
+    padding: 1.5em 2em;
+    background-size: cover;
+    background-position: center;
+}
+.elementor-widget-meafe-blockquote.meafe-blockquote-align-left .meafe-blockquote{
+    text-align: left;
+}
+.elementor-widget-meafe-blockquote.meafe-blockquote-align-center .meafe-blockquote{
+    text-align: center;
+}
+.elementor-widget-meafe-blockquote.meafe-blockquote-align-right .meafe-blockquote{
+    text-align: right;
+}
+.elementor-widget-meafe-blockquote .meafe-blockquote::before, 
+.elementor-widget-meafe-blockquote .meafe-blockquote::after {
+    display: none;
+}
+
+.meafe-blockquote-type-quotation .meafe-blockquote-icon-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 1;
+}
+
+.meafe-blockquote-type-quotation .meafe-blockquote-bg .meafe-blockquote-icon-wrapper {
+     top: 0.8em;
+     left: 1.3em;
+}
+.meafe-blockquote-type-quotation .meafe-blockquote-author{
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+    font-style: normal;
+}
+.meafe-blockquote-type-quotation .meafe-blockquote-author:before{
+    content: "";
+    width: 16px;
+    height: 1px;
+    background: #707070;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    margin-top: -4px;
+}
+.meafe-blockquote .meafe-blockquote-content{
+    margin-top: 40px;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.meafe-blockquote-type-clean .meafe-blockquote-icon-wrapper {
+    margin-bottom: 0;
+    /* background: rgba(0,0,0,0.05); */
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.meafe-blockquote-type-clean.meafe-blockquote-align-center .meafe-blockquote-icon-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.meafe-blockquote-type-clean.meafe-blockquote-align-right .meafe-blockquote-icon-wrapper {
+    margin-left: auto;
+}
+
+.meafe-blockquote .author-wrapper {
+    margin-top: 40px;
+}

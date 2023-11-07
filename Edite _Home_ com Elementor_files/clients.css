@@ -1,0 +1,185 @@
+/*------------------------------*/
+/* CTA Widget
+/*------------------------------*/
+.meafe-clients {
+    overflow: hidden;
+}
+
+.meafe-clients .swiper-container {
+    overflow: hidden;
+}
+
+.meafe-clients .meafe-grid-container.no-swiper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    justify-content: center;
+}
+
+.meafe-clients .swiper-container .swiper-slide img {
+    margin: 0 auto;
+}
+
+.meafe-clients-bwyes .meafe-client img {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.meafe-clients-bwyes .meafe-client a:hover img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.meafe-clients .meafe-grid-container .meafe-client:not(.swiper-slide) {
+    padding: 15px;
+}
+
+.meafe-clients .meafe-grid-container .meafe-client {
+    position: relative;
+    text-align: center;
+}
+
+.meafe-clients .meafe-grid-container.meafe-grid-desktop-1 .meafe-client:not(.swiper-slide) {
+    width: 100%;
+}
+
+.meafe-clients .meafe-grid-container.meafe-grid-desktop-2 .meafe-client:not(.swiper-slide) {
+    width: 50%;
+}
+
+.meafe-clients .meafe-grid-container.meafe-grid-desktop-3 .meafe-client:not(.swiper-slide) {
+    width: 33.33%;
+}
+
+.meafe-clients .meafe-grid-container.meafe-grid-desktop-4 .meafe-client:not(.swiper-slide) {
+    width: 25%;
+}
+
+.meafe-clients .meafe-grid-container.meafe-grid-desktop-5 .meafe-client:not(.swiper-slide) {
+    width: 20%;
+}
+
+.meafe-clients .meafe-grid-container.meafe-grid-desktop-6 .meafe-client:not(.swiper-slide) {
+    width: 16.66%;
+}
+
+.meafe-clients .meafa-navigation-wrap .nav{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 30px;
+    line-height: 30px;
+    min-height: auto;
+    height: 30px;
+    width: 30px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    outline: 0;
+    outline-offset: unset;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.meafe-clients.swiper-dots-enabled .meafa-navigation-wrap .nav {
+    top: 50%;
+}
+
+.meafe-clients .meafa-navigation-wrap .meafa-navigation-next{
+    left: auto;
+    right: 0;
+}
+
+.meafe-clients .meafa-swiper-pagination {
+    position: static;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.meafe-clients .meafa-swiper-pagination .swiper-pagination-bullet {
+    display: inline-block;
+    background: rgba(0,0,0,0.5);
+    border-radius: 100%;
+    -webkit-transition: all ease 0.35s;
+    -moz-transition: all ease 0.35s;
+    transition: all ease 0.35s;
+    margin: 0;
+    max-height: initial;
+    min-height: auto;
+    line-height: 1;
+    width: 8px;
+    height: 8px;
+}
+
+.meafe-clients .meafa-swiper-pagination .swiper-pagination-bullet:hover, 
+.meafe-clients .meafa-swiper-pagination .swiper-pagination-bullet-active {
+    background: rgba(0,0,0,0.5);
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1025px) {
+    .meafe-clients .meafe-grid-container.meafe-grid-tablet-1 .meafe-client:not(.swiper-slide) {
+        width: 100%;
+    }
+
+	.meafe-clients .meafe-grid-container.meafe-grid-tablet-2 .meafe-client:not(.swiper-slide) {	    
+		width: 50%;
+	}
+
+	.meafe-clients .meafe-grid-container.meafe-grid-tablet-3 .meafe-client:not(.swiper-slide) {
+	    width: 33.33%;
+	}
+
+	.meafe-clients .meafe-grid-container.meafe-grid-tablet-4 .meafe-client:not(.swiper-slide) {
+	    width: 25%;
+	}
+
+	.meafe-clients .meafe-grid-container.meafe-grid-tablet-5 .meafe-client:not(.swiper-slide) {
+	    width: 20%;
+	}
+
+	.meafe-clients .meafe-grid-container.meafe-grid-tablet-6 .meafe-client:not(.swiper-slide) {
+	    width: 16.66%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.meafe-clients .meafe-grid-container.no-swiper {
+	    margin-left: -10px;
+	    margin-right: -10px;
+	}
+
+	.meafe-clients .meafe-grid-container .meafe-client:not(.swiper-slide) {
+	    padding: 10px;
+    }
+    
+    .meafe-clients .meafe-grid-container.meafe-grid-mobile-1 .meafe-client:not(.swiper-slide) {
+        width: 100%;
+    }
+
+	.meafe-clients .meafe-grid-container.meafe-grid-mobile-2 .meafe-client:not(.swiper-slide) {	    
+		width: 50%;
+	}
+
+	.meafe-clients .meafe-grid-container.meafe-grid-mobile-3 .meafe-client:not(.swiper-slide) {
+	    width: 33.33%;
+	}
+
+	.meafe-clients .meafe-grid-container.meafe-grid-mobile-4 .meafe-client:not(.swiper-slide) {
+	    width: 25%;
+	}
+
+	.meafe-clients .meafe-grid-container.meafe-grid-mobile-5 .meafe-client:not(.swiper-slide) {
+	    width: 20%;
+	}
+
+	.meafe-clients .meafe-grid-container.meafe-grid-mobile-6 .meafe-client:not(.swiper-slide) {
+	    width: 16.66%;
+	}
+}
