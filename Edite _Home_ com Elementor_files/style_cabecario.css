@@ -46,6 +46,42 @@
 
 }
 
+/* ------------------------------------ */
+.buttondosagem{
+  background-color: #0D1F23;
+  display: flex;
+  align-items: center;
+  border-radius: 5%;
+
+}
+.buttondosagem li svg{
+  padding-top: 6%;
+  color: #f7f7f7;
+}
+
+.buttondosagem li  {
+
+  display: block;
+  padding: 0.3em 0.4em;
+  text-decoration: none;
+  transition:.3s;
+
+
+}
+.buttondosagem li a{
+    color:#ffffff; 
+    text-decoration: none;
+}
+
+.buttondosagem li:hover,
+.buttondosagem .btn-mobile:hover {
+
+  background-color: #02a1ee;
+  color:#fff; 
+
+}
+/* ------------------------------------------- */
+
 .header .logo {
  
   display: block;
