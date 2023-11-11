@@ -98,6 +98,11 @@ function calcularDosagem() {
   let areiam3 = areia / 1699.58;
   let britam3= brita / 1399.58;
 
+  //transforma kg para Saco de cimento 50Kg
+  let cimentoSaco = cimento / 50;
+  let areiaLata = areia / 18; // Conferir se a lata é 18 ou 20 Kg
+  let britaLata = brita / 18; // Conferir se a lata é 18 ou 20 Kg
+
 /* Calcular a dosagem FCJ 1 : 1 : 2 : 40 MPa
   var cimento = volume * 515;
   var areia = volume * 790.50;
@@ -121,12 +126,15 @@ function calcularDosagem() {
   // Exibir os resultados
   document.getElementById("resultado-cimento").innerHTML = cimento.toFixed(2);
   document.getElementById("resultado-cimentom3").innerHTML = cimentom3.toFixed(3);
+  document.getElementById("resultado-cimento-saco").innerHTML = cimentoSaco.toFixed(1);
 
   document.getElementById("resultado-areia").innerHTML = areia.toFixed(2);
   document.getElementById("resultado-areiam3").innerHTML = areiam3.toFixed(3);
+  document.getElementById("resultado-areia-lata").innerHTML = areiaLata.toFixed(1);
 
   document.getElementById("resultado-brita").innerHTML = brita.toFixed(2);
   document.getElementById("resultado-britam3").innerHTML = britam3.toFixed(3);
+  document.getElementById("resultado-brita-lata").innerHTML = britaLata.toFixed(1);
 
   document.getElementById("resultado-agua").innerHTML = agua.toFixed(2);
 
