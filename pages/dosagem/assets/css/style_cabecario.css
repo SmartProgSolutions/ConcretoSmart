@@ -5,16 +5,26 @@
 .bg-1      { background-color:#f4f4f4; padding:5em 0em;  }
 
 .header {
-  
   background-color: #fff;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   top:0;
-  left:0;  
+  left:0;
   width: 100%;
   z-index:1;
   float:left; 
 
+}
+.header.dark{
+  background-color:#0D1F23;
+}
+
+.header.dark ul{
+  background-color:#0D1F23;
+}
+
+.header.dark li a{
+  color:#ffffff; 
 }
 
 .header ul {
@@ -26,6 +36,8 @@
   background-color: #fff;
 
 }
+
+
 
 .header li a {
 
@@ -66,7 +78,7 @@
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 28px 10px;
+  padding: 28px 20px;
   position: relative;
   user-select: none;
 }
@@ -130,11 +142,11 @@
 
   width:100%;
   float:left;
-  /*margin-top:100px;  */  
+  margin-top:100px;    
 
 }
 
-.content { 
+.contenti { 
 
   float:left; 
   width:92%; 

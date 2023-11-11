@@ -26,10 +26,31 @@
     <div class="divs-centrais">
         <!-- Formulário de dossagem -->
         <section class="formDosagem">
-    
-            <div id="div-titulo" class="centralizado">
-                <h1 >Dosagem de Concreto</h1>
+
+            <div>
+                <div id="div-titulo" class="centralizado">
+                    <h1 >Dosagem de Concreto</h1>
+                </div> 
+
+                <!-- Botão Light Dark mode  -->
+                <div class="lightDarkMode">
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                        </svg>  
+                        <div class="ball"></div>
+                    </label>
+                </div>
+                
             </div>
+
+
+
+
         
             <!-- Seleciona o Formato-->
             <div  class="divFormato">
@@ -191,10 +212,11 @@
             <!-- Conteudo do pop op de alerta sobre uso da plataforma -->
             <div id="popup1" class="overlay">
                 <div class="popup">
-                    <h2>Uso da plataforma</h2>
+                    <h2 style="margin-left: 15%;">Uso da plataforma</h2>
                     <a class="close" href="#">&times;</a>
                     <div class="content-popup">
-                        Thank to pop me out of that button, but now i'm done so you can close this window.
+                        Não é de responsabilidade dos desenvolvedores da plataforma qualquer informação 
+                        que possa parecer divergente, é sempre importante o acompanhamento de um profissional.
                     </div>
                 </div>
             </div>
@@ -291,7 +313,6 @@
                 </div>
                 
             </div>
-
             <!--Linha da Areia-->
             <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
 
@@ -317,6 +338,7 @@
     <footer id="footerComponent">
         <!-- O conteúdo do footer será inserido aqui usando JavaScript -->
     </footer>
+    
     <script src="./assets/js/carrega_footer.js"></script>
     <script src="./assets/js/carrega_header.js"></script>
 
@@ -325,5 +347,6 @@
     <script src="./assets/js/calculardosagem.js"></script>
     <script src="./assets/js/preencheinput.js"></script>
     <script src="./assets/js/divsOcultas.js"></script>
+    <script src="./assets/js/lightDarkMode.js"></script>
 </body>
 </html>
