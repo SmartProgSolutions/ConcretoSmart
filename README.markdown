@@ -1,8 +1,4 @@
 <div align="center" id="top">
-  <img src="./.github/homeweb.jpeg" alt="ConcretoSmart" />
-
-
-  &#xa0;
 
 
   <a href="https://concretosmart.vercel.app/">Demo</a>
@@ -36,7 +32,6 @@
   <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-requisitos-para-rodar-a-aplicação">Requisitos</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-iniciando">Iniciando</a> &#xa0; | &#xa0;
-  <a href="#-configurações-adicionais-ao-projeto">Schemas</a> &#xa0; | &#xa0;
   <a href="#memo-licença">Licença</a> &#xa0; | &#xa0;
   <a href="#memo-licença">Autores</a>
 
@@ -47,8 +42,7 @@
 
 ## 😸 Sobre ##
 
-Escrever Sobre o projeto!!-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Testando o pull request de colaborador 
+Essa plataforma que realiza dosagem de concreto automática, foi desenvolvida como projeto de extensão II, que visa não apenas melhora a precisão e a consistência da mistura, mas também contribui para a sustentabilidade, reduzindo o desperdício de materiais e a pegada de carbono associada à produção de concreto. É uma solução inovadora que impulsiona a eficiência, a qualidade e a sustentabilidade na indústria da construção.
 
 ## Telas da aplicação
 
