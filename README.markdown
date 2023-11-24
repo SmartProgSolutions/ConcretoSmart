@@ -38,7 +38,12 @@
   <a href="#checkered_flag-iniciando">Iniciando</a> &#xa0; | &#xa0;
   <a href="#-configurações-adicionais-ao-projeto">Schemas</a> &#xa0; | &#xa0;
   <a href="#memo-licença">Licença</a> &#xa0; | &#xa0;
-  <a href="https://github.com/AlcivanLucas" target="_blank">Autor</a>
+  <a href="https://github.com/AlcivanLucas" target="_blank">Autores</a>
+  <a href="https://github.com/AlcivanLucas" target="_blank">Autores</a>
+  <a href="https://github.com/AlcivanLucas" target="_blank">Autores</a>
+  <a href="https://github.com/AlcivanLucas" target="_blank">Autores</a>
+  <a href="https://github.com/AlcivanLucas" target="_blank">Autores</a>
+  
 </p>
 
 <br>
@@ -100,10 +105,10 @@ Antes de iniciar :checkered_flag:, você precisa ter [Git](https://git-scm.com) 
 
 ```bash
 # Clone este projeto
-$ git clone https://github.com/AlcivanLucas/Behaviors.git
+$ git clone https://github.com/AlcivanLucas/ConcretoSmart.git
 
 # Acesse
-$ cd/behaviors
+$ cd/ConcretoSmart
 
 # Instale as dependências
 $ npm i
@@ -116,10 +121,10 @@ $ npx expo start
 
 ```bash
 # Clone este projeto
-$ git clone https://github.com/AlcivanLucas/Behaviors.git
+$ git clone https://github.com/AlcivanLucas/ConcretoSmart.git
 
 # Acesse
-$ cd/Behaviors/web
+$ cd/ConcretoSmart/web
 
 # Instale as dependências
 $ npm i
@@ -132,10 +137,10 @@ $ npm run dev
 
 ```bash
 # Clone este projeto
-$ git clone https://github.com/AlcivanLucas/Behaviors.git
+$ git clone https://github.com/AlcivanLucas/ConcretoSmart.git
 
 # Acesse
-$ cd/Behaviors/server
+$ cd/ConcretoSmart/server
 
 # Instale as dependências
 $ npm i
@@ -148,7 +153,9 @@ $ npm run dev
 
 ```bash
 # verificar repositório atual
-$ git remote -v 
+$ git remote -v
+
+
 
 ```
 
