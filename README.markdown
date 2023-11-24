@@ -157,11 +157,12 @@ $ git remote -v
 
 Este projeto está sob licença MIT. Para mais informações acesse [LICENSE]().
 
-Feito com :heart: por <a href="https://github.com/AlcivanLucas" target="_blank">Alcivan Lucas</a> <br>
-Feito com :heart: por <a href="https://github.com/WendrilXX" target="_blank">Wendrill Gabriel</a> <br>
-Feito com :heart: por <a href="https://github.com/Joap-Filho" target="_blank">João Filho</a> <br>
-Feito com :heart: por <a href="https://github.com/heitorviana-dev" target="_blank">Heitor Viana</a> <br>
-Feito com :heart: por <a href="https://github.com/KevillaAguiar" target="_blank">Kevilla Aguiar🦅</a> <br>
+Feito com :heart: por <a href="https://github.com/KevillaAguiar" target="_blank">Kevilla Aguiar🦅</a> ,
+ <a href="https://github.com/AlcivanLucas" target="_blank">Alcivan Lucas</a> , 
+ <a href="https://github.com/WendrilXX" target="_blank">Wendrill Gabriel</a> ,
+ <a href="https://github.com/Joap-Filho" target="_blank">João Filho</a> ,
+ <a href="https://github.com/heitorviana-dev" target="_blank">Heitor Viana</a> 
+  
 &#xa0;
 
-<a href="#top">Voltar ao topo</a>
+<a align="center" href="#top">Voltar ao topo</a>
