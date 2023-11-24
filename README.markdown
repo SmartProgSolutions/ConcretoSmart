@@ -38,11 +38,8 @@
   <a href="#checkered_flag-iniciando">Iniciando</a> &#xa0; | &#xa0;
   <a href="#-configurações-adicionais-ao-projeto">Schemas</a> &#xa0; | &#xa0;
   <a href="#memo-licença">Licença</a> &#xa0; | &#xa0;
-  <a href="https://github.com/AlcivanLucas" target="_blank">Autores</a>
-  <a href="https://github.com/AlcivanLucas" target="_blank">Autores</a>
-  <a href="https://github.com/AlcivanLucas" target="_blank">Autores</a>
-  <a href="https://github.com/AlcivanLucas" target="_blank">Autores</a>
-  <a href="https://github.com/AlcivanLucas" target="_blank">Autores</a>
+  <a href="#memo-licença">Autores</a>
+
   
 </p>
 
