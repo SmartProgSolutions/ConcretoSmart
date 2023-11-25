@@ -48,15 +48,15 @@ Essa plataforma que realiza dosagem de concreto automática, foi desenvolvida co
 
 ### Tela Home Desktop ##
 
-<img src="./.github/homeweb.jpeg" alt="Imagem da tela Home Desktop" />
+<img src="https://raw.githubusercontent.com/AlcivanLucas/ConcretoSmart/main/assets/gifs/home.gif" alt="Imagem da tela Home Desktop" />
 
 ## Tela de Dosagem Desktop ##
 
-<img src="./.github/pagina_de_dosagem.png" alt="Imagem da tela de dosagem Desktop" />
+<img src="https://raw.githubusercontent.com/AlcivanLucas/ConcretoSmart/main/assets/gifs/teladosagem.gif">
 
 ## Tela de Contato  ##
 
-<img src="./.github/pagina_de_contato.png" alt="Imagem da tela de Contato" />
+<img src="https://raw.githubusercontent.com/AlcivanLucas/ConcretoSmart/main/assets/gifs/telacontato.gif" alt="Imagem da tela de Contato" />
 
 ## Procurar mais telas do software ##
 
