@@ -58,7 +58,7 @@ Essa plataforma que realiza dosagem de concreto automática, foi desenvolvida co
 
 <img src="https://raw.githubusercontent.com/AlcivanLucas/ConcretoSmart/main/assets/gifs/telacontato.gif" alt="Imagem da tela de Contato" />
 
-## Procurar mais telas do software ##
+## Telas Mobile ##
 
 <img src="./.github/Signup.png" alt="Colocar mais imagens para dar volume" />
 
