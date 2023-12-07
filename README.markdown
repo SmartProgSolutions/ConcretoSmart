@@ -82,7 +82,7 @@ Essa plataforma que realiza dosagem de concreto automática, foi desenvolvida co
 
 ## Aplicativo IOS ##
 
-Em desenvolvimento....:heart:
+Em desenvolvimento.... :heart:
 
 ## :rocket: Tecnologias ##
 
