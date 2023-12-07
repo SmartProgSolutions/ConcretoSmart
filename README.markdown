@@ -58,18 +58,22 @@ Essa plataforma que realiza dosagem de concreto automática, foi desenvolvida co
 
 <img src="https://raw.githubusercontent.com/AlcivanLucas/ConcretoSmart/main/assets/gifs/telacontato.gif" alt="Imagem da tela de Contato" />
 
-## Telas Mobile ##
+## Tela Home Mobile ##
 
-<img src="./.github/Signup.png" alt="Colocar mais imagens para dar volume" />
+<img src="https://raw.githubusercontent.com/AlcivanLucas/ConcretoSmart/main/assets/gifs/telahomemobile.gif" alt="Se não aparecer, é complicado!" />
+
+## Telas Dosagem Mobile ##
+
+<img src="https://raw.githubusercontent.com/AlcivanLucas/ConcretoSmart/main/assets/gifs/teladosagemmobile.gif" alt="Apareça Rummm" />
+
 
 ## :skateboard: Funcionalidades ##
 
-:heavy_check_mark: Slides\
 :heavy_check_mark: Calculo de Dosagens\
 :heavy_check_mark: Envio de Tabela de Dosagem para o usuário\
 :heavy_check_mark: Formulário de contato\
-:heavy_check_mark: mais funcionalidae\
-:heavy_check_mark: mais funcionalidae\
+:heavy_check_mark: Personalização de Traços\
+:heavy_check_mark: Geração de relatórios detalhados\
 :heavy_check_mark: Aplicação responsiva
 
 ## :rocket: Tecnologias ##
