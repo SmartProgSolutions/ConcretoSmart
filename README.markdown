@@ -76,6 +76,14 @@ Essa plataforma que realiza dosagem de concreto automática, foi desenvolvida co
 :heavy_check_mark: Geração de relatórios detalhados\
 :heavy_check_mark: Aplicação responsiva
 
+## Aplicativo Android ##
+
+<a href="https://github.com/AlcivanLucas/ConcretoSmart/blob/main/assets/ConcretoSmart_copy.apk" target="_blank">ConcretoSmart.apk</a>
+
+## Aplicativo IOS ##
+
+Em desenvolvimento....:heart:
+
 ## :rocket: Tecnologias ##
 
 Abaixo poderá ter acesso às principais tecnologias usadas neste projeto
