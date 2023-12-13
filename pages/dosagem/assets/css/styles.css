@@ -326,7 +326,8 @@ select {
 
 .lightDarkMode {
   display: inline-block; /* Também faz com que o container do botão se comporte como um elemento em linha */
-  margin-left: 30%; /* Adicione um espaço de margem à esquerda para separar o título do botão */
+ /*  margin-left: 30%; Adicione um espaço de margem à esquerda para separar o título do botão */
+  margin-left: auto;
 }
 
 * { 
@@ -374,3 +375,8 @@ select {
 
 
   /* Fim do light dark mode */
+
+  .cabeca-form{
+    display: flex;
+    align-items: center; /* Alinhamento vertical */
+  }
