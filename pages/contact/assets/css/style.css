@@ -23,7 +23,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .alinhahorizontal {
@@ -37,10 +37,40 @@ body {
     background-color: var(--color-white); /* cor do fromulario de contato*/
     padding: 2rem;
     border-radius: 10px;
-    min-width: 30%;
+    min-width: 40%;
     overflow: auto;
-    margin-top: 10%;
+    /* margin-top: 12%; */
 }
+
+/* Se [largura do dispositivo] for menor ou igual a 768px, então execute o {...} */
+@media (max-width: 768px) {
+    .content {
+       /*color: #000000; elemento que vai ser modificado/adicionado/sobrescrito nessa resolução */
+      width: 90%;
+      margin-top: 18%;
+    }
+  }
+
+/* Se [largura do dispositivo] for entre 768px e 600px, então execute o {...} */
+
+@media (max-width: 768px) and (min-width: 600px) {
+    .content {
+   /*  color: #000000; elemento que vai ser modificado/adicionado/sobrescrito nessa resolução */
+    width: 70%;
+    margin-top: 10%;
+  }
+}
+
+  /* Se [largura do dispositivo] for maior ou igual a 768px, então execute o {...} */
+@media (min-width: 768px) {
+  .content {
+   /* color: #000000;  elemento que vai ser modificado/adicionado/sobrescrito nessa resolução */
+    width: 40%;
+    margin-top: 6%;
+  }
+}
+
+
 
 h1{
     margin-bottom: 1rem;
@@ -151,3 +181,9 @@ button[type="submit"]:hover{
 
 
 /* Fim do formulario no modo dark */
+
+
+.cabeca-form{
+    display: flex;
+    align-items: center; /* Alinhamento vertical */
+  }
