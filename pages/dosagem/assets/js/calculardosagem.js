@@ -126,7 +126,7 @@ function calcularDosagem() {
   // Exibir os resultados
   document.getElementById("resultado-cimento").innerHTML = cimento.toFixed(2);
   document.getElementById("resultado-cimentom3").innerHTML = cimentom3.toFixed(3);
-  document.getElementById("resultado-cimento-saco").innerHTML = cimentoSaco.toFixed(1);
+  document.getElementById("resultado-cimento-saco").innerHTML = cimentoSaco.toFixed(2);
 
   document.getElementById("resultado-areia").innerHTML = areia.toFixed(2);
   document.getElementById("resultado-areiam3").innerHTML = areiam3.toFixed(3);
